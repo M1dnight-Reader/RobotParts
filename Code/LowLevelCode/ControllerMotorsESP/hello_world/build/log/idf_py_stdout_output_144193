@@ -1,0 +1,1092 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 14 2025 16:19:53[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc6ch ( 48236) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bc94 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bcb8 vaddr=3ffb0000 size=023a4h (  9124) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e064 vaddr=40080000 size=01fb4h (  8116) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=20dc8h (134600) map[0m
+[0;32mI (171) esp_image: segment 5: paddr=00040df0 vaddr=40081fb4 size=0be10h ( 48656) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (216) cpu_start: Pro cpu start user code[0m
+[0;32mI (216) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (216) app_init: Application information:[0m
+[0;32mI (216) app_init: Project name:     hello_world[0m
+[0;32mI (220) app_init: App version:      c3f7ac7-dirty[0m
+[0;32mI (225) app_init: Compile time:     Aug 19 2025 15:25:04[0m
+[0;32mI (230) app_init: ELF file SHA256:  cb96d7635...[0m
+[0;32mI (234) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (238) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (242) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (246) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (261) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 4008DDC4 len 0001223C (72 KiB): IRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (286) spi_flash: flash io: dio[0m
+[0;33mW (289) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (301) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) main: Starting app[0m
+[0;32mI (320) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) uart: queue free spaces: 10[0m
+[0;32mI (380) main: Tasks created[0m
+[0;32mI (390) main_task: Returned from app_main()[0m
+[0;33mW (480) main: No rpm message this cycle[0m
+[0;33mW (580) main: No rpm message this cycle[0m
+[0;33mW (680) main: No rpm message this cycle[0m
+[0;33mW (780) main: No rpm message this cycle[0m
+[0;33mW (880) main: No rpm message this cycle[0m
+[0;33mW (980) main: No rpm message this cycle[0m
+[0;33mW (1080) main: No rpm message this cycle[0m
+[0;33mW (1180) main: No rpm message this cycle[0m
+[0;33mW (1280) main: No rpm message this cycle[0m
+[0;33mW (1380) main: No rpm message this cycle[0m
+[0;33mW (1480) main: No rpm message this cycle[0m
+[0;33mW (1580) main: No rpm message this cycle[0m
+[0;33mW (1680) main: No rpm message this cycle[0m
+[0;33mW (1780) main: No rpm message this cycle[0m
+[0;33mW (1880) main: No rpm message this cycle[0m
+[0;33mW (1980) main: No rpm message this cycle[0m
+[0;33mW (2080) main: No rpm message this cycle[0m
+[0;33mW (2180) main: No rpm message this cycle[0m
+[0;33mW (2280) main: No rpm message this cycle[0m
+[0;33mW (2380) main: No rpm message this cycle[0m
+[0;33mW (2480) main: No rpm message this cycle[0m
+[0;33mW (2580) main: No rpm message this cycle[0m
+[0;33mW (2680) main: No rpm message this cycle[0m
+[0;33mW (2780) main: No rpm message this cycle[0m
+[0;33mW (2880) main: No rpm message this cycle[0m
+[0;33mW (2980) main: No rpm message this cycle[0m
+[0;32mI (3010) main: Line: [0m
+[0;33mW (3010) main: Bad format (parsed=-1): [0m
+[0;33mW (3080) main: No rpm message this cycle[0m
+[0;32mI (3110) main: Line: A:44.48,B:-58.79,C:-58.66,D:45.08[0m
+[0;32mI (3180) main: PID out A:3.00 B:-1.21 C:3.00 D:-3.00 | meas A:44.48 B:-58.79 C:-58.66 D:45.08[0m
+[0;32mI (3210) main: Line: A:41.42,B:-53.89,C:-53.96,D:41.71[0m
+[0;32mI (3280) main: PID out A:6.00 B:-4.21 C:6.00 D:-6.00 | meas A:41.42 B:-53.89 C:-53.96 D:41.71[0m
+[0;32mI (3310) main: Line: A:10.93,B:-13.67,C:-13.64,D:12.04[0m
+[0;32mI (3380) main: PID out A:9.00 B:-7.21 C:9.00 D:-9.00 | meas A:10.93 B:-13.67 C:-13.64 D:12.04[0m
+[0;32mI (3410) main: Line: A:3.25,B:-5.28,C:-5.60,D:4.98[0m
+[0;32mI (3480) main: PID out A:12.00 B:-10.21 C:12.00 D:-12.00 | meas A:3.25 B:-5.28 C:-5.60 D:4.98[0m
+[0;32mI (3510) main: Line: A:3.87,B:-6.99,C:-7.45,D:5.29[0m
+[0;32mI (3580) main: PID out A:15.00 B:-13.21 C:15.00 D:-15.00 | meas A:3.87 B:-6.99 C:-7.45 D:5.29[0m
+[0;32mI (3610) main: Line: A:6.29,B:-9.90,C:-10.37,D:7.43[0m
+[0;32mI (3680) main: PID out A:18.00 B:-16.21 C:18.00 D:-18.00 | meas A:6.29 B:-9.90 C:-10.37 D:7.43[0m
+[0;32mI (3710) main: Line: A:8.55,B:-13.25,C:-13.61,D:9.75[0m
+[0;32mI (3780) main: PID out A:21.00 B:-19.21 C:21.00 D:-21.00 | meas A:8.55 B:-13.25 C:-13.61 D:9.75[0m
+[0;32mI (3820) main: Line: A:11.05,B:-16.56,C:-17.03,D:12.37[0m
+[0;32mI (3880) main: PID out A:24.00 B:-22.21 C:24.00 D:-24.00 | meas A:11.05 B:-16.56 C:-17.03 D:12.37[0m
+[0;32mI (3920) main: Line: A:13.60,B:-19.96,C:-20.34,D:14.71[0m
+[0;32mI (3980) main: PID out A:27.00 B:-25.21 C:27.00 D:-27.00 | meas A:13.60 B:-19.96 C:-20.34 D:14.71[0m
+[0;32mI (4020) main: Line: A:15.87,B:-23.20,C:-23.52,D:17.48[0m
+[0;32mI (4080) main: PID out A:30.00 B:-28.21 C:30.00 D:-30.00 | meas A:15.87 B:-23.20 C:-23.52 D:17.48[0m
+[0;32mI (4120) main: Line: A:18.51,B:-26.34,C:-26.28,D:19.72[0m
+[0;32mI (4180) main: PID out A:33.00 B:-31.21 C:33.00 D:-33.00 | meas A:18.51 B:-26.34 C:-26.28 D:19.72[0m
+[0;32mI (4220) main: Line: A:20.63,B:-28.99,C:-29.08,D:22.07[0m
+[0;32mI (4280) main: PID out A:36.00 B:-31.01 C:36.00 D:-36.00 | meas A:20.63 B:-28.99 C:-29.08 D:22.07[0m
+[0;32mI (4320) main: Line: A:22.74,B:-31.53,C:-31.88,D:24.61[0m
+[0;32mI (4380) main: PID out A:37.26 B:-28.47 C:39.00 D:-39.00 | meas A:22.74 B:-31.53 C:-31.88 D:24.61[0m
+[0;32mI (4420) main: Line: A:25.17,B:-36.72,C:-36.96,D:28.01[0m
+[0;32mI (4480) main: PID out A:34.83 B:-25.47 C:42.00 D:-42.00 | meas A:25.17 B:-36.72 C:-36.96 D:28.01[0m
+[0;32mI (4520) main: Line: A:37.37,B:-52.05,C:-50.95,D:39.62[0m
+[0;32mI (4580) main: PID out A:31.83 B:-22.47 C:45.00 D:-45.00 | meas A:37.37 B:-52.05 C:-50.95 D:39.62[0m
+[0;32mI (4620) main: Line: A:24.38,B:-45.15,C:-38.43,D:35.42[0m
+[0;32mI (4680) main: PID out A:34.83 B:-19.47 C:48.00 D:-48.00 | meas A:24.38 B:-45.15 C:-38.43 D:35.42[0m
+[0;32mI (4720) main: Line: A:17.63,B:-44.43,C:-32.75,D:34.35[0m
+[0;32mI (4780) main: PID out A:37.83 B:-16.47 C:51.00 D:-51.00 | meas A:17.63 B:-44.43 C:-32.75 D:34.35[0m
+[0;32mI (4820) main: Line: A:14.67,B:-47.00,C:-33.96,D:36.80[0m
+[0;32mI (4880) main: PID out A:40.83 B:-13.47 C:54.00 D:-54.00 | meas A:14.67 B:-47.00 C:-33.96 D:36.80[0m
+[0;32mI (4920) main: Line: A:12.03,B:-49.74,C:-36.84,D:38.63[0m
+[0;32mI (4980) main: PID out A:43.83 B:-10.47 C:57.00 D:-57.00 | meas A:12.03 B:-49.74 C:-36.84 D:38.63[0m
+[0;32mI (5020) main: Line: A:9.72,B:-52.64,C:-39.81,D:40.79[0m
+[0;32mI (5080) main: PID out A:46.83 B:-7.47 C:60.00 D:-60.00 | meas A:9.72 B:-52.64 C:-39.81 D:40.79[0m
+[0;32mI (5120) main: Line: A:7.19,B:-55.73,C:-42.89,D:42.93[0m
+[0;32mI (5180) main: PID out A:49.83 B:-4.47 C:63.00 D:-63.00 | meas A:7.19 B:-55.73 C:-42.89 D:42.93[0m
+[0;32mI (5220) main: Line: A:4.76,B:-58.82,C:-46.05,D:45.45[0m
+[0;32mI (5280) main: PID out A:52.83 B:-1.47 C:66.00 D:-66.00 | meas A:4.76 B:-58.82 C:-46.05 D:45.45[0m
+[0;32mI (5320) main: Line: A:2.45,B:-61.90,C:-48.76,D:47.39[0m
+[0;32mI (5380) main: PID out A:55.83 B:1.53 C:69.00 D:-69.00 | meas A:2.45 B:-61.90 C:-48.76 D:47.39[0m
+[0;32mI (5420) main: Line: A:0.24,B:-64.78,C:-37.20,D:49.69[0m
+[0;32mI (5480) main: PID out A:58.83 B:4.53 C:72.00 D:-72.00 | meas A:0.24 B:-64.78 C:-37.20 D:49.69[0m
+[0;32mI (5520) main: Line: A:0.12,B:-67.58,C:26.83,D:51.74[0m
+[0;32mI (5580) main: PID out A:59.88 B:7.53 C:69.00 D:-75.00 | meas A:0.12 B:-67.58 C:26.83 D:51.74[0m
+[0;32mI (5620) main: Line: A:1.90,B:-70.91,C:41.75,D:53.77[0m
+[0;32mI (5680) main: PID out A:58.10 B:10.53 C:66.00 D:-78.00 | meas A:1.90 B:-70.91 C:41.75 D:53.77[0m
+[0;32mI (5720) main: Line: A:4.31,B:-73.89,C:44.69,D:52.95[0m
+[0;32mI (5780) main: PID out A:55.69 B:13.53 C:63.00 D:-81.00 | meas A:4.31 B:-73.89 C:44.69 D:52.95[0m
+[0;32mI (5820) main: Line: A:6.74,B:-76.90,C:44.12,D:51.41[0m
+[0;32mI (5880) main: PID out A:53.26 B:16.53 C:60.00 D:-84.00 | meas A:6.74 B:-76.90 C:44.12 D:51.41[0m
+[0;32mI (5920) main: Line: A:9.32,B:-79.87,C:42.44,D:48.61[0m
+[0;32mI (5980) main: PID out A:50.68 B:19.53 C:57.00 D:-87.00 | meas A:9.32 B:-79.87 C:42.44 D:48.61[0m
+[0;32mI (6020) main: Line: A:11.67,B:-82.90,C:40.93,D:46.45[0m
+[0;32mI (6080) main: PID out A:48.33 B:22.53 C:54.00 D:-90.00 | meas A:11.67 B:-82.90 C:40.93 D:46.45[0m
+[0;32mI (6120) main: Line: A:13.98,B:-85.81,C:38.96,D:44.15[0m
+[0;32mI (6180) main: PID out A:46.02 B:25.53 C:51.00 D:-93.00 | meas A:13.98 B:-85.81 C:38.96 D:44.15[0m
+[0;32mI (6220) main: Line: A:16.09,B:-88.53,C:36.96,D:41.78[0m
+[0;32mI (6280) main: PID out A:43.91 B:28.53 C:48.00 D:-96.00 | meas A:16.09 B:-88.53 C:36.96 D:41.78[0m
+[0;32mI (6320) main: Line: A:18.78,B:-91.60,C:35.37,D:39.58[0m
+[0;32mI (6380) main: PID out A:41.22 B:31.53 C:45.00 D:-99.00 | meas A:18.78 B:-91.60 C:35.37 D:39.58[0m
+[0;32mI (6420) main: Line: A:23.96,B:-90.46,C:22.84,D:38.67[0m
+[0;32mI (6480) main: PID out A:38.22 B:30.46 C:42.00 D:-98.67 | meas A:23.96 B:-90.46 C:22.84 D:38.67[0m
+[0;32mI (6520) main: Line: A:37.06,B:-74.50,C:-25.46,D:41.55[0m
+[0;32mI (6580) main: PID out A:35.22 B:27.46 C:45.00 D:-100.00 | meas A:37.06 B:-74.50 C:-25.46 D:41.55[0m
+[0;32mI (6620) main: Line: A:26.92,B:-90.86,C:17.69,D:35.82[0m
+[0;32mI (6680) main: PID out A:33.08 B:30.46 C:42.31 D:-97.00 | meas A:26.92 B:-90.86 C:17.69 D:35.82[0m
+[0;32mI (6720) main: Line: A:22.08,B:-96.85,C:25.34,D:34.34[0m
+[0;32mI (6780) main: PID out A:36.08 B:33.46 C:39.31 D:-94.34 | meas A:22.08 B:-96.85 C:25.34 D:34.34[0m
+[0;32mI (6830) main: Line: A:23.11,B:-96.70,C:25.67,D:32.92[0m
+[0;32mI (6880) main: PID out A:36.89 B:36.46 C:36.31 D:-92.92 | meas A:23.11 B:-96.70 C:25.67 D:32.92[0m
+[0;32mI (6930) main: Line: A:25.12,B:-94.71,C:27.03,D:30.24[0m
+[0;32mI (6980) main: PID out A:34.88 B:34.71 C:33.31 D:-90.24 | meas A:25.12 B:-94.71 C:27.03 D:30.24[0m
+[0;32mI (7030) main: Line: A:26.80,B:-92.99,C:27.65,D:27.75[0m
+[0;32mI (7080) main: PID out A:33.20 B:32.99 C:32.35 D:-87.75 | meas A:26.80 B:-92.99 C:27.65 D:27.75[0m
+[0;32mI (7130) main: Line: A:26.38,B:-90.71,C:26.45,D:26.07[0m
+[0;32mI (7180) main: PID out A:33.62 B:30.71 C:33.55 D:-86.07 | meas A:26.38 B:-90.71 C:26.45 D:26.07[0m
+[0;32mI (7230) main: Line: A:24.59,B:-88.38,C:25.44,D:25.35[0m
+[0;32mI (7280) main: PID out A:35.41 B:28.38 C:34.56 D:-85.35 | meas A:24.59 B:-88.38 C:25.44 D:25.35[0m
+[0;32mI (7330) main: Line: A:23.40,B:-86.77,C:26.23,D:25.68[0m
+[0;32mI (7380) main: PID out A:36.60 B:26.77 C:33.77 D:-85.68 | meas A:23.40 B:-86.77 C:26.23 D:25.68[0m
+[0;32mI (7430) main: Line: A:21.41,B:-85.91,C:26.83,D:26.37[0m
+[0;32mI (7480) main: PID out A:38.59 B:25.91 C:33.17 D:-86.37 | meas A:21.41 B:-85.91 C:26.83 D:26.37[0m
+[0;32mI (7530) main: Line: A:20.23,B:-85.95,C:28.12,D:26.06[0m
+[0;32mI (7580) main: PID out A:39.77 B:25.95 C:31.88 D:-86.06 | meas A:20.23 B:-85.95 C:28.12 D:26.06[0m
+[0;32mI (7630) main: Line: A:19.43,B:-86.38,C:29.09,D:25.56[0m
+[0;32mI (7680) main: PID out A:40.57 B:26.38 C:30.91 D:-85.56 | meas A:19.43 B:-86.38 C:29.09 D:25.56[0m
+[0;32mI (7730) main: Line: A:19.07,B:-86.25,C:30.14,D:24.58[0m
+[0;32mI (7780) main: PID out A:40.93 B:26.25 C:29.86 D:-84.58 | meas A:19.07 B:-86.25 C:30.14 D:24.58[0m
+[0;32mI (7830) main: Line: A:19.30,B:-85.74,C:30.49,D:23.79[0m
+[0;32mI (7880) main: PID out A:40.70 B:25.74 C:29.51 D:-83.79 | meas A:19.30 B:-85.74 C:30.49 D:23.79[0m
+[0;32mI (7930) main: Line: A:19.19,B:-84.69,C:30.94,D:22.77[0m
+[0;32mI (7980) main: PID out A:40.81 B:24.69 C:29.06 D:-82.77 | meas A:19.19 B:-84.69 C:30.94 D:22.77[0m
+[0;32mI (8030) main: Line: A:19.09,B:-84.02,C:30.92,D:22.32[0m
+[0;32mI (8080) main: PID out A:40.91 B:24.02 C:29.08 D:-82.32 | meas A:19.09 B:-84.02 C:30.92 D:22.32[0m
+[0;32mI (8130) main: Line: A:18.22,B:-83.24,C:31.18,D:22.06[0m
+[0;32mI (8180) main: PID out A:41.78 B:23.24 C:28.82 D:-82.06 | meas A:18.22 B:-83.24 C:31.18 D:22.06[0m
+[0;32mI (8230) main: Line: A:17.93,B:-82.90,C:31.13,D:22.00[0m
+[0;32mI (8280) main: PID out A:42.07 B:22.90 C:28.87 D:-82.00 | meas A:17.93 B:-82.90 C:31.13 D:22.00[0m
+[0;32mI (8330) main: Line: A:17.17,B:-82.59,C:31.48,D:21.62[0m
+[0;32mI (8380) main: PID out A:42.83 B:22.59 C:28.52 D:-81.62 | meas A:17.17 B:-82.59 C:31.48 D:21.62[0m
+[0;32mI (8430) main: Line: A:21.95,B:-78.77,C:18.18,D:25.98[0m
+[0;32mI (8480) main: PID out A:39.83 B:19.59 C:31.52 D:-84.62 | meas A:21.95 B:-78.77 C:18.18 D:25.98[0m
+[0;32mI (8530) main: Line: A:34.51,B:-69.39,C:-22.29,D:37.08[0m
+[0;32mI (8580) main: PID out A:36.83 B:16.59 C:34.52 D:-87.62 | meas A:34.51 B:-69.39 C:-22.29 D:37.08[0m
+[0;32mI (8630) main: Line: A:18.94,B:-81.03,C:21.24,D:28.65[0m
+[0;32mI (8680) main: PID out A:39.83 B:19.59 C:37.52 D:-88.65 | meas A:18.94 B:-81.03 C:21.24 D:28.65[0m
+[0;32mI (8730) main: Line: A:13.85,B:-86.62,C:27.50,D:27.48[0m
+[0;32mI (8780) main: PID out A:42.83 B:22.59 C:34.52 D:-87.48 | meas A:13.85 B:-86.62 C:27.50 D:27.48[0m
+[0;32mI (8830) main: Line: A:14.42,B:-87.86,C:29.96,D:28.05[0m
+[0;32mI (8880) main: PID out A:45.58 B:25.59 C:31.52 D:-88.05 | meas A:14.42 B:-87.86 C:29.96 D:28.05[0m
+[0;32mI (8930) main: Line: A:16.90,B:-87.79,C:32.43,D:26.50[0m
+[0;32mI (8980) main: PID out A:43.10 B:27.79 C:28.52 D:-86.50 | meas A:16.90 B:-87.79 C:32.43 D:26.50[0m
+[0;32mI (9030) main: Line: A:18.90,B:-87.82,C:33.89,D:23.97[0m
+[0;32mI (9080) main: PID out A:41.10 B:27.82 C:26.11 D:-83.97 | meas A:18.90 B:-87.82 C:33.89 D:23.97[0m
+[0;32mI (9130) main: Line: A:19.98,B:-86.59,C:32.62,D:21.81[0m
+[0;32mI (9180) main: PID out A:40.02 B:26.59 C:27.38 D:-81.81 | meas A:19.98 B:-86.59 C:32.62 D:21.81[0m
+[0;32mI (9230) main: Line: A:20.35,B:-84.59,C:31.63,D:20.40[0m
+[0;32mI (9280) main: PID out A:39.65 B:24.59 C:28.37 D:-80.40 | meas A:20.35 B:-84.59 C:31.63 D:20.40[0m
+[0;32mI (9330) main: Line: A:20.06,B:-82.64,C:30.33,D:20.70[0m
+[0;32mI (9380) main: PID out A:39.94 B:22.64 C:29.67 D:-80.70 | meas A:20.06 B:-82.64 C:30.33 D:20.70[0m
+[0;32mI (9430) main: Line: A:18.01,B:-81.39,C:30.16,D:21.66[0m
+[0;32mI (9480) main: PID out A:41.99 B:21.39 C:29.84 D:-81.66 | meas A:18.01 B:-81.39 C:30.16 D:21.66[0m
+[0;32mI (9530) main: Line: A:17.12,B:-81.43,C:30.71,D:22.43[0m
+[0;32mI (9580) main: PID out A:42.88 B:21.43 C:29.29 D:-82.43 | meas A:17.12 B:-81.43 C:30.71 D:22.43[0m
+[0;32mI (9630) main: Line: A:15.96,B:-82.00,C:31.75,D:22.27[0m
+[0;32mI (9680) main: PID out A:44.04 B:22.00 C:28.25 D:-82.27 | meas A:15.96 B:-82.00 C:31.75 D:22.27[0m
+[0;32mI (9730) main: Line: A:15.95,B:-82.99,C:32.41,D:21.92[0m
+[0;32mI (9780) main: PID out A:44.05 B:22.99 C:27.59 D:-81.92 | meas A:15.95 B:-82.99 C:32.41 D:21.92[0m
+[0;32mI (9830) main: Line: A:16.51,B:-82.78,C:33.12,D:21.63[0m
+[0;32mI (9880) main: PID out A:43.49 B:22.78 C:26.88 D:-81.63 | meas A:16.51 B:-82.78 C:33.12 D:21.63[0m
+[0;32mI (9940) main: Line: A:16.50,B:-82.38,C:33.17,D:20.53[0m
+[0;32mI (9980) main: PID out A:43.50 B:22.38 C:26.83 D:-80.53 | meas A:16.50 B:-82.38 C:33.17 D:20.53[0m
+[0;32mI (10040) main: Line: A:16.79,B:-82.14,C:33.11,D:20.39[0m
+[0;32mI (10080) main: PID out A:43.21 B:22.14 C:26.89 D:-80.39 | meas A:16.79 B:-82.14 C:33.11 D:20.39[0m
+[0;32mI (10140) main: Line: A:16.79,B:-81.29,C:32.98,D:20.15[0m
+[0;32mI (10180) main: PID out A:43.21 B:21.29 C:27.02 D:-80.15 | meas A:16.79 B:-81.29 C:32.98 D:20.15[0m
+[0;32mI (10240) main: Line: A:16.26,B:-80.59,C:33.02,D:20.07[0m
+[0;32mI (10280) main: PID out A:43.74 B:20.59 C:26.98 D:-80.07 | meas A:16.26 B:-80.59 C:33.02 D:20.07[0m
+[0;32mI (10340) main: Line: A:15.56,B:-80.73,C:32.74,D:20.41[0m
+[0;32mI (10380) main: PID out A:44.44 B:20.73 C:27.26 D:-80.41 | meas A:15.56 B:-80.73 C:32.74 D:20.41[0m
+[0;32mI (10440) main: Line: A:21.56,B:-76.98,C:16.27,D:25.78[0m
+[0;32mI (10480) main: PID out A:41.44 B:17.73 C:30.26 D:-83.41 | meas A:21.56 B:-76.98 C:16.27 D:25.78[0m
+[0;32mI (10540) main: Line: A:33.44,B:-69.32,C:-19.89,D:36.59[0m
+[0;32mI (10580) main: PID out A:38.44 B:14.73 C:33.26 D:-86.41 | meas A:33.44 B:-69.32 C:-19.89 D:36.59[0m
+[0;32mI (10640) main: Line: A:17.22,B:-80.38,C:22.38,D:27.49[0m
+[0;32mI (10680) main: PID out A:41.44 B:17.73 C:36.26 D:-87.49 | meas A:17.22 B:-80.38 C:22.38 D:27.49[0m
+[0;32mI (10740) main: Line: A:12.13,B:-85.64,C:28.94,D:26.52[0m
+[0;32mI (10780) main: PID out A:44.44 B:20.73 C:33.26 D:-86.52 | meas A:12.13 B:-85.64 C:28.94 D:26.52[0m
+[0;32mI (10840) main: Line: A:13.46,B:-87.18,C:31.30,D:27.13[0m
+[0;32mI (10880) main: PID out A:46.54 B:23.73 C:30.26 D:-87.13 | meas A:13.46 B:-87.18 C:31.30 D:27.13[0m
+[0;32mI (10940) main: Line: A:15.17,B:-87.41,C:33.67,D:25.66[0m
+[0;32mI (10980) main: PID out A:44.83 B:26.73 C:27.26 D:-85.66 | meas A:15.17 B:-87.41 C:33.67 D:25.66[0m
+[0;32mI (11040) main: Line: A:17.70,B:-87.33,C:34.61,D:23.03[0m
+[0;32mI (11080) main: PID out A:42.30 B:27.33 C:25.39 D:-83.03 | meas A:17.70 B:-87.33 C:34.61 D:23.03[0m
+[0;32mI (11140) main: Line: A:19.47,B:-85.78,C:34.07,D:20.56[0m
+[0;32mI (11180) main: PID out A:40.53 B:25.78 C:25.93 D:-80.56 | meas A:19.47 B:-85.78 C:34.07 D:20.56[0m
+[0;32mI (11240) main: Line: A:20.35,B:-83.43,C:32.22,D:19.21[0m
+[0;32mI (11280) main: PID out A:39.65 B:23.43 C:27.78 D:-79.21 | meas A:20.35 B:-83.43 C:32.22 D:19.21[0m
+[0;32mI (11340) main: Line: A:18.60,B:-81.42,C:31.01,D:19.86[0m
+[0;32mI (11380) main: PID out A:41.40 B:21.42 C:28.99 D:-79.86 | meas A:18.60 B:-81.42 C:31.01 D:19.86[0m
+[0;32mI (11440) main: Line: A:17.34,B:-80.09,C:30.80,D:20.79[0m
+[0;32mI (11480) main: PID out A:42.66 B:20.09 C:29.20 D:-80.79 | meas A:17.34 B:-80.09 C:30.80 D:20.79[0m
+[0;32mI (11540) main: Line: A:15.56,B:-80.60,C:31.54,D:21.50[0m
+[0;32mI (11580) main: PID out A:44.44 B:20.60 C:28.46 D:-81.50 | meas A:15.56 B:-80.60 C:31.54 D:21.50[0m
+[0;32mI (11640) main: Line: A:14.99,B:-81.31,C:32.47,D:21.65[0m
+[0;32mI (11680) main: PID out A:45.01 B:21.31 C:27.53 D:-81.65 | meas A:14.99 B:-81.31 C:32.47 D:21.65[0m
+[0;32mI (11740) main: Line: A:15.34,B:-82.16,C:33.48,D:21.24[0m
+[0;32mI (11780) main: PID out A:44.66 B:22.16 C:26.52 D:-81.24 | meas A:15.34 B:-82.16 C:33.48 D:21.24[0m
+[0;32mI (11840) main: Line: A:15.78,B:-82.18,C:34.04,D:20.80[0m
+[0;32mI (11880) main: PID out A:44.22 B:22.18 C:25.96 D:-80.80 | meas A:15.78 B:-82.18 C:34.04 D:20.80[0m
+[0;32mI (11940) main: Line: A:16.26,B:-81.78,C:33.85,D:19.93[0m
+[0;32mI (11980) main: PID out A:43.74 B:21.78 C:26.15 D:-79.93 | meas A:16.26 B:-81.78 C:33.85 D:19.93[0m
+[0;32mI (12040) main: Line: A:16.15,B:-81.35,C:33.60,D:19.71[0m
+[0;32mI (12080) main: PID out A:43.85 B:21.35 C:26.40 D:-79.71 | meas A:16.15 B:-81.35 C:33.60 D:19.71[0m
+[0;32mI (12140) main: Line: A:16.00,B:-80.90,C:33.35,D:19.67[0m
+[0;32mI (12180) main: PID out A:44.00 B:20.90 C:26.65 D:-79.67 | meas A:16.00 B:-80.90 C:33.35 D:19.67[0m
+[0;32mI (12240) main: Line: A:15.51,B:-80.63,C:33.53,D:19.68[0m
+[0;32mI (12280) main: PID out A:44.49 B:20.63 C:26.47 D:-79.68 | meas A:15.51 B:-80.63 C:33.53 D:19.68[0m
+[0;32mI (12340) main: Line: A:15.54,B:-80.41,C:33.51,D:19.76[0m
+[0;32mI (12380) main: PID out A:44.46 B:20.41 C:26.49 D:-79.76 | meas A:15.54 B:-80.41 C:33.51 D:19.76[0m
+[0;32mI (12440) main: Line: A:22.73,B:-75.80,C:13.86,D:26.29[0m
+[0;32mI (12480) main: PID out A:41.46 B:17.41 C:29.49 D:-82.76 | meas A:22.73 B:-75.80 C:13.86 D:26.29[0m
+[0;32mI (12540) main: Line: A:32.28,B:-69.74,C:-17.43,D:35.90[0m
+[0;32mI (12580) main: PID out A:38.46 B:14.41 C:32.49 D:-85.76 | meas A:32.28 B:-69.74 C:-17.43 D:35.90[0m
+[0;32mI (12640) main: Line: A:16.19,B:-80.79,C:23.00,D:26.40[0m
+[0;32mI (12680) main: PID out A:41.46 B:17.41 C:35.49 D:-86.40 | meas A:16.19 B:-80.79 C:23.00 D:26.40[0m
+[0;32mI (12740) main: Line: A:11.87,B:-85.58,C:28.97,D:25.44[0m
+[0;32mI (12780) main: PID out A:44.46 B:20.41 C:32.49 D:-85.44 | meas A:11.87 B:-85.58 C:28.97 D:25.44[0m
+[0;32mI (12840) main: Line: A:12.97,B:-86.35,C:31.57,D:26.06[0m
+[0;32mI (12880) main: PID out A:47.03 B:23.41 C:29.49 D:-86.06 | meas A:12.97 B:-86.35 C:31.57 D:26.06[0m
+[0;32mI (12940) main: Line: A:15.03,B:-86.43,C:33.64,D:24.55[0m
+[0;32mI (12980) main: PID out A:44.97 B:26.41 C:26.49 D:-84.55 | meas A:15.03 B:-86.43 C:33.64 D:24.55[0m
+[0;32mI (13040) main: Line: A:17.76,B:-86.23,C:34.56,D:22.08[0m
+[0;32mI (13080) main: PID out A:42.24 B:26.23 C:25.44 D:-82.08 | meas A:17.76 B:-86.23 C:34.56 D:22.08[0m
+[0;32mI (13140) main: Line: A:19.15,B:-84.93,C:33.64,D:19.74[0m
+[0;32mI (13180) main: PID out A:40.85 B:24.93 C:26.36 D:-79.74 | meas A:19.15 B:-84.93 C:33.64 D:19.74[0m
+[0;32mI (13240) main: Line: A:18.70,B:-83.02,C:32.19,D:19.28[0m
+[0;32mI (13280) main: PID out A:41.30 B:23.02 C:27.81 D:-79.28 | meas A:18.70 B:-83.02 C:32.19 D:19.28[0m
+[0;32mI (13340) main: Line: A:18.28,B:-80.94,C:31.32,D:19.74[0m
+[0;32mI (13380) main: PID out A:41.72 B:20.94 C:28.68 D:-79.74 | meas A:18.28 B:-80.94 C:31.32 D:19.74[0m
+[0;32mI (13440) main: Line: A:16.82,B:-80.35,C:31.42,D:20.99[0m
+[0;32mI (13480) main: PID out A:43.18 B:20.35 C:28.58 D:-80.99 | meas A:16.82 B:-80.35 C:31.42 D:20.99[0m
+[0;32mI (13550) main: Line: A:15.43,B:-80.71,C:31.78,D:21.57[0m
+[0;32mI (13580) main: PID out A:44.57 B:20.71 C:28.22 D:-81.57 | meas A:15.43 B:-80.71 C:31.78 D:21.57[0m
+[0;32mI (13650) main: Line: A:14.94,B:-81.61,C:32.93,D:21.36[0m
+[0;32mI (13680) main: PID out A:45.06 B:21.61 C:27.07 D:-81.36 | meas A:14.94 B:-81.61 C:32.93 D:21.36[0m
+[0;32mI (13750) main: Line: A:15.37,B:-82.04,C:33.68,D:21.02[0m
+[0;32mI (13780) main: PID out A:44.63 B:22.04 C:26.32 D:-81.02 | meas A:15.37 B:-82.04 C:33.68 D:21.02[0m
+[0;32mI (13850) main: Line: A:16.17,B:-82.14,C:33.86,D:20.27[0m
+[0;32mI (13880) main: PID out A:43.83 B:22.14 C:26.14 D:-80.27 | meas A:16.17 B:-82.14 C:33.86 D:20.27[0m
+[0;32mI (13950) main: Line: A:16.34,B:-81.78,C:33.79,D:19.80[0m
+[0;32mI (13980) main: PID out A:43.66 B:21.78 C:26.21 D:-79.80 | meas A:16.34 B:-81.78 C:33.79 D:19.80[0m
+[0;32mI (14050) main: Line: A:16.00,B:-80.85,C:33.54,D:19.75[0m
+[0;32mI (14080) main: PID out A:44.00 B:20.85 C:26.46 D:-79.75 | meas A:16.00 B:-80.85 C:33.54 D:19.75[0m
+[0;32mI (14150) main: Line: A:15.77,B:-80.65,C:33.18,D:19.71[0m
+[0;32mI (14180) main: PID out A:44.23 B:20.65 C:26.82 D:-79.71 | meas A:15.77 B:-80.65 C:33.18 D:19.71[0m
+[0;32mI (14250) main: Line: A:15.32,B:-80.55,C:33.44,D:19.95[0m
+[0;32mI (14280) main: PID out A:44.68 B:20.55 C:26.56 D:-79.95 | meas A:15.32 B:-80.55 C:33.44 D:19.95[0m
+[0;32mI (14350) main: Line: A:15.36,B:-80.69,C:33.64,D:20.01[0m
+[0;32mI (14380) main: PID out A:44.64 B:20.69 C:26.36 D:-80.01 | meas A:15.36 B:-80.69 C:33.64 D:20.01[0m
+[0;32mI (14450) main: Line: A:23.55,B:-75.62,C:10.20,D:27.17[0m
+[0;32mI (14480) main: PID out A:41.64 B:17.69 C:29.36 D:-83.01 | meas A:23.55 B:-75.62 C:10.20 D:27.17[0m
+[0;32mI (14550) main: Line: A:31.64,B:-70.71,C:-14.93,D:35.55[0m
+[0;32mI (14580) main: PID out A:38.64 B:14.69 C:32.36 D:-86.01 | meas A:31.64 B:-70.71 C:-14.93 D:35.55[0m
+[0;32mI (14650) main: Line: A:16.08,B:-81.43,C:24.11,D:25.98[0m
+[0;32mI (14680) main: PID out A:41.64 B:17.69 C:35.36 D:-85.98 | meas A:16.08 B:-81.43 C:24.11 D:25.98[0m
+[0;32mI (14750) main: Line: A:12.10,B:-85.74,C:29.35,D:25.50[0m
+[0;32mI (14780) main: PID out A:44.64 B:20.69 C:32.36 D:-85.50 | meas A:12.10 B:-85.74 C:29.35 D:25.50[0m
+[0;32mI (14850) main: Line: A:13.41,B:-86.60,C:31.70,D:26.21[0m
+[0;32mI (14880) main: PID out A:46.59 B:23.69 C:29.36 D:-86.21 | meas A:13.41 B:-86.60 C:31.70 D:26.21[0m
+[0;32mI (14950) main: Line: A:15.57,B:-86.43,C:34.12,D:24.35[0m
+[0;32mI (14980) main: PID out A:44.43 B:26.43 C:26.36 D:-84.35 | meas A:15.57 B:-86.43 C:34.12 D:24.35[0m
+[0;32mI (15050) main: Line: A:18.35,B:-86.68,C:34.67,D:21.95[0m
+[0;32mI (15080) main: PID out A:41.65 B:26.68 C:25.33 D:-81.95 | meas A:18.35 B:-86.68 C:34.67 D:21.95[0m
+[0;32mI (15150) main: Line: A:19.67,B:-84.64,C:33.31,D:19.78[0m
+[0;32mI (15180) main: PID out A:40.33 B:24.64 C:26.69 D:-79.78 | meas A:19.67 B:-84.64 C:33.31 D:19.78[0m
+[0;32mI (15250) main: Line: A:19.13,B:-82.90,C:31.48,D:19.32[0m
+[0;32mI (15280) main: PID out A:40.87 B:22.90 C:28.52 D:-79.32 | meas A:19.13 B:-82.90 C:31.48 D:19.32[0m
+[0;32mI (15350) main: Line: A:18.14,B:-81.14,C:30.72,D:20.36[0m
+[0;32mI (15380) main: PID out A:41.86 B:21.14 C:29.28 D:-80.36 | meas A:18.14 B:-81.14 C:30.72 D:20.36[0m
+[0;32mI (15450) main: Line: A:16.82,B:-80.88,C:31.34,D:21.71[0m
+[0;32mI (15480) main: PID out A:43.18 B:20.88 C:28.66 D:-81.71 | meas A:16.82 B:-80.88 C:31.34 D:21.71[0m
+[0;32mI (15550) main: Line: A:15.59,B:-81.14,C:31.93,D:21.82[0m
+[0;32mI (15580) main: PID out A:44.41 B:21.14 C:28.07 D:-81.82 | meas A:15.59 B:-81.14 C:31.93 D:21.82[0m
+[0;32mI (15650) main: Line: A:15.36,B:-82.25,C:32.93,D:21.21[0m
+[0;32mI (15680) main: PID out A:44.64 B:22.25 C:27.07 D:-81.21 | meas A:15.36 B:-82.25 C:32.93 D:21.21[0m
+[0;32mI (15750) main: Line: A:15.56,B:-82.56,C:33.75,D:20.87[0m
+[0;32mI (15780) main: PID out A:44.44 B:22.56 C:26.25 D:-80.87 | meas A:15.56 B:-82.56 C:33.75 D:20.87[0m
+[0;32mI (15850) main: Line: A:16.55,B:-82.39,C:33.71,D:20.38[0m
+[0;32mI (15880) main: PID out A:43.45 B:22.39 C:26.29 D:-80.38 | meas A:16.55 B:-82.39 C:33.71 D:20.38[0m
+[0;32mI (15950) main: Line: A:16.52,B:-81.70,C:33.57,D:19.74[0m
+[0;32mI (15980) main: PID out A:43.48 B:21.70 C:26.43 D:-79.74 | meas A:16.52 B:-81.70 C:33.57 D:19.74[0m
+[0;32mI (16050) main: Line: A:16.43,B:-81.26,C:32.98,D:19.81[0m
+[0;32mI (16080) main: PID out A:43.57 B:21.26 C:27.02 D:-79.81 | meas A:16.43 B:-81.26 C:32.98 D:19.81[0m
+[0;32mI (16150) main: Line: A:15.86,B:-80.84,C:33.04,D:19.73[0m
+[0;32mI (16180) main: PID out A:44.14 B:20.84 C:26.96 D:-79.73 | meas A:15.86 B:-80.84 C:33.04 D:19.73[0m
+[0;32mI (16250) main: Line: A:15.37,B:-80.93,C:33.27,D:20.26[0m
+[0;32mI (16280) main: PID out A:44.63 B:20.93 C:26.73 D:-80.26 | meas A:15.37 B:-80.93 C:33.27 D:20.26[0m
+[0;32mI (16350) main: Line: A:15.38,B:-80.72,C:33.52,D:20.02[0m
+[0;32mI (16380) main: PID out A:44.62 B:20.72 C:26.48 D:-80.02 | meas A:15.38 B:-80.72 C:33.52 D:20.02[0m
+[0;32mI (16450) main: Line: A:25.08,B:-75.11,C:6.59,D:28.47[0m
+[0;32mI (16480) main: PID out A:41.62 B:17.72 C:29.48 D:-83.02 | meas A:25.08 B:-75.11 C:6.59 D:28.47[0m
+[0;32mI (16550) main: Line: A:31.00,B:-71.48,C:-11.70,D:35.05[0m
+[0;32mI (16580) main: PID out A:38.62 B:14.72 C:32.48 D:-86.02 | meas A:31.00 B:-71.48 C:-11.70 D:35.05[0m
+[0;32mI (16650) main: Line: A:15.59,B:-81.86,C:24.87,D:26.29[0m
+[0;32mI (16680) main: PID out A:41.62 B:17.72 C:35.13 D:-86.29 | meas A:15.59 B:-81.86 C:24.87 D:26.29[0m
+[0;32mI (16750) main: Line: A:12.07,B:-86.10,C:29.38,D:25.64[0m
+[0;32mI (16780) main: PID out A:44.62 B:20.72 C:32.13 D:-85.64 | meas A:12.07 B:-86.10 C:29.38 D:25.64[0m
+[0;32mI (16860) main: Line: A:13.70,B:-86.36,C:31.96,D:25.88[0m
+[0;32mI (16880) main: PID out A:46.30 B:23.72 C:29.13 D:-85.88 | meas A:13.70 B:-86.36 C:31.96 D:25.88[0m
+[0;32mI (16960) main: Line: A:15.61,B:-86.56,C:33.85,D:23.79[0m
+[0;32mI (16980) main: PID out A:44.39 B:26.56 C:26.15 D:-83.79 | meas A:15.61 B:-86.56 C:33.85 D:23.79[0m
+[0;32mI (17060) main: Line: A:18.06,B:-86.13,C:34.65,D:21.47[0m
+[0;32mI (17080) main: PID out A:41.94 B:26.13 C:25.35 D:-81.47 | meas A:18.06 B:-86.13 C:34.65 D:21.47[0m
+[0;32mI (17160) main: Line: A:19.59,B:-84.28,C:33.28,D:19.46[0m
+[0;32mI (17180) main: PID out A:40.41 B:24.28 C:26.72 D:-79.46 | meas A:19.59 B:-84.28 C:33.28 D:19.46[0m
+[0;32mI (17260) main: Line: A:18.71,B:-82.29,C:31.56,D:19.49[0m
+[0;32mI (17280) main: PID out A:41.29 B:22.29 C:28.44 D:-79.49 | meas A:18.71 B:-82.29 C:31.56 D:19.49[0m
+[0;32mI (17360) main: Line: A:17.66,B:-80.85,C:31.18,D:20.48[0m
+[0;32mI (17380) main: PID out A:42.34 B:20.85 C:28.82 D:-80.48 | meas A:17.66 B:-80.85 C:31.18 D:20.48[0m
+[0;32mI (17460) main: Line: A:16.23,B:-80.86,C:31.61,D:21.29[0m
+[0;32mI (17480) main: PID out A:43.77 B:20.86 C:28.39 D:-81.29 | meas A:16.23 B:-80.86 C:31.61 D:21.29[0m
+[0;32mI (17560) main: Line: A:15.33,B:-81.51,C:32.34,D:21.50[0m
+[0;32mI (17580) main: PID out A:44.67 B:21.51 C:27.66 D:-81.50 | meas A:15.33 B:-81.51 C:32.34 D:21.50[0m
+[0;32mI (17660) main: Line: A:15.37,B:-82.00,C:33.39,D:21.33[0m
+[0;32mI (17680) main: PID out A:44.63 B:22.00 C:26.61 D:-81.33 | meas A:15.37 B:-82.00 C:33.39 D:21.33[0m
+[0;32mI (17760) main: Line: A:16.00,B:-82.42,C:33.85,D:20.68[0m
+[0;32mI (17780) main: PID out A:44.00 B:22.42 C:26.15 D:-80.68 | meas A:16.00 B:-82.42 C:33.85 D:20.68[0m
+[0;32mI (17860) main: Line: A:16.42,B:-82.02,C:33.78,D:19.90[0m
+[0;32mI (17880) main: PID out A:43.58 B:22.02 C:26.22 D:-79.90 | meas A:16.42 B:-82.02 C:33.78 D:19.90[0m
+[0;32mI (17960) main: Line: A:16.65,B:-81.38,C:33.39,D:19.76[0m
+[0;32mI (17980) main: PID out A:43.35 B:21.38 C:26.61 D:-79.76 | meas A:16.65 B:-81.38 C:33.39 D:19.76[0m
+[0;32mI (18060) main: Line: A:16.35,B:-80.78,C:33.20,D:19.76[0m
+[0;32mI (18080) main: PID out A:43.65 B:20.78 C:26.80 D:-79.76 | meas A:16.35 B:-80.78 C:33.20 D:19.76[0m
+[0;32mI (18160) main: Line: A:15.68,B:-80.76,C:33.04,D:20.24[0m
+[0;32mI (18180) main: PID out A:44.32 B:20.76 C:26.96 D:-80.24 | meas A:15.68 B:-80.76 C:33.04 D:20.24[0m
+[0;32mI (18260) main: Line: A:15.20,B:-80.81,C:32.91,D:20.19[0m
+[0;32mI (18280) main: PID out A:44.80 B:20.81 C:27.09 D:-80.19 | meas A:15.20 B:-80.81 C:32.91 D:20.19[0m
+[0;32mI (18360) main: Line: A:15.32,B:-81.11,C:33.72,D:20.27[0m
+[0;32mI (18380) main: PID out A:44.68 B:21.11 C:26.28 D:-80.27 | meas A:15.32 B:-81.11 C:33.72 D:20.27[0m
+[0;32mI (18460) main: Line: A:26.44,B:-74.64,C:3.13,D:29.75[0m
+[0;32mI (18480) main: PID out A:41.68 B:18.11 C:29.28 D:-83.27 | meas A:26.44 B:-74.64 C:3.13 D:29.75[0m
+[0;32mI (18560) main: Line: A:29.55,B:-72.24,C:-7.78,D:33.97[0m
+[0;32mI (18580) main: PID out A:38.68 B:15.11 C:32.28 D:-86.27 | meas A:29.55 B:-72.24 C:-7.78 D:33.97[0m
+[0;32mI (18660) main: Line: A:15.19,B:-82.68,C:25.60,D:25.64[0m
+[0;32mI (18680) main: PID out A:41.68 B:18.11 C:34.40 D:-85.64 | meas A:15.19 B:-82.68 C:25.60 D:25.64[0m
+[0;32mI (18760) main: Line: A:12.52,B:-86.22,C:29.87,D:25.39[0m
+[0;32mI (18780) main: PID out A:44.68 B:21.11 C:31.40 D:-85.39 | meas A:12.52 B:-86.22 C:29.87 D:25.39[0m
+[0;32mI (18860) main: Line: A:14.21,B:-86.36,C:31.95,D:25.62[0m
+[0;32mI (18880) main: PID out A:45.79 B:24.11 C:28.40 D:-85.62 | meas A:14.21 B:-86.36 C:31.95 D:25.62[0m
+[0;32mI (18960) main: Line: A:16.06,B:-86.45,C:34.03,D:23.42[0m
+[0;32mI (18980) main: PID out A:43.94 B:26.45 C:25.97 D:-83.42 | meas A:16.06 B:-86.45 C:34.03 D:23.42[0m
+[0;32mI (19060) main: Line: A:18.14,B:-86.04,C:34.40,D:21.13[0m
+[0;32mI (19080) main: PID out A:41.86 B:26.04 C:25.60 D:-81.13 | meas A:18.14 B:-86.04 C:34.40 D:21.13[0m
+[0;32mI (19160) main: Line: A:19.24,B:-83.99,C:32.74,D:19.41[0m
+[0;32mI (19180) main: PID out A:40.76 B:23.99 C:27.26 D:-79.41 | meas A:19.24 B:-83.99 C:32.74 D:19.41[0m
+[0;32mI (19260) main: Line: A:18.48,B:-81.97,C:31.73,D:19.47[0m
+[0;32mI (19280) main: PID out A:41.52 B:21.97 C:28.27 D:-79.47 | meas A:18.48 B:-81.97 C:31.73 D:19.47[0m
+[0;32mI (19360) main: Line: A:17.30,B:-81.02,C:31.55,D:20.55[0m
+[0;32mI (19380) main: PID out A:42.70 B:21.02 C:28.45 D:-80.55 | meas A:17.30 B:-81.02 C:31.55 D:20.55[0m
+[0;32mI (19460) main: Line: A:15.98,B:-81.17,C:31.83,D:21.14[0m
+[0;32mI (19480) main: PID out A:44.02 B:21.17 C:28.17 D:-81.14 | meas A:15.98 B:-81.17 C:31.83 D:21.14[0m
+[0;32mI (19560) main: Line: A:15.58,B:-81.65,C:32.78,D:21.24[0m
+[0;32mI (19580) main: PID out A:44.42 B:21.65 C:27.22 D:-81.24 | meas A:15.58 B:-81.65 C:32.78 D:21.24[0m
+[0;32mI (19660) main: Line: A:15.79,B:-82.23,C:33.56,D:21.14[0m
+[0;32mI (19680) main: PID out A:44.21 B:22.23 C:26.44 D:-81.14 | meas A:15.79 B:-82.23 C:33.56 D:21.14[0m
+[0;32mI (19760) main: Line: A:16.28,B:-82.08,C:33.73,D:20.24[0m
+[0;32mI (19780) main: PID out A:43.72 B:22.08 C:26.27 D:-80.24 | meas A:16.28 B:-82.08 C:33.73 D:20.24[0m
+[0;32mI (19860) main: Line: A:16.41,B:-81.86,C:33.62,D:19.81[0m
+[0;32mI (19880) main: PID out A:43.59 B:21.86 C:26.38 D:-79.81 | meas A:16.41 B:-81.86 C:33.62 D:19.81[0m
+[0;32mI (19960) main: Line: A:16.25,B:-81.27,C:33.24,D:19.83[0m
+[0;32mI (19980) main: PID out A:43.75 B:21.27 C:26.76 D:-79.83 | meas A:16.25 B:-81.27 C:33.24 D:19.83[0m
+[0;32mI (20060) main: Line: A:15.97,B:-81.18,C:33.17,D:19.93[0m
+[0;32mI (20080) main: PID out A:44.03 B:21.18 C:26.83 D:-79.93 | meas A:15.97 B:-81.18 C:33.17 D:19.93[0m
+[0;32mI (20170) main: Line: A:15.93,B:-81.20,C:33.37,D:20.16[0m
+[0;32mI (20180) main: PID out A:44.07 B:21.20 C:26.63 D:-80.16 | meas A:15.93 B:-81.20 C:33.37 D:20.16[0m
+[0;32mI (20270) main: Line: A:15.62,B:-81.49,C:33.54,D:20.06[0m
+[0;32mI (20280) main: PID out A:44.38 B:21.49 C:26.46 D:-80.06 | meas A:15.62 B:-81.49 C:33.54 D:20.06[0m
+[0;32mI (20370) main: Line: A:15.77,B:-81.06,C:33.59,D:19.82[0m
+[0;32mI (20380) main: PID out A:44.23 B:21.06 C:26.41 D:-79.82 | meas A:15.77 B:-81.06 C:33.59 D:19.82[0m
+[0;32mI (20470) main: Line: A:27.97,B:-73.59,C:-1.32,D:30.63[0m
+[0;32mI (20480) main: PID out A:41.23 B:18.06 C:29.41 D:-82.82 | meas A:27.97 B:-73.59 C:-1.32 D:30.63[0m
+[0;32mI (20570) main: Line: A:28.85,B:-72.92,C:-4.80,D:33.28[0m
+[0;32mI (20580) main: PID out A:38.23 B:15.06 C:32.41 D:-85.82 | meas A:28.85 B:-72.92 C:-4.80 D:33.28[0m
+[0;32mI (20670) main: Line: A:14.82,B:-82.95,C:25.69,D:25.35[0m
+[0;32mI (20680) main: PID out A:41.23 B:18.06 C:34.31 D:-85.35 | meas A:14.82 B:-82.95 C:25.69 D:25.35[0m
+[0;32mI (20770) main: Line: A:12.29,B:-85.87,C:29.54,D:25.53[0m
+[0;32mI (20780) main: PID out A:44.23 B:21.06 C:31.31 D:-85.53 | meas A:12.29 B:-85.87 C:29.54 D:25.53[0m
+[0;32mI (20870) main: Line: A:13.91,B:-86.59,C:32.10,D:24.98[0m
+[0;32mI (20880) main: PID out A:46.09 B:24.06 C:28.31 D:-84.98 | meas A:13.91 B:-86.59 C:32.10 D:24.98[0m
+[0;32mI (20970) main: Line: A:16.33,B:-86.50,C:34.13,D:22.97[0m
+[0;32mI (20980) main: PID out A:43.67 B:26.50 C:25.87 D:-82.97 | meas A:16.33 B:-86.50 C:34.13 D:22.97[0m
+[0;32mI (21070) main: Line: A:18.49,B:-85.19,C:33.89,D:20.83[0m
+[0;32mI (21080) main: PID out A:41.51 B:25.19 C:26.11 D:-80.83 | meas A:18.49 B:-85.19 C:33.89 D:20.83[0m
+[0;32mI (21170) main: Line: A:18.93,B:-83.67,C:32.68,D:19.90[0m
+[0;32mI (21180) main: PID out A:41.07 B:23.67 C:27.32 D:-79.90 | meas A:18.93 B:-83.67 C:32.68 D:19.90[0m
+[0;32mI (21270) main: Line: A:18.20,B:-82.17,C:31.91,D:19.84[0m
+[0;32mI (21280) main: PID out A:41.80 B:22.17 C:28.09 D:-79.84 | meas A:18.20 B:-82.17 C:31.91 D:19.84[0m
+[0;32mI (21370) main: Line: A:16.92,B:-81.44,C:31.54,D:20.71[0m
+[0;32mI (21380) main: PID out A:43.08 B:21.44 C:28.46 D:-80.71 | meas A:16.92 B:-81.44 C:31.54 D:20.71[0m
+[0;32mI (21470) main: Line: A:16.42,B:-81.32,C:32.08,D:21.06[0m
+[0;32mI (21480) main: PID out A:43.58 B:21.32 C:27.92 D:-81.06 | meas A:16.42 B:-81.32 C:32.08 D:21.06[0m
+[0;32mI (21570) main: Line: A:16.12,B:-82.02,C:33.05,D:21.15[0m
+[0;32mI (21580) main: PID out A:43.88 B:22.02 C:26.95 D:-81.15 | meas A:16.12 B:-82.02 C:33.05 D:21.15[0m
+[0;32mI (21670) main: Line: A:16.20,B:-82.21,C:32.95,D:20.75[0m
+[0;32mI (21680) main: PID out A:43.80 B:22.21 C:27.05 D:-80.75 | meas A:16.20 B:-82.21 C:32.95 D:20.75[0m
+[0;32mI (21770) main: Line: A:15.10,B:-76.68,C:30.97,D:18.91[0m
+[0;32mI (21780) main: PID out A:44.90 B:19.21 C:29.03 D:-78.91 | meas A:15.10 B:-76.68 C:30.97 D:18.91[0m
+[0;32mI (21870) main: Line: A:10.70,B:-60.96,C:24.79,D:15.37[0m
+[0;32mI (21880) main: PID out A:47.90 B:16.21 C:32.03 D:-75.91 | meas A:10.70 B:-60.96 C:24.79 D:15.37[0m
+[0;32mI (21970) main: Line: A:6.27,B:-43.11,C:18.75,D:11.47[0m
+[0;32mI (21980) main: PID out A:50.90 B:13.21 C:35.03 D:-72.91 | meas A:6.27 B:-43.11 C:18.75 D:11.47[0m
+[0;33mW (22050) main: uart event type: 1[0m
+[0;33mW (22050) main: uart event type: 1[0m
+[0;33mW (22050) main: uart event type: 1[0m
+[0;33mW (22050) main: uart event type: 1[0m
+[0;33mW (22050) main: uart event type: 1[0m
+[0;33mW (22050) main: uart event type: 1[0m
+[0;33mW (22050) main: uart event type: 1[0m
+[0;33mW (22060) main: uart event type: 1[0m
+[0;33mW (22060) main: uart event type: 1[0m
+[0;33mW (22060) main: uart event type: 1[0m
+[0;33mW (22070) main: uart event type: 1[0m
+[0;33mW (22070) main: uart event type: 1[0m
+[0;33mW (22070) main: uart event type: 1[0m
+[0;33mW (22080) main: No rpm message this cycle[0m
+[0;33mW (22080) main: uart event type: 1[0m
+[0;33mW (22080) main: uart event type: 1[0m
+[0;33mW (22090) main: uart event type: 1[0m
+[0;33mW (22090) main: uart event type: 1[0m
+[0;33mW (22090) main: uart event type: 1[0m
+[0;33mW (22090) main: uart event type: 1[0m
+[0;33mW (22180) main: No rpm message this cycle[0m
+[0;33mW (22280) main: No rpm message this cycle[0m
+[0;33mW (22380) main: No rpm message this cycle[0m
+[0;33mW (22480) main: No rpm message this cycle[0m
+[0;33mW (22580) main: No rpm message this cycle[0m
+[0;33mW (22680) main: No rpm message this cycle[0m
+[0;33mW (22780) main: No rpm message this cycle[0m
+[0;33mW (22880) main: No rpm message this cycle[0m
+[0;33mW (22980) main: No rpm message this cycle[0m
+[0;33mW (23080) main: No rpm message this cycle[0m
+[0;33mW (23180) main: No rpm message this cycle[0m
+[0;33mW (23280) main: No rpm message this cycle[0m
+[0;33mW (23380) main: No rpm message this cycle[0m
+[0;33mW (23480) main: No rpm message this cycle[0m
+[0;33mW (23580) main: No rpm message this cycle[0m
+[0;33mW (23680) main: No rpm message this cycle[0m
+[0;33mW (23780) main: No rpm message this cycle[0m
+[0;33mW (23880) main: No rpm message this cycle[0m
+[0;33mW (23980) main: No rpm message this cycle[0m
+[0;33mW (24080) main: No rpm message this cycle[0m
+[0;33mW (24180) main: No rpm message this cycle[0m
+[0;33mW (24280) main: No rpm message this cycle[0m
+[0;33mW (24380) main: No rpm message this cycle[0m
+[0;33mW (24480) main: No rpm message this cycle[0m
+[0;33mW (24580) main: No rpm message this cycle[0m
+[0;33mW (24680) main: No rpm message this cycle[0m
+[0;33mW (24780) main: No rpm message this cycle[0m
+[0;33mW (24880) main: No rpm message this cycle[0m
+[0;33mW (24980) main: No rpm message this cycle[0m
+[0;33mW (25080) main: No rpm message this cycle[0m
+[0;33mW (25180) main: No rpm message this cycle[0m
+[0;33mW (25280) main: No rpm message this cycle[0m
+[0;33mW (25380) main: No rpm message this cycle[0m
+[0;33mW (25480) main: No rpm message this cycle[0m
+[0;33mW (25580) main: No rpm message this cycle[0m
+[0;33mW (25680) main: No rpm message this cycle[0m
+[0;33mW (25780) main: No rpm message this cycle[0m
+[0;33mW (25880) main: No rpm message this cycle[0m
+[0;33mW (25980) main: No rpm message this cycle[0m
+[0;33mW (26080) main: No rpm message this cycle[0m
+[0;33mW (26180) main: No rpm message this cycle[0m
+[0;33mW (26280) main: No rpm message this cycle[0m
+[0;33mW (26380) main: No rpm message this cycle[0m
+[0;33mW (26480) main: No rpm message this cycle[0m
+[0;33mW (26580) main: No rpm message this cycle[0m
+[0;33mW (26680) main: No rpm message this cycle[0m
+[0;33mW (26780) main: No rpm message this cycle[0m
+[0;33mW (26880) main: No rpm message this cycle[0m
+[0;33mW (26980) main: No rpm message this cycle[0m
+[0;33mW (27080) main: No rpm message this cycle[0m
+[0;33mW (27180) main: No rpm message this cycle[0m
+[0;33mW (27280) main: No rpm message this cycle[0m
+[0;33mW (27380) main: No rpm message this cycle[0m
+[0;33mW (27480) main: No rpm message this cycle[0m
+[0;33mW (27580) main: No rpm message this cycle[0m
+[0;33mW (27680) main: No rpm message this cycle[0m
+[0;33mW (27780) main: No rpm message this cycle[0m
+[0;33mW (27880) main: No rpm message this cycle[0m
+[0;33mW (27980) main: No rpm message this cycle[0m
+[0;33mW (28080) main: No rpm message this cycle[0m
+[0;33mW (28180) main: No rpm message this cycle[0m
+[0;33mW (28280) main: No rpm message this cycle[0m
+[0;33mW (28380) main: No rpm message this cycle[0m
+[0;33mW (28480) main: No rpm message this cycle[0m
+[0;33mW (28580) main: No rpm message this cycle[0m
+[0;33mW (28680) main: No rpm message this cycle[0m
+[0;33mW (28780) main: No rpm message this cycle[0m
+[0;33mW (28880) main: No rpm message this cycle[0m
+[0;33mW (28980) main: No rpm message this cycle[0m
+[0;33mW (29080) main: No rpm message this cycle[0m
+[0;33mW (29180) main: No rpm message this cycle[0m
+[0;33mW (29280) main: No rpm message this cycle[0m
+[0;33mW (29380) main: No rpm message this cycle[0m
+[0;33mW (29480) main: No rpm message this cycle[0m
+[0;33mW (29580) main: No rpm message this cycle[0m
+[0;33mW (29680) main: No rpm message this cycle[0m
+[0;33mW (29780) main: No rpm message this cycle[0m
+[0;33mW (29880) main: No rpm message this cycle[0m
+[0;33mW (29980) main: No rpm message this cycle[0m
+[0;33mW (30080) main: No rpm message this cycle[0m
+[0;33mW (30180) main: No rpm message this cycle[0m
+[0;33mW (30280) main: No rpm message this cycle[0m
+[0;33mW (30380) main: No rpm message this cycle[0m
+[0;33mW (30480) main: No rpm message this cycle[0m
+[0;33mW (30580) main: No rpm message this cycle[0m
+[0;33mW (30680) main: No rpm message this cycle[0m
+[0;33mW (30780) main: No rpm message this cycle[0m
+[0;33mW (30880) main: No rpm message this cycle[0m
+[0;33mW (30980) main: No rpm message this cycle[0m
+[0;33mW (31080) main: No rpm message this cycle[0m
+[0;33mW (31180) main: No rpm message this cycle[0m
+[0;33mW (31280) main: No rpm message this cycle[0m
+[0;33mW (31380) main: No rpm message this cycle[0m
+[0;33mW (31480) main: No rpm message this cycle[0m
+[0;33mW (31580) main: No rpm message this cycle[0m
+[0;33mW (31680) main: No rpm message this cycle[0m
+[0;33mW (31780) main: No rpm message this cycle[0m
+[0;33mW (31880) main: No rpm message this cycle[0m
+[0;33mW (31980) main: No rpm message this cycle[0m
+[0;33mW (32080) main: No rpm message this cycle[0m
+[0;33mW (32180) main: No rpm message this cycle[0m
+[0;33mW (32280) main: No rpm message this cycle[0m
+[0;33mW (32380) main: No rpm message this cycle[0m
+[0;33mW (32480) main: No rpm message this cycle[0m
+[0;33mW (32580) main: No rpm message this cycle[0m
+[0;33mW (32680) main: No rpm message this cycle[0m
+[0;33mW (32780) main: No rpm message this cycle[0m
+[0;33mW (32880) main: No rpm message this cycle[0m
+[0;33mW (32980) main: No rpm message this cycle[0m
+[0;33mW (33080) main: No rpm message this cycle[0m
+[0;33mW (33180) main: No rpm message this cycle[0m
+[0;33mW (33280) main: No rpm message this cycle[0m
+[0;33mW (33380) main: No rpm message this cycle[0m
+[0;33mW (33480) main: No rpm message this cycle[0m
+[0;33mW (33580) main: No rpm message this cycle[0m
+[0;33mW (33680) main: No rpm message this cycle[0m
+[0;33mW (33780) main: No rpm message this cycle[0m
+[0;33mW (33880) main: No rpm message this cycle[0m
+[0;33mW (33980) main: No rpm message this cycle[0m
+[0;33mW (34080) main: No rpm message this cycle[0m
+[0;33mW (34180) main: No rpm message this cycle[0m
+[0;33mW (34280) main: No rpm message this cycle[0m
+[0;33mW (34380) main: No rpm message this cycle[0m
+[0;33mW (34480) main: No rpm message this cycle[0m
+[0;33mW (34580) main: No rpm message this cycle[0m
+[0;33mW (34680) main: No rpm message this cycle[0m
+[0;33mW (34780) main: No rpm message this cycle[0m
+[0;33mW (34880) main: No rpm message this cycle[0m
+[0;33mW (34980) main: No rpm message this cycle[0m
+[0;33mW (35080) main: No rpm message this cycle[0m
+[0;33mW (35180) main: No rpm message this cycle[0m
+[0;33mW (35280) main: No rpm message this cycle[0m
+[0;33mW (35380) main: No rpm message this cycle[0m
+[0;33mW (35480) main: No rpm message this cycle[0m
+[0;33mW (35580) main: No rpm message this cycle[0m
+[0;33mW (35680) main: No rpm message this cycle[0m
+[0;33mW (35780) main: No rpm message this cycle[0m
+[0;33mW (35880) main: No rpm message this cycle[0m
+[0;33mW (35980) main: No rpm message this cycle[0m
+[0;33mW (36080) main: No rpm message this cycle[0m
+[0;33mW (36180) main: No rpm message this cycle[0m
+[0;33mW (36280) main: No rpm message this cycle[0m
+[0;33mW (36380) main: No rpm message this cycle[0m
+[0;33mW (36480) main: No rpm message this cycle[0m
+[0;33mW (36580) main: No rpm message this cycle[0m
+[0;33mW (36680) main: No rpm message this cycle[0m
+[0;33mW (36780) main: No rpm message this cycle[0m
+[0;33mW (36880) main: No rpm message this cycle[0m
+[0;33mW (36980) main: No rpm message this cycle[0m
+[0;33mW (37080) main: No rpm message this cycle[0m
+[0;33mW (37180) main: No rpm message this cycle[0m
+[0;33mW (37280) main: No rpm message this cycle[0m
+[0;33mW (37380) main: No rpm message this cycle[0m
+[0;33mW (37480) main: No rpm message this cycle[0m
+[0;33mW (37580) main: No rpm message this cycle[0m
+[0;33mW (37680) main: No rpm message this cycle[0m
+[0;33mW (37780) main: No rpm message this cycle[0m
+[0;33mW (37880) main: No rpm message this cycle[0m
+[0;33mW (37980) main: No rpm message this cycle[0m
+[0;33mW (38080) main: No rpm message this cycle[0m
+[0;33mW (38180) main: No rpm message this cycle[0m
+[0;33mW (38280) main: No rpm message this cycle[0m
+[0;33mW (38380) main: No rpm message this cycle[0m
+[0;33mW (38480) main: No rpm message this cycle[0m
+[0;33mW (38580) main: No rpm message this cycle[0m
+[0;33mW (38680) main: No rpm message this cycle[0m
+[0;33mW (38780) main: No rpm message this cycle[0m
+[0;33mW (38880) main: No rpm message this cycle[0m
+[0;33mW (38980) main: No rpm message this cycle[0m
+[0;33mW (39080) main: No rpm message this cycle[0m
+[0;33mW (39180) main: No rpm message this cycle[0m
+[0;33mW (39280) main: No rpm message this cycle[0m
+[0;33mW (39380) main: No rpm message this cycle[0m
+[0;33mW (39480) main: No rpm message this cycle[0m
+[0;33mW (39580) main: No rpm message this cycle[0m
+[0;33mW (39680) main: No rpm message this cycle[0m
+[0;33mW (39780) main: No rpm message this cycle[0m
+[0;33mW (39880) main: No rpm message this cycle[0m
+[0;33mW (39980) main: No rpm message this cycle[0m
+[0;33mW (40080) main: No rpm message this cycle[0m
+[0;33mW (40180) main: No rpm message this cycle[0m
+[0;33mW (40280) main: No rpm message this cycle[0m
+[0;33mW (40380) main: No rpm message this cycle[0m
+[0;33mW (40480) main: No rpm message this cycle[0m
+[0;33mW (40580) main: No rpm message this cycle[0m
+[0;33mW (40680) main: No rpm message this cycle[0m
+[0;33mW (40780) main: No rpm message this cycle[0m
+[0;33mW (40880) main: No rpm message this cycle[0m
+[0;33mW (40980) main: No rpm message this cycle[0m
+[0;33mW (41080) main: No rpm message this cycle[0m
+[0;33mW (41180) main: No rpm message this cycle[0m
+[0;33mW (41280) main: No rpm message this cycle[0m
+[0;33mW (41380) main: No rpm message this cycle[0m
+[0;33mW (41480) main: No rpm message this cycle[0m
+[0;33mW (41580) main: No rpm message this cycle[0m
+[0;33mW (41680) main: No rpm message this cycle[0m
+[0;33mW (41780) main: No rpm message this cycle[0m
+[0;33mW (41880) main: No rpm message this cycle[0m
+[0;33mW (41980) main: No rpm message this cycle[0m
+[0;33mW (42080) main: No rpm message this cycle[0m
+[0;33mW (42180) main: No rpm message this cycle[0m
+[0;33mW (42280) main: No rpm message this cycle[0m
+[0;33mW (42380) main: No rpm message this cycle[0m
+[0;33mW (42480) main: No rpm message this cycle[0m
+[0;33mW (42580) main: No rpm message this cycle[0m
+[0;33mW (42680) main: No rpm message this cycle[0m
+[0;33mW (42780) main: No rpm message this cycle[0m
+[0;33mW (42880) main: No rpm message this cycle[0m
+[0;33mW (42980) main: No rpm message this cycle[0m
+[0;33mW (43080) main: No rpm message this cycle[0m
+[0;33mW (43180) main: No rpm message this cycle[0m
+[0;33mW (43280) main: No rpm message this cycle[0m
+[0;33mW (43380) main: No rpm message this cycle[0m
+[0;33mW (43480) main: No rpm message this cycle[0m
+[0;33mW (43580) main: No rpm message this cycle[0m
+[0;33mW (43680) main: No rpm message this cycle[0m
+[0;33mW (43780) main: No rpm message this cycle[0m
+[0;33mW (43880) main: No rpm message this cycle[0m
+[0;33mW (43980) main: No rpm message this cycle[0m
+[0;33mW (44080) main: No rpm message this cycle[0m
+[0;33mW (44180) main: No rpm message this cycle[0m
+[0;33mW (44280) main: No rpm message this cycle[0m
+[0;33mW (44380) main: No rpm message this cycle[0m
+[0;33mW (44480) main: No rpm message this cycle[0m
+[0;33mW (44580) main: No rpm message this cycle[0m
+[0;33mW (44680) main: No rpm message this cycle[0m
+[0;33mW (44780) main: No rpm message this cycle[0m
+[0;33mW (44880) main: No rpm message this cycle[0m
+[0;33mW (44980) main: No rpm message this cycle[0m
+[0;33mW (45080) main: No rpm message this cycle[0m
+[0;33mW (45180) main: No rpm message this cycle[0m
+[0;33mW (45280) main: No rpm message this cycle[0m
+[0;33mW (45380) main: No rpm message this cycle[0m
+[0;33mW (45480) main: No rpm message this cycle[0m
+[0;33mW (45580) main: No rpm message this cycle[0m
+[0;33mW (45680) main: No rpm message this cycle[0m
+[0;33mW (45780) main: No rpm message this cycle[0m
+[0;33mW (45880) main: No rpm message this cycle[0m
+[0;33mW (45980) main: No rpm message this cycle[0m
+[0;33mW (46080) main: No rpm message this cycle[0m
+[0;33mW (46180) main: No rpm message this cycle[0m
+[0;33mW (46280) main: No rpm message this cycle[0m
+[0;33mW (46380) main: No rpm message this cycle[0m
+[0;33mW (46480) main: No rpm message this cycle[0m
+[0;33mW (46580) main: No rpm message this cycle[0m
+[0;33mW (46680) main: No rpm message this cycle[0m
+[0;33mW (46780) main: No rpm message this cycle[0m
+[0;33mW (46880) main: No rpm message this cycle[0m
+[0;33mW (46980) main: No rpm message this cycle[0m
+[0;33mW (47080) main: No rpm message this cycle[0m
+[0;33mW (47180) main: No rpm message this cycle[0m
+[0;33mW (47280) main: No rpm message this cycle[0m
+[0;33mW (47380) main: No rpm message this cycle[0m
+[0;33mW (47480) main: No rpm message this cycle[0m
+[0;33mW (47580) main: No rpm message this cycle[0m
+[0;33mW (47680) main: No rpm message this cycle[0m
+[0;33mW (47780) main: No rpm message this cycle[0m
+[0;33mW (47880) main: No rpm message this cycle[0m
+[0;33mW (47980) main: No rpm message this cycle[0m
+[0;33mW (48080) main: No rpm message this cycle[0m
+[0;33mW (48180) main: No rpm message this cycle[0m
+[0;33mW (48280) main: No rpm message this cycle[0m
+[0;33mW (48380) main: No rpm message this cycle[0m
+[0;33mW (48480) main: No rpm message this cycle[0m
+[0;33mW (48580) main: No rpm message this cycle[0m
+[0;33mW (48680) main: No rpm message this cycle[0m
+[0;33mW (48780) main: No rpm message this cycle[0m
+[0;33mW (48880) main: No rpm message this cycle[0m
+[0;33mW (48980) main: No rpm message this cycle[0m
+[0;33mW (49080) main: No rpm message this cycle[0m
+[0;33mW (49180) main: No rpm message this cycle[0m
+[0;33mW (49280) main: No rpm message this cycle[0m
+[0;33mW (49380) main: No rpm message this cycle[0m
+[0;33mW (49480) main: No rpm message this cycle[0m
+[0;33mW (49580) main: No rpm message this cycle[0m
+[0;33mW (49680) main: No rpm message this cycle[0m
+[0;33mW (49780) main: No rpm message this cycle[0m
+[0;33mW (49880) main: No rpm message this cycle[0m
+[0;33mW (49980) main: No rpm message this cycle[0m
+[0;33mW (50080) main: No rpm message this cycle[0m
+[0;33mW (50180) main: No rpm message this cycle[0m
+[0;33mW (50280) main: No rpm message this cycle[0m
+[0;33mW (50380) main: No rpm message this cycle[0m
+[0;33mW (50480) main: No rpm message this cycle[0m
+[0;33mW (50580) main: No rpm message this cycle[0m
+[0;33mW (50680) main: No rpm message this cycle[0m
+[0;33mW (50780) main: No rpm message this cycle[0m
+[0;33mW (50880) main: No rpm message this cycle[0m
+[0;33mW (50980) main: No rpm message this cycle[0m
+[0;33mW (51080) main: No rpm message this cycle[0m
+[0;33mW (51180) main: No rpm message this cycle[0m
+[0;33mW (51280) main: No rpm message this cycle[0m
+[0;33mW (51380) main: No rpm message this cycle[0m
+[0;33mW (51480) main: No rpm message this cycle[0m
+[0;33mW (51580) main: No rpm message this cycle[0m
+[0;33mW (51680) main: No rpm message this cycle[0m
+[0;33mW (51780) main: No rpm message this cycle[0m
+[0;33mW (51880) main: No rpm message this cycle[0m
+[0;33mW (51980) main: No rpm message this cycle[0m
+[0;33mW (52080) main: No rpm message this cycle[0m
+[0;33mW (52180) main: No rpm message this cycle[0m
+[0;33mW (52280) main: No rpm message this cycle[0m
+[0;33mW (52380) main: No rpm message this cycle[0m
+[0;33mW (52480) main: No rpm message this cycle[0m
+[0;33mW (52580) main: No rpm message this cycle[0m
+[0;33mW (52680) main: No rpm message this cycle[0m
+[0;33mW (52780) main: No rpm message this cycle[0m
+[0;33mW (52880) main: No rpm message this cycle[0m
+[0;33mW (52980) main: No rpm message this cycle[0m
+[0;33mW (53080) main: No rpm message this cycle[0m
+[0;33mW (53180) main: No rpm message this cycle[0m
+[0;33mW (53280) main: No rpm message this cycle[0m
+[0;33mW (53380) main: No rpm message this cycle[0m
+[0;33mW (53480) main: No rpm message this cycle[0m
+[0;33mW (53580) main: No rpm message this cycle[0m
+[0;33mW (53680) main: No rpm message this cycle[0m
+[0;33mW (53780) main: No rpm message this cycle[0m
+[0;33mW (53880) main: No rpm message this cycle[0m
+[0;33mW (53980) main: No rpm message this cycle[0m
+[0;33mW (54080) main: No rpm message this cycle[0m
+[0;33mW (54180) main: No rpm message this cycle[0m
+[0;33mW (54280) main: No rpm message this cycle[0m
+[0;33mW (54380) main: No rpm message this cycle[0m
+[0;33mW (54480) main: No rpm message this cycle[0m
+[0;33mW (54580) main: No rpm message this cycle[0m
+[0;33mW (54680) main: No rpm message this cycle[0m
+[0;33mW (54780) main: No rpm message this cycle[0m
+[0;33mW (54880) main: No rpm message this cycle[0m
+[0;33mW (54980) main: No rpm message this cycle[0m
+[0;33mW (55080) main: No rpm message this cycle[0m
+[0;33mW (55180) main: No rpm message this cycle[0m
+[0;33mW (55280) main: No rpm message this cycle[0m
+[0;33mW (55380) main: No rpm message this cycle[0m
+[0;33mW (55480) main: No rpm message this cycle[0m
+[0;33mW (55580) main: No rpm message this cycle[0m
+[0;33mW (55680) main: No rpm message this cycle[0m
+[0;33mW (55780) main: No rpm message this cycle[0m
+[0;33mW (55880) main: No rpm message this cycle[0m
+[0;33mW (55980) main: No rpm message this cycle[0m
+[0;33mW (56080) main: No rpm message this cycle[0m
+[0;33mW (56180) main: No rpm message this cycle[0m
+[0;33mW (56280) main: No rpm message this cycle[0m
+[0;33mW (56380) main: No rpm message this cycle[0m
+[0;33mW (56480) main: No rpm message this cycle[0m
+[0;33mW (56580) main: No rpm message this cycle[0m
+[0;33mW (56680) main: No rpm message this cycle[0m
+[0;33mW (56780) main: No rpm message this cycle[0m
+[0;33mW (56880) main: No rpm message this cycle[0m
+[0;33mW (56980) main: No rpm message this cycle[0m
+[0;33mW (57080) main: No rpm message this cycle[0m
+[0;33mW (57180) main: No rpm message this cycle[0m
+[0;33mW (57280) main: No rpm message this cycle[0m
+[0;33mW (57380) main: No rpm message this cycle[0m
+[0;33mW (57480) main: No rpm message this cycle[0m
+[0;33mW (57580) main: No rpm message this cycle[0m
+[0;33mW (57680) main: No rpm message this cycle[0m
+[0;33mW (57780) main: No rpm message this cycle[0m
+[0;33mW (57880) main: No rpm message this cycle[0m
+[0;33mW (57980) main: No rpm message this cycle[0m
+[0;33mW (58080) main: No rpm message this cycle[0m
+[0;33mW (58180) main: No rpm message this cycle[0m
+[0;33mW (58280) main: No rpm message this cycle[0m
+[0;33mW (58380) main: No rpm message this cycle[0m
+[0;33mW (58480) main: No rpm message this cycle[0m
+[0;33mW (58580) main: No rpm message this cycle[0m
+[0;33mW (58680) main: No rpm message this cycle[0m
+[0;33mW (58780) main: No rpm message this cycle[0m
+[0;33mW (58880) main: No rpm message this cycle[0m
+[0;33mW (58980) main: No rpm message this cycle[0m
+[0;33mW (59080) main: No rpm message this cycle[0m
+[0;33mW (59180) main: No rpm message this cycle[0m
+[0;33mW (59280) main: No rpm message this cycle[0m
+[0;33mW (59380) main: No rpm message this cycle[0m
+[0;33mW (59480) main: No rpm message this cycle[0m
+[0;33mW (59580) main: No rpm message this cycle[0m
+[0;33mW (59680) main: No rpm message this cycle[0m
+[0;33mW (59780) main: No rpm message this cycle[0m
+[0;33mW (59880) main: No rpm message this cycle[0m
+[0;33mW (59980) main: No rpm message this cycle[0m
+[0;33mW (60080) main: No rpm message this cycle[0m
+[0;33mW (60180) main: No rpm message this cycle[0m
+[0;33mW (60280) main: No rpm message this cycle[0m
+[0;33mW (60380) main: No rpm message this cycle[0m
+[0;33mW (60480) main: No rpm message this cycle[0m
+[0;33mW (60580) main: No rpm message this cycle[0m
+[0;33mW (60680) main: No rpm message this cycle[0m
+[0;33mW (60780) main: No rpm message this cycle[0m
+[0;33mW (60880) main: No rpm message this cycle[0m
+[0;33mW (60980) main: No rpm message this cycle[0m
+[0;33mW (61080) main: No rpm message this cycle[0m
+[0;33mW (61180) main: No rpm message this cycle[0m
+[0;33mW (61280) main: No rpm message this cycle[0m
+[0;33mW (61380) main: No rpm message this cycle[0m
+[0;33mW (61480) main: No rpm message this cycle[0m
+[0;33mW (61580) main: No rpm message this cycle[0m
+[0;33mW (61680) main: No rpm message this cycle[0m
+[0;33mW (61780) main: No rpm message this cycle[0m
+[0;33mW (61880) main: No rpm message this cycle[0m
+[0;33mW (61980) main: No rpm message this cycle[0m
+[0;33mW (62080) main: No rpm message this cycle[0m
+[0;33mW (62180) main: No rpm message this cycle[0m
+[0;33mW (62280) main: No rpm message this cycle[0m
+[0;33mW (62380) main: No rpm message this cycle[0m
+[0;33mW (62480) main: No rpm message this cycle[0m
+[0;33mW (62580) main: No rpm message this cycle[0m
+[0;33mW (62680) main: No rpm message this cycle[0m
+[0;33mW (62780) main: No rpm message this cycle[0m
+[0;33mW (62880) main: No rpm message this cycle[0m
+[0;33mW (62980) main: No rpm message this cycle[0m
+[0;33mW (63080) main: No rpm message this cycle[0m
+[0;33mW (63180) main: No rpm message this cycle[0m
+[0;33mW (63280) main: No rpm message this cycle[0m
+[0;33mW (63380) main: No rpm message this cycle[0m
+[0;33mW (63480) main: No rpm message this cycle[0m
+[0;33mW (63580) main: No rpm message this cycle[0m
+[0;33mW (63680) main: No rpm message this cycle[0m
+[0;33mW (63780) main: No rpm message this cycle[0m
+[0;33mW (63880) main: No rpm message this cycle[0m
+[0;33mW (63980) main: No rpm message this cycle[0m
+[0;33mW (64080) main: No rpm message this cycle[0m
+[0;33mW (64180) main: No rpm message this cycle[0m
+[0;33mW (64280) main: No rpm message this cycle[0m
+[0;33mW (64380) main: No rpm message this cycle[0m
+[0;33mW (64480) main: No rpm message this cycle[0m
+[0;33mW (64580) main: No rpm message this cycle[0m
+[0;33mW (64680) main: No rpm message this cycle[0m
+[0;33mW (64780) main: No rpm message this cycle[0m
+[0;33mW (64880) main: No rpm message this cycle[0m
+[0;33mW (64980) main: No rpm message this cycle[0m
+[0;33mW (65080) main: No rpm message this cycle[0m
+[0;33mW (65180) main: No rpm message this cycle[0m
+[0;33mW (65280) main: No rpm message this cycle[0m
+[0;33mW (65380) main: No rpm message this cycle[0m
+[0;33mW (65480) main: No rpm message this cycle[0m
+[0;33mW (65580) main: No rpm message this cycle[0m
+[0;33mW (65680) main: No rpm message this cycle[0m
+[0;33mW (65780) main: No rpm message this cycle[0m
+[0;33mW (65880) main: No rpm message this cycle[0m
+[0;33mW (65980) main: No rpm message this cycle[0m
+[0;33mW (66080) main: No rpm message this cycle[0m
+[0;33mW (66180) main: No rpm message this cycle[0m
+[0;33mW (66280) main: No rpm message this cycle[0m
+[0;33mW (66380) main: No rpm message this cycle[0m
+[0;33mW (66480) main: No rpm message this cycle[0m
+[0;33mW (66580) main: No rpm message this cycle[0m
+[0;33mW (66680) main: No rpm message this cycle[0m
+[0;33mW (66780) main: No rpm message this cycle[0m
+[0;33mW (66880) main: No rpm message this cycle[0m
+[0;33mW (66980) main: No rpm message this cycle[0m
+[0;33mW (67080) main: No rpm message this cycle[0m
+[0;33mW (67180) main: No rpm message this cycle[0m
+[0;33mW (67280) main: No rpm message this cycle[0m
+[0;33mW (67380) main: No rpm message this cycle[0m
+[0;33mW (67480) main: No rpm message this cycle[0m
+[0;33mW (67580) main: No rpm message this cycle[0m
+[0;33mW (67680) main: No rpm message this cycle[0m
+[0;33mW (67780) main: No rpm message this cycle[0m
+[0;33mW (67880) main: No rpm message this cycle[0m
+[0;33mW (67980) main: No rpm message this cycle[0m
+[0;33mW (68080) main: No rpm message this cycle[0m
+[0;33mW (68180) main: No rpm message this cycle[0m
+[0;33mW (68280) main: No rpm message this cycle[0m
+[0;33mW (68380) main: No rpm message this cycle[0m
+[0;33mW (68480) main: No rpm message this cycle[0m
+[0;33mW (68580) main: No rpm message this cycle[0m
+[0;33mW (68680) main: No rpm message this cycle[0m
+[0;33mW (68780) main: No rpm message this cycle[0m
+[0;33mW (68880) main: No rpm message this cycle[0m
+[0;33mW (68980) main: No rpm message this cycle[0m
+[0;33mW (69080) main: No rpm message this cycle[0m
+[0;33mW (69180) main: No rpm message this cycle[0m
+[0;33mW (69280) main: No rpm message this cycle[0m
+[0;33mW (69380) main: No rpm message this cycle[0m
+[0;33mW (69480) main: No rpm message this cycle[0m
+[0;33mW (69580) main: No rpm message this cycle[0m
+[0;33mW (69680) main: No rpm message this cycle[0m
+[0;33mW (69780) main: No rpm message this cycle[0m
+[0;33mW (69880) main: No rpm message this cycle[0m
+[0;33mW (69980) main: No rpm message this cycle[0m
+[0;33mW (70080) main: No rpm message this cycle[0m
+[0;33mW (70180) main: No rpm message this cycle[0m
+[0;33mW (70280) main: No rpm message this cycle[0m
+[0;33mW (70380) main: No rpm message this cycle[0m
+[0;33mW (70480) main: No rpm message this cycle[0m
+[0;33mW (70580) main: No rpm message this cycle[0m
+[0;33mW (70680) main: No rpm message this cycle[0m
+[0;33mW (70780) main: No rpm message this cycle[0m
+[0;33mW (70880) main: No rpm message this cycle[0m
+[0;33mW (70980) main: No rpm message this cycle[0m
+[0;33mW (71080) main: No rpm message this cycle[0m
+[0;33mW (71180) main: No rpm message this cycle[0m
+[0;33mW (71280) main: No rpm message this cycle[0m
+[0;33mW (71380) main: No rpm message this cycle[0m
+[0;33mW (71480) main: No rpm message this cycle[0m
+[0;33mW (71580) main: No rpm message this cycle[0m
+[0;33mW (71680) main: No rpm message this cycle[0m
+[0;33mW (71780) main: No rpm message this cycle[0m
+[0;33mW (71880) main: No rpm message this cycle[0m
+[0;33mW (71980) main: No rpm message this cycle[0m
+[0;33mW (72080) main: No rpm message this cycle[0m
+[0;33mW (72180) main: No rpm message this cycle[0m
+[0;33mW (72280) main: No rpm message this cycle[0m
+[0;33mW (72380) main: No rpm message this cycle[0m
+[0;33mW (72480) main: No rpm message this cycle[0m
+[0;33mW (72580) main: No rpm message this cycle[0m
+[0;33mW (72680) main: No rpm message this cycle[0m
+[0;33mW (72780) main: No rpm message this cycle[0m
+[0;33mW (72880) main: No rpm message this cycle[0m
+[0;33mW (72980) main: No rpm message this cycle[0m
+[0;33mW (73080) main: No rpm message this cycle[0m
+[0;33mW (73180) main: No rpm message this cycle[0m
+[0;33mW (73280) main: No rpm message this cycle[0m
+[0;33mW (73380) main: No rpm message this cycle[0m
+[0;33mW (73480) main: No rpm message this cycle[0m
+[0;33mW (73580) main: No rpm message this cycle[0m
+[0;33mW (73680) main: No rpm message this cycle[0m
+[0;33mW (73780) main: No rpm message this cycle[0m
+[0;33mW (73880) main: No rpm message this cycle[0m
+[0;33mW (73980) main: No rpm message this cycle[0m
+[0;33mW (74080) main: No rpm message this cycle[0m
+[0;33mW (74180) main: No rpm message this cycle[0m
+[0;33mW (74280) main: No rpm message this cycle[0m
+[0;33mW (74380) main: No rpm message this cycle[0m
+[0;33mW (74480) main: No rpm message this cycle[0m
+[0;33mW (74580) main: No rpm message this cycle[0m
+[0;33mW (74680) main: No rpm message this cycle[0m
+[0;33mW (74780) main: No rpm message this cycle[0m
+[0;33mW (74880) main: No rpm message this cycle[0m
+[0;33mW (74980) main: No rpm message this cycle[0m
+[0;33mW (75080) main: No rpm message this cycle[0m
+[0;33mW (75180) main: No rpm message this cycle[0m
+[0;33mW (75280) main: No rpm message this cycle[0m
+[0;33mW (75380) main: No rpm message this cycle[0m
+[0;33mW (75480) main: No rpm message this cycle[0m
+[0;33mW (75580) main: No rpm message this cycle[0m
+[0;33mW (75680) main: No rpm message this cycle[0m
+[0;33mW (75780) main: No rpm message this cycle[0m
+[0;33mW (75880) main: No rpm message this cycle[0m
+[0;33mW (75980) main: No rpm message this cycle[0m
+[0;33mW (76080) main: No rpm message this cycle[0m
+[0;33mW (76180) main: No rpm message this cycle[0m
+[0;33mW (76280) main: No rpm message this cycle[0m
+[0;33mW (76380) main: No rpm message this cycle[0m
+[0;33mW (76480) main: No rpm message this cycle[0m
+[0;33mW (76580) main: No rpm message this cycle[0m
+[0;33mW (76680) main: No rpm message this cycle[0m
+[0;33mW (76780) main: No rpm message this cycle[0m
+[0;33mW (76880) main: No rpm message this cycle[0m
+[0;33mW (76980) main: No rpm message this cycle[0m
+[0;33mW (77080) main: No rpm message this cycle[0m
+[0;33mW (77180) main: No rpm message this cycle[0m
+[0;33mW (77280) main: No rpm message this cycle[0m
+[0;33mW (77380) main: No rpm message this cycle[0m
+[0;33mW (77480) main: No rpm message this cycle[0m
+[0;33mW (77580) main: No rpm message this cycle[0m
+[0;33mW (77680) main: No rpm message this cycle[0m
+[0;33mW (77780) main: No rpm message this cycle[0m
+[0;33mW (77880) main: No rpm message this cycle[0m
+[0;33mW (77980) main: No rpm message this cycle[0m
+[0;33mW (78080) main: No rpm message this cycle[0m
+[0;33mW (78180) main: No rpm message this cycle[0m
+[0;33mW (78280) main: No rpm message this cycle[0m
+[0;33mW (78380) main: No rpm message this cycle[0m
+[0;33mW (78480) main: No rpm message this cycle[0m
+[0;33mW (78580) main: No rpm message this cycle[0m
+[0;33mW (78680) main: No rpm message this cycle[0m
+[0;33mW (78780) main: No rpm message this cycle[0m
+[0;33mW (78880) main: No rpm message this cycle[0m
+[0;33mW (78980) main: No rpm message this cycle[0m
+[0;33mW (79080) main: No rpm message this cycle[0m
+[0;33mW (79180) main: No rpm message this cycle[0m
+[0;33mW (79280) main: No rpm message this cycle[0m
+[0;33mW (79380) main: No rpm message this cycle[0m
+[0;33mW (79480) main: No rpm message this cycle[0m
+[0;33mW (79580) main: No rpm message this cycle[0m
+[0;33mW (79680) main: No rpm message this cycle[0m
+[0;33mW (79780) main: No rpm message this cycle[0m
+[0;33mW (79880) main: No rpm message this cycle[0m
+[0;33mW (79980) main: No rpm message this cycle[0m
+[0;33mW (80080) main: No rpm message this cycle[0m
+[0;33mW (80180) main: No rpm message this cycle[0m
+[0;33mW (80280) main: No rpm message this cycle[0m
+[0;33mW (80380) main: No rpm message this cycle[0m
+[0;33mW (80480) main: No rpm message this cycle[0m
+[0;33mW (80580) main: No rpm message this cycle[0m
+[0;33mW (80680) main: No rpm message this cycle[0m
+[0;33mW (80780) main: No rpm message this cycle[0m
+[0;33mW (80880) main: No rpm message this cycle[0m
+[0;33mW (80980) main: No rpm message this cycle[0m
+[0;33mW (81080) main: No rpm message this cycle[0m
+[0;33mW (81180) main: No rpm message this cycle[0m
+[0;33mW (81280) main: No rpm message this cycle[0m
+[0;33mW (81380) main: No rpm message this cycle[0m
+[0;33mW (81480) main: No rpm message this cycle[0m
+[0;33mW (81580) main: No rpm message this cycle[0m

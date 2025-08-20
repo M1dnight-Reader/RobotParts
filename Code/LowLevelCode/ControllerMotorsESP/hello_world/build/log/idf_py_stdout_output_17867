@@ -1,0 +1,433 @@
+335) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 14 2025 16:19:53[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b1f0h ( 45552) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b218 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b23c vaddr=3ffb0000 size=023a4h (  9124) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d5e8 vaddr=40080000 size=02a30h ( 10800) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17a6ch ( 96876) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037a94 vaddr=40082a30 size=0b2d4h ( 45780) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (201) app_init: Application information:[0m
+[0;32mI (201) app_init: Project name:     hello_world[0m
+[0;32mI (205) app_init: App version:      c3f7ac7[0m
+[0;32mI (209) app_init: Compile time:     Aug 14 2025 16:19:32[0m
+[0;32mI (214) app_init: ELF file SHA256:  3cb7f21cc...[0m
+[0;32mI (219) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (222) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (226) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (230) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (234) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (241) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (246) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (251) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (262) heap_init: At 4008DD04 len 000122FC (72 KiB): IRAM[0m
+[0;32mI (268) spi_flash: detected chip: generic[0m
+[0;32mI (271) spi_flash: flash io: dio[0m
+[0;33mW (274) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (286) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (295) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (305) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (315) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (335) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (345) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (355) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (365) uart: queue free spaces: 64[0m
+[0;32mI (365) main_task: Returned from app_main()[0m
+[0;32mI (2715) uart_rx: Line: A:59.46,B:-78.35,C:59.28,D:60.12[0m
+0.24,B:-99.18,C:79.88,D:58.8A:8A:59.46,B:-78.35,C:59.28,D:60.12
+[0;32mI (2815) uart_rx: Line: A:59.74,B:-78.85,C:59.66,D:60.42[0m
+[0;32mI (2915) uart_rx: Line: A:59.95,B:-78.91,C:59.57,D:60.58[0m
+[0;32mI (3015) uart_rx: Line: A:60.06,B:-79.00,C:59.69,D:60.84[0m
+[0;32mI (3115) uart_rx: Line: A:60.11,B:-79.17,C:59.85,D:60.83[0m
+[0;32mI (3215) uart_rx: Line: A:60.32,B:-79.15,C:59.71,D:60.85[0m
+[0;32mI (3315) uart_rx: Line: A:60.24,B:-79.06,C:59.86,D:61.06[0m
+[0;32mI (3415) uart_rx: Line: A:60.23,B:-79.26,C:59.83,D:61.15[0m
+[0;32mI (3515) uart_rx: Line: A:60.44,B:-79.45,C:59.85,D:61.04[0m
+[0;32mI (3615) uart_rx: Line: A:60.24,B:-79.38,C:60.00,D:61.08[0m
+[0;32mI (3715) uart_rx: Line: A:60.15,B:-79.43,C:59.86,D:60.94[0m
+[0;32mI (3815) uart_rx: Line: A:60.36,B:-79.61,C:59.96,D:61.10[0m
+[0;32mI (3915) uart_rx: Line: A:60.23,B:-79.61,C:59.95,D:60.96[0m
+[0;32mI (4015) uart_rx: Line: A:60.46,B:-79.66,C:59.92,D:61.19[0m
+[0;32mI (4115) uart_rx: Line: A:60.46,B:-79.71,C:60.10,D:61.11[0m
+[0;32mI (4215) uart_rx: Line: A:60.60,B:-79.70,C:60.06,D:60.97[0m
+[0;32mI (4315) uart_rx: Line: A:60.69,B:-79.64,C:60.13,D:61.04[0m
+[0;32mI (4415) uart_rx: Line: A:60.65,B:-79.57,C:60.15,D:61.02[0m
+[0;32mI (4515) uart_rx: Line: A:60.65,B:-79.80,C:60.23,D:61.16[0m
+[0;32mI (4615) uart_rx: Line: A:60.66,B:-79.71,C:60.04,D:60.99[0m
+[0;32mI (4715) uart_rx: Line: A:60.62,B:-79.81,C:60.22,D:61.15[0m
+[0;32mI (4815) uart_rx: Line: A:60.43,B:-79.82,C:60.01,D:61.10[0m
+[0;32mI (4915) uart_rx: Line: A:60.66,B:-79.73,C:59.98,D:61.04[0m
+[0;32mI (5025) uart_rx: Line: A:60.71,B:-79.91,C:60.16,D:61.16[0m
+[0;32mI (5125) uart_rx: Line: A:60.68,B:-79.79,C:60.05,D:61.19[0m
+[0;32mI (5225) uart_rx: Line: A:56.71,B:-73.76,C:56.24,D:57.30[0m
+[0;32mI (5325) uart_rx: Line: A:48.29,B:-62.20,C:48.07,D:49.06[0m
+[0;32mI (5425) uart_rx: Line: A:40.33,B:-51.15,C:39.71,D:40.62[0m
+[0;32mI (5525) uart_rx: Line: A:31.89,B:-40.29,C:31.25,D:32.93[0m
+[0;32mI (61545) uart_rx: Line: A:58.71,B:-77.75,C:58.23,D:59.07[0m
+ders - corPCINT 4 A:58.71,B:-77.75,C:58.23,D:59.07
+[0;32mI (61645) uart_rx: Line: A:59.93,B:-78.92,C:59.25,D:60.11[0m
+[0;32mI (61745) uart_rx: Line: A:60.13,B:-79.12,C:59.65,D:60.47[0m
+[0;32mI (61845) uart_rx: Line: A:60.17,B:-79.06,C:59.75,D:60.89[0m
+[0;32mI (61945) uart_rx: Line: A:60.30,B:-79.22,C:59.77,D:60.72[0m
+[0;32mI (62055) uart_rx: Line: A:60.30,B:-79.28,C:59.92,D:61.01[0m
+[0;32mI (62155) uart_rx: Line: A:60.40,B:-79.25,C:59.92,D:60.91[0m
+[0;32mI (62255) uart_rx: Line: A:60.60,B:-79.44,C:60.01,D:61.02[0m
+[0;32mI (62355) uart_rx: Line: A:60.34,B:-79.49,C:59.99,D:60.96[0m
+[0;32mI (62455) uart_rx: Line: A:60.46,B:-79.66,C:60.04,D:61.08[0m
+[0;32mI (62555) uart_rx: Line: A:60.47,B:-79.58,C:59.90,D:60.94[0m
+[0;32mI (62655) uart_rx: Line: A:60.33,B:-79.68,C:60.14,D:61.11[0m
+[0;32mI (62755) uart_rx: Line: A:60.68,B:-79.81,C:60.02,D:60.99[0m
+[0;32mI (62855) uart_rx: Line: A:60.67,B:-79.81,C:59.95,D:61.14[0m
+[0;32mI (62955) uart_rx: Line: A:60.56,B:-79.71,C:59.92,D:61.28[0m
+[0;32mI (63055) uart_rx: Line: A:60.77,B:-79.75,C:59.97,D:61.19[0m
+[0;32mI (63155) uart_rx: Line: A:60.57,B:-79.67,C:59.99,D:61.08[0m
+[0;32mI (63255) uart_rx: Line: A:60.60,B:-79.59,C:59.96,D:61.05[0m
+[0;32mI (63355) uart_rx: Line: A:60.62,B:-79.82,C:59.89,D:61.16[0m
+[0;32mI (63455) uart_rx: Line: A:60.59,B:-79.97,C:59.94,D:61.15[0m
+[0;32mI (63555) uart_rx: Line: A:60.65,B:-79.85,C:59.93,D:61.07[0m
+[0;32mI (63655) uart_rx: Line: A:60.70,B:-79.94,C:60.04,D:61.12[0m
+[0;32mI (63755) uart_rx: Line: A:60.61,B:-79.99,C:60.05,D:61.11[0m
+[0;32mI (63855) uart_rx: Line: A:60.99,B:-80.17,C:60.07,D:61.19[0m
+[0;32mI (63955) uart_rx: Line: A:60.90,B:-79.97,C:59.83,D:61.19[0m
+[0;32mI (64055) uart_rx: Line: A:60.92,B:-79.91,C:59.91,D:61.17[0m
+[0;32mI (64155) uart_rx: Line: A:61.11,B:-80.21,C:60.04,D:61.44[0m
+[0;32mI (64255) uart_rx: Line: A:61.07,B:-80.05,C:60.05,D:61.12[0m
+[0;32mI (64365) uart_rx: Line: A:60.78,B:-80.10,C:59.89,D:61.42[0m
+[0;32mI (64465) uart_rx: Line: A:60.73,B:-80.10,C:59.98,D:61.16[0m
+[0;32mI (64565) uart_rx: Line: A:61.00,B:-80.12,C:59.87,D:61.12[0m
+[0;32mI (64665) uart_rx: Line: A:61.16,B:-80.36,C:60.10,D:61.26[0m
+[0;32mI (64765) uart_rx: Line: A:61.17,B:-80.20,C:60.09,D:61.18[0m
+[0;32mI (64865) uart_rx: Line: A:60.95,B:-80.18,C:60.14,D:61.22[0m
+[0;32mI (64965) uart_rx: Line: A:61.12,B:-80.08,C:59.84,D:61.13[0m
+[0;32mI (65065) uart_rx: Line: A:61.12,B:-80.15,C:60.13,D:61.25[0m
+[0;32mI (65165) uart_rx: Line: A:61.23,B:-80.15,C:60.18,D:61.24[0m
+[0;32mI (65265) uart_rx: Line: A:61.16,B:-80.11,C:60.17,D:61.21[0m
+[0;32mI (65365) uart_rx: Line: A:61.14,B:-80.03,C:60.06,D:61.21[0m
+[0;32mI (65465) uart_rx: Line: A:60.88,B:-80.05,C:59.98,D:61.00[0m
+[0;32mI (65565) uart_rx: Line: A:61.07,B:-80.27,C:60.10,D:61.30[0m
+[0;32mI (65665) uart_rx: Line: A:61.34,B:-80.38,C:60.25,D:61.33[0m
+[0;32mI (65765) uart_rx: Line: A:61.18,B:-80.18,C:59.97,D:61.27[0m
+[0;32mI (65865) uart_rx: Line: A:61.37,B:-80.24,C:60.14,D:61.31[0m
+[0;32mI (65965) uart_rx: Line: A:61.24,B:-80.26,C:60.17,D:61.17[0m
+[0;32mI (66065) uart_rx: Line: A:61.36,B:-80.40,C:60.20,D:61.16[0m
+[0;32mI (66165) uart_rx: Line: A:61.32,B:-80.25,C:60.27,D:61.19[0m
+[0;32mI (66265) uart_rx: Line: A:61.32,B:-80.28,C:60.35,D:61.33[0m
+[0;32mI (66375) uart_rx: Line: A:61.31,B:-80.31,C:60.18,D:61.32[0m
+[0;32mI (66475) uart_rx: Line: A:60.96,B:-80.21,C:60.11,D:61.18[0m
+[0;32mI (66575) uart_rx: Line: A:61.17,B:-80.45,C:60.18,D:61.35[0m
+[0;32mI (66675) uart_rx: Line: A:61.21,B:-80.45,C:60.16,D:61.27[0m
+[0;32mI (66775) uart_rx: Line: A:61.35,B:-80.50,C:60.29,D:61.28[0m
+[0;32mI (66875) uart_rx: Line: A:61.23,B:-80.48,C:60.17,D:61.30[0m
+[0;32mI (66975) uart_rx: Line: A:61.29,B:-80.40,C:60.13,D:61.35[0m
+[0;32mI (67075) uart_rx: Line: A:61.17,B:-80.21,C:60.15,D:61.12[0m
+[0;32mI (67175) uart_rx: Line: A:61.57,B:-80.36,C:60.04,D:61.24[0m
+[0;32mI (67275) uart_rx: Line: A:61.50,B:-80.48,C:60.21,D:61.35[0m
+[0;32mI (67375) uart_rx: Line: A:61.09,B:-80.41,C:60.09,D:61.28[0m
+[0;32mI (67475) uart_rx: Line: A:61.03,B:-80.28,C:60.12,D:61.11[0m
+[0;32mI (67575) uart_rx: Line: A:61.23,B:-80.51,C:60.14,D:61.31[0m
+[0;32mI (67675) uart_rx: Line: A:61.26,B:-80.63,C:60.36,D:61.30[0m
+[0;32mI (67775) uart_rx: Line: A:61.18,B:-80.52,C:60.21,D:61.25[0m
+[0;32mI (67875) uart_rx: Line: A:61.26,B:-80.64,C:60.15,D:61.36[0m
+[0;32mI (67975) uart_rx: Line: A:61.38,B:-80.57,C:60.23,D:61.17[0m
+[0;32mI (68075) uart_rx: Line: A:61.31,B:-80.35,C:60.13,D:61.23[0m
+[0;32mI (68175) uart_rx: Line: A:61.27,B:-80.46,C:60.19,D:61.33[0m
+[0;32mI (68275) uart_rx: Line: A:61.22,B:-80.37,C:60.32,D:61.22[0m
+[0;32mI (68385) uart_rx: Line: A:61.08,B:-80.32,C:60.31,D:61.15[0m
+[0;32mI (68485) uart_rx: Line: A:61.13,B:-80.38,C:60.19,D:61.22[0m
+[0;32mI (68585) uart_rx: Line: A:61.01,B:-80.33,C:60.14,D:61.16[0m
+[0;32mI (68685) uart_rx: Line: A:60.99,B:-80.39,C:60.35,D:61.20[0m
+[0;32mI (68785) uart_rx: Line: A:60.97,B:-80.52,C:60.28,D:61.21[0m
+[0;32mI (68885) uart_rx: Line: A:61.11,B:-80.37,C:60.40,D:61.19[0m
+[0;32mI (68985) uart_rx: Line: A:61.07,B:-80.37,C:60.32,D:61.19[0m
+[0;32mI (69085) uart_rx: Line: A:61.32,B:-80.44,C:60.13,D:61.26[0m
+[0;32mI (69185) uart_rx: Line: A:61.11,B:-80.36,C:60.32,D:61.20[0m
+[0;32mI (69285) uart_rx: Line: A:61.10,B:-80.38,C:60.21,D:61.36[0m
+[0;32mI (69385) uart_rx: Line: A:60.94,B:-80.29,C:60.20,D:61.15[0m
+[0;32mI (69485) uart_rx: Line: A:61.06,B:-80.38,C:60.21,D:61.14[0m
+[0;32mI (69585) uart_rx: Line: A:61.11,B:-80.45,C:60.38,D:61.30[0m
+[0;32mI (69685) uart_rx: Line: A:61.23,B:-80.50,C:60.34,D:61.21[0m
+[0;32mI (69785) uart_rx: Line: A:61.15,B:-80.55,C:60.35,D:61.37[0m
+[0;32mI (69885) uart_rx: Line: A:61.15,B:-80.61,C:60.25,D:61.30[0m
+[0;32mI (69985) uart_rx: Line: A:61.13,B:-80.43,C:60.39,D:61.23[0m
+[0;32mI (70085) uart_rx: Line: A:61.21,B:-80.44,C:60.33,D:61.17[0m
+[0;32mI (70185) uart_rx: Line: A:61.20,B:-80.43,C:60.27,D:61.27[0m
+[0;32mI (70285) uart_rx: Line: A:61.10,B:-80.44,C:60.11,D:61.32[0m
+[0;32mI (70385) uart_rx: Line: A:61.00,B:-80.54,C:60.40,D:61.34[0m
+[0;32mI (70485) uart_rx: Line: A:61.18,B:-80.61,C:60.30,D:61.16[0m
+[0;32mI (70585) uart_rx: Line: A:61.01,B:-80.44,C:60.24,D:61.09[0m
+[0;32mI (70685) uart_rx: Line: A:60.91,B:-80.30,C:60.24,D:60.97[0m
+[0;32mI (70785) uart_rx: Line: A:61.09,B:-80.53,C:60.31,D:61.16[0m
+[0;32mI (70895) uart_rx: Line: A:61.19,B:-80.65,C:60.30,D:61.26[0m
+[0;32mI (70995) uart_rx: Line: A:61.25,B:-80.73,C:60.51,D:61.47[0m
+[0;32mI (71095) uart_rx: Line: A:61.21,B:-80.38,C:60.25,D:61.33[0m
+[0;32mI (71195) uart_rx: Line: A:61.06,B:-80.50,C:60.40,D:61.26[0m
+[0;32mI (71295) uart_rx: Line: A:61.01,B:-80.46,C:60.32,D:61.33[0m
+[0;32mI (71395) uart_rx: Line: A:60.88,B:-80.34,C:60.07,D:61.16[0m
+[0;32mI (71495) uart_rx: Line: A:61.12,B:-80.56,C:60.34,D:61.48[0m
+[0;32mI (71595) uart_rx: Line: A:60.91,B:-80.53,C:60.18,D:61.46[0m
+[0;32mI (71695) uart_rx: Line: A:61.12,B:-80.54,C:60.23,D:61.49[0m
+[0;32mI (71795) uart_rx: Line: A:61.18,B:-80.51,C:60.08,D:61.24[0m
+[0;32mI (71895) uart_rx: Line: A:60.99,B:-80.68,C:60.19,D:61.23[0m
+[0;32mI (71995) uart_rx: Line: A:61.18,B:-80.63,C:60.23,D:61.40[0m
+[0;32mI (72095) uart_rx: Line: A:61.22,B:-80.55,C:60.24,D:61.20[0m
+[0;32mI (72195) uart_rx: Line: A:61.20,B:-80.62,C:60.28,D:61.34[0m
+[0;32mI (72295) uart_rx: Line: A:61.07,B:-80.61,C:60.23,D:61.33[0m
+[0;32mI (72395) uart_rx: Line: A:60.97,B:-80.45,C:60.20,D:61.35[0m
+[0;32mI (72495) uart_rx: Line: A:61.25,B:-80.62,C:60.28,D:61.29[0m
+[0;32mI (72595) uart_rx: Line: A:61.30,B:-80.86,C:60.24,D:61.49[0m
+[0;32mI (72695) uart_rx: Line: A:61.14,B:-80.53,C:60.22,D:61.18[0m
+[0;32mI (72795) uart_rx: Line: A:61.13,B:-80.79,C:60.31,D:61.30[0m
+[0;32mI (72905) uart_rx: Line: A:61.12,B:-80.64,C:60.35,D:61.38[0m
+[0;32mI (73005) uart_rx: Line: A:61.37,B:-80.59,C:60.31,D:61.29[0m
+[0;32mI (73105) uart_rx: Line: A:58.63,B:-76.74,C:57.86,D:58.86[0m
+[0;32mI (73205) uart_rx: Line: A:50.64,B:-65.70,C:50.35,D:51.21[0m
+[0;32mI (73305) uart_rx: Line: A:42.52,B:-54.97,C:42.33,D:43.41[0m
+[0;32mI (73405) uart_rx: Line: A:34.77,B:-44.29,C:34.07,D:35.63[0m
+[0;32mI (73505) uart_rx: Line: A:27.04,B:-34.27,C:26.45,D:27.94[0m
+[0;32mI (102265) uart_rx: Line: A:59.07,B:-78.47,C:58.17,D:58.94[0m
+coders - correPCINT A:59.07,B:-78.47,C:58.17,D:58.94
+[0;32mI (102365) uart_rx: Line: A:59.89,B:-79.29,C:59.25,D:60.34[0m
+[0;32mI (102465) uart_rx: Line: A:60.01,B:-79.68,C:59.73,D:60.73[0m
+[0;32mI (102565) uart_rx: Line: A:60.27,B:-79.81,C:59.88,D:60.91[0m
+[0;32mI (102665) uart_rx: Line: A:60.30,B:-79.80,C:59.91,D:60.97[0m
+[0;32mI (102765) uart_rx: Line: A:60.29,B:-79.73,C:59.75,D:61.08[0m
+[0;32mI (102865) uart_rx: Line: A:60.44,B:-79.93,C:59.90,D:61.06[0m
+[0;32mI (102965) uart_rx: Line: A:60.51,B:-79.91,C:59.67,D:61.14[0m
+[0;32mI (103065) uart_rx: Line: A:60.59,B:-79.98,C:59.93,D:61.08[0m
+[0;32mI (103165) uart_rx: Line: A:60.79,B:-80.08,C:59.96,D:61.31[0m
+[0;32mI (103265) uart_rx: Line: A:60.74,B:-80.08,C:60.15,D:61.15[0m
+[0;32mI (103375) uart_rx: Line: A:60.72,B:-80.12,C:59.92,D:61.14[0m
+[0;32mI (103475) uart_rx: Line: A:60.85,B:-79.98,C:60.09,D:61.21[0m
+[0;32mI (103575) uart_rx: Line: A:60.95,B:-80.17,C:60.08,D:61.48[0m
+[0;32mI (103675) uart_rx: Line: A:60.99,B:-79.92,C:60.10,D:61.20[0m
+[0;32mI (103775) uart_rx: Line: A:60.72,B:-80.10,C:59.96,D:61.37[0m
+[0;32mI (103875) uart_rx: Line: A:60.78,B:-79.85,C:60.07,D:61.10[0m
+[0;32mI (103975) uart_rx: Line: A:60.77,B:-80.02,C:59.89,D:61.15[0m
+[0;32mI (104075) uart_rx: Line: A:60.90,B:-80.00,C:59.94,D:61.25[0m
+[0;32mI (104175) uart_rx: Line: A:61.04,B:-80.23,C:60.04,D:61.24[0m
+[0;32mI (104275) uart_rx: Line: A:60.86,B:-80.28,C:59.94,D:61.29[0m
+[0;32mI (104375) uart_rx: Line: A:61.01,B:-80.15,C:60.10,D:61.27[0m
+[0;32mI (104475) uart_rx: Line: A:61.06,B:-80.23,C:59.92,D:61.10[0m
+[0;32mI (104575) uart_rx: Line: A:60.81,B:-80.16,C:59.89,D:61.22[0m
+[0;32mI (104675) uart_rx: Line: A:60.76,B:-80.19,C:59.95,D:61.18[0m
+[0;32mI (104775) uart_rx: Line: A:60.63,B:-80.17,C:59.90,D:61.31[0m
+[0;32mI (104875) uart_rx: Line: A:60.72,B:-80.26,C:59.94,D:61.28[0m
+[0;32mI (104975) uart_rx: Line: A:60.89,B:-80.28,C:60.18,D:61.38[0m
+[0;32mI (105075) uart_rx: Line: A:60.68,B:-80.21,C:60.04,D:61.28[0m
+[0;32mI (105175) uart_rx: Line: A:61.03,B:-80.42,C:60.20,D:61.37[0m
+[0;32mI (105275) uart_rx: Line: A:60.87,B:-80.39,C:60.26,D:61.39[0m
+[0;32mI (105375) uart_rx: Line: A:60.94,B:-80.43,C:60.15,D:61.22[0m
+[0;32mI (105475) uart_rx: Line: A:61.01,B:-80.59,C:60.19,D:61.52[0m
+[0;32mI (105575) uart_rx: Line: A:60.95,B:-80.39,C:60.07,D:61.53[0m
+[0;32mI (105685) uart_rx: Line: A:60.91,B:-80.34,C:60.27,D:61.43[0m
+[0;32mI (105785) uart_rx: Line: A:60.81,B:-80.44,C:60.34,D:61.61[0m
+[0;32mI (105885) uart_rx: Line: A:60.83,B:-80.30,C:60.16,D:61.57[0m
+[0;32mI (105985) uart_rx: Line: A:60.95,B:-80.26,C:60.16,D:61.35[0m
+[0;32mI (106085) uart_rx: Line: A:61.06,B:-80.55,C:60.13,D:61.39[0m
+[0;32mI (106185) uart_rx: Line: A:61.02,B:-80.43,C:60.18,D:61.46[0m
+[0;32mI (106285) uart_rx: Line: A:60.84,B:-80.53,C:60.18,D:61.52[0m
+[0;32mI (106385) uart_rx: Line: A:60.97,B:-80.47,C:60.30,D:61.46[0m
+[0;32mI (106485) uart_rx: Line: A:60.99,B:-80.55,C:60.30,D:61.58[0m
+[0;32mI (106585) uart_rx: Line: A:61.02,B:-80.53,C:60.37,D:61.58[0m
+[0;32mI (106685) uart_rx: Line: A:61.00,B:-80.57,C:60.23,D:61.52[0m
+[0;32mI (106785) uart_rx: Line: A:60.91,B:-80.45,C:60.41,D:61.40[0m
+[0;32mI (106885) uart_rx: Line: A:61.00,B:-80.42,C:60.36,D:61.48[0m
+[0;32mI (106985) uart_rx: Line: A:61.30,B:-80.47,C:60.30,D:61.43[0m
+[0;32mI (107085) uart_rx: Line: A:61.03,B:-80.56,C:60.26,D:61.49[0m
+[0;32mI (107185) uart_rx: Line: A:61.13,B:-80.51,C:60.36,D:61.50[0m
+[0;32mI (107285) uart_rx: Line: A:61.27,B:-80.53,C:60.43,D:61.53[0m
+[0;32mI (107385) uart_rx: Line: A:61.37,B:-80.51,C:60.54,D:61.53[0m
+[0;32mI (107485) uart_rx: Line: A:61.21,B:-80.50,C:60.17,D:61.42[0m
+[0;32mI (107585) uart_rx: Line: A:61.08,B:-80.48,C:60.31,D:61.43[0m
+[0;32mI (107685) uart_rx: Line: A:61.21,B:-80.69,C:60.38,D:61.54[0m
+[0;32mI (107785) uart_rx: Line: A:61.05,B:-80.41,C:60.23,D:61.41[0m
+[0;32mI (107895) uart_rx: Line: A:61.04,B:-80.46,C:60.23,D:61.39[0m
+[0;32mI (107995) uart_rx: Line: A:61.22,B:-80.46,C:60.39,D:61.38[0m
+[0;32mI (108095) uart_rx: Line: A:61.18,B:-80.67,C:60.44,D:61.54[0m
+[0;32mI (108195) uart_rx: Line: A:61.25,B:-80.51,C:60.31,D:61.35[0m
+[0;32mI (108295) uart_rx: Line: A:61.38,B:-80.56,C:60.38,D:61.43[0m
+[0;32mI (108395) uart_rx: Line: A:61.45,B:-80.66,C:60.23,D:61.39[0m
+[0;32mI (108495) uart_rx: Line: A:61.26,B:-80.63,C:60.19,D:61.36[0m
+[0;32mI (108595) uart_rx: Line: A:61.42,B:-80.71,C:60.17,D:61.54[0m
+[0;32mI (108695) uart_rx: Line: A:61.18,B:-80.56,C:60.28,D:61.43[0m
+[0;32mI (108795) uart_rx: Line: A:61.35,B:-80.51,C:60.29,D:61.58[0m
+[0;32mI (108895) uart_rx: Line: A:61.31,B:-80.61,C:60.21,D:61.47[0m
+[0;32mI (108995) uart_rx: Line: A:61.23,B:-80.51,C:60.14,D:61.43[0m
+[0;32mI (109095) uart_rx: Line: A:61.36,B:-80.42,C:60.29,D:61.41[0m
+[0;32mI (109195) uart_rx: Line: A:61.26,B:-80.61,C:60.23,D:61.47[0m
+[0;32mI (109295) uart_rx: Line: A:61.52,B:-80.66,C:60.41,D:61.39[0m
+[0;32mI (109395) uart_rx: Line: A:61.49,B:-80.73,C:60.33,D:61.49[0m
+[0;32mI (109495) uart_rx: Line: A:61.34,B:-80.56,C:60.11,D:61.47[0m
+[0;32mI (109595) uart_rx: Line: A:61.33,B:-80.52,C:60.12,D:61.39[0m
+[0;32mI (109695) uart_rx: Line: A:61.39,B:-80.83,C:60.33,D:61.67[0m
+[0;32mI (109795) uart_rx: Line: A:61.35,B:-80.47,C:60.24,D:61.39[0m
+[0;32mI (109895) uart_rx: Line: A:61.43,B:-80.68,C:60.38,D:61.55[0m
+[0;32mI (109995) uart_rx: Line: A:61.36,B:-80.61,C:60.17,D:61.42[0m
+[0;32mI (110095) uart_rx: Line: A:61.36,B:-80.46,C:60.28,D:61.38[0m
+[0;32mI (110195) uart_rx: Line: A:56.12,B:-72.88,C:55.25,D:56.48[0m
+[0;32mI (110295) uart_rx: Line: A:48.14,B:-62.06,C:47.33,D:48.57[0m
+[0;32mI (110395) uart_rx: Line: A:40.17,B:-51.67,C:39.70,D:40.41[0m
+[0;32mI (110495) uart_rx: Line: A:32.36,B:-40.94,C:31.95,D:32.86[0m
+[0;32mI (132185) uart_rx: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+NT 4 encoders - correctPCINA:0.00,B:0.00,C:0.00,D:0.00
+[0;32mI (132285) uart_rx: Line: A:59.99,B:-79.40,C:59.54,D:60.70[0m
+[0;32mI (132385) uart_rx: Line: A:60.14,B:-79.59,C:59.56,D:60.88[0m
+[0;32mI (132485) uart_rx: Line: A:60.59,B:-79.86,C:59.92,D:61.41[0m
+[0;32mI (132585) uart_rx: Line: A:60.62,B:-80.04,C:60.12,D:61.36[0m
+[0;32mI (132685) uart_rx: Line: A:60.84,B:-80.05,C:60.15,D:61.48[0m
+[0;32mI (132785) uart_rx: Line: A:60.61,B:-80.01,C:60.12,D:61.31[0m
+[0;32mI (132885) uart_rx: Line: A:60.77,B:-80.00,C:59.99,D:61.17[0m
+[0;32mI (132985) uart_rx: Line: A:60.77,B:-80.12,C:60.16,D:61.23[0m
+[0;32mI (133085) uart_rx: Line: A:60.48,B:-80.14,C:60.02,D:61.30[0m
+[0;32mI (133185) uart_rx: Line: A:60.93,B:-80.05,C:60.16,D:61.31[0m
+[0;32mI (133285) uart_rx: Line: A:60.71,B:-80.23,C:59.98,D:61.14[0m
+[0;32mI (133385) uart_rx: Line: A:60.81,B:-80.15,C:60.04,D:61.29[0m
+[0;32mI (133485) uart_rx: Line: A:60.99,B:-80.30,C:60.06,D:61.48[0m
+[0;32mI (133585) uart_rx: Line: A:60.76,B:-80.09,C:60.19,D:61.37[0m
+[0;32mI (133685) uart_rx: Line: A:60.90,B:-80.24,C:60.09,D:61.39[0m
+[0;32mI (133785) uart_rx: Line: A:61.06,B:-80.40,C:60.07,D:61.62[0m
+[0;32mI (133885) uart_rx: Line: A:61.17,B:-80.43,C:60.32,D:61.45[0m
+[0;32mI (133985) uart_rx: Line: A:60.99,B:-80.31,C:60.07,D:61.52[0m
+[0;32mI (134085) uart_rx: Line: A:60.95,B:-80.44,C:60.18,D:61.42[0m
+[0;32mI (134195) uart_rx: Line: A:61.11,B:-80.27,C:60.08,D:61.56[0m
+[0;32mI (134295) uart_rx: Line: A:61.11,B:-80.26,C:60.09,D:61.36[0m
+[0;32mI (134395) uart_rx: Line: A:61.14,B:-80.25,C:60.20,D:61.37[0m
+[0;32mI (134495) uart_rx: Line: A:61.12,B:-80.32,C:60.10,D:61.36[0m
+[0;32mI (134595) uart_rx: Line: A:61.27,B:-80.40,C:60.20,D:61.52[0m
+[0;32mI (134695) uart_rx: Line: A:61.27,B:-80.51,C:60.14,D:61.44[0m
+[0;32mI (134795) uart_rx: Line: A:61.31,B:-80.61,C:60.21,D:61.67[0m
+[0;32mI (134895) uart_rx: Line: A:61.13,B:-80.49,C:60.17,D:61.47[0m
+[0;32mI (134995) uart_rx: Line: A:61.05,B:-80.61,C:60.19,D:61.54[0m
+[0;32mI (135095) uart_rx: Line: A:60.92,B:-80.54,C:60.28,D:61.54[0m
+[0;32mI (135195) uart_rx: Line: A:61.11,B:-80.34,C:60.33,D:61.60[0m
+[0;32mI (135295) uart_rx: Line: A:61.01,B:-80.33,C:60.17,D:61.51[0m
+[0;32mI (135395) uart_rx: Line: A:61.22,B:-80.37,C:60.32,D:61.43[0m
+[0;32mI (135495) uart_rx: Line: A:61.27,B:-80.61,C:60.22,D:61.52[0m
+[0;32mI (135595) uart_rx: Line: A:61.20,B:-80.47,C:60.28,D:61.49[0m
+[0;32mI (135695) uart_rx: Line: A:61.12,B:-80.43,C:60.18,D:61.35[0m
+[0;32mI (135795) uart_rx: Line: A:61.29,B:-80.46,C:60.28,D:61.33[0m
+[0;32mI (135895) uart_rx: Line: A:61.12,B:-80.39,C:60.17,D:61.46[0m
+[0;32mI (135995) uart_rx: Line: A:61.17,B:-80.50,C:60.18,D:61.56[0m
+[0;32mI (136095) uart_rx: Line: A:61.00,B:-80.49,C:60.21,D:61.47[0m
+[0;32mI (136195) uart_rx: Line: A:61.17,B:-80.39,C:60.23,D:61.42[0m
+[0;32mI (136295) uart_rx: Line: A:61.23,B:-80.40,C:60.08,D:61.36[0m
+[0;32mI (136405) uart_rx: Line: A:61.17,B:-80.27,C:60.20,D:61.54[0m
+[0;32mI (136505) uart_rx: Line: A:61.27,B:-80.53,C:60.26,D:61.47[0m
+[0;32mI (136605) uart_rx: Line: A:61.45,B:-80.58,C:60.24,D:61.66[0m
+[0;32mI (136705) uart_rx: Line: A:61.45,B:-80.43,C:60.27,D:61.57[0m
+[0;32mI (136805) uart_rx: Line: A:61.44,B:-80.65,C:60.21,D:61.63[0m
+[0;32mI (136905) uart_rx: Line: A:61.28,B:-80.66,C:60.33,D:61.46[0m
+[0;32mI (137005) uart_rx: Line: A:61.24,B:-80.63,C:60.33,D:61.66[0m
+[0;32mI (137105) uart_rx: Line: A:61.24,B:-80.72,C:60.38,D:61.59[0m
+[0;32mI (137205) uart_rx: Line: A:61.15,B:-80.45,C:60.37,D:61.49[0m
+[0;32mI (137305) uart_rx: Line: A:61.29,B:-80.35,C:60.02,D:61.56[0m
+[0;32mI (137405) uart_rx: Line: A:61.15,B:-80.42,C:60.23,D:61.59[0m
+[0;32mI (137505) uart_rx: Line: A:61.38,B:-80.56,C:60.37,D:61.51[0m
+[0;32mI (137605) uart_rx: Line: A:61.30,B:-80.59,C:60.34,D:61.70[0m
+[0;32mI (137705) uart_rx: Line: A:61.46,B:-80.62,C:60.23,D:61.68[0m
+[0;32mI (137805) uart_rx: Line: A:61.45,B:-80.66,C:60.33,D:61.66[0m
+[0;32mI (137905) uart_rx: Line: A:61.17,B:-80.67,C:60.06,D:61.58[0m
+[0;32mI (138005) uart_rx: Line: A:61.12,B:-80.65,C:60.13,D:61.48[0m
+[0;32mI (138105) uart_rx: Line: A:60.35,B:-79.20,C:59.35,D:60.68[0m
+[0;32mI (138205) uart_rx: Line: A:52.90,B:-68.72,C:52.18,D:53.53[0m
+[0;32mI (138305) uart_rx: Line: A:44.96,B:-58.04,C:44.53,D:45.51[0m
+[0;32mI (138405) uart_rx: Line: A:37.31,B:-47.46,C:36.82,D:37.48[0m
+[0;32mI (138505) uart_rx: Line: A:29.47,B:-37.14,C:28.90,D:29.70[0m
+[0;32mI (146935) uart_rx: Line: A:59.28,B:-101.33,C:58.68,D:81.64[0m
+oders - correPCINT A:59.28,B:-101.33,C:58.68,D:81.64
+[0;32mI (147035) uart_rx: Line: A:60.47,B:-79.79,C:59.61,D:61.01[0m
+[0;32mI (147135) uart_rx: Line: A:60.46,B:-80.12,C:59.97,D:61.26[0m
+[0;32mI (147245) uart_rx: Line: A:60.78,B:-79.97,C:59.98,D:61.41[0m
+[0;32mI (147345) uart_rx: Line: A:60.81,B:-80.19,C:60.28,D:61.60[0m
+[0;32mI (147445) uart_rx: Line: A:60.74,B:-80.15,C:60.14,D:61.56[0m
+[0;32mI (147545) uart_rx: Line: A:60.83,B:-80.09,C:60.22,D:61.64[0m
+[0;32mI (147645) uart_rx: Line: A:60.98,B:-80.02,C:60.20,D:61.33[0m
+[0;32mI (147745) uart_rx: Line: A:60.98,B:-80.35,C:60.39,D:61.75[0m
+[0;32mI (147845) uart_rx: Line: A:61.21,B:-80.30,C:60.22,D:61.54[0m
+[0;32mI (147945) uart_rx: Line: A:61.04,B:-80.31,C:60.35,D:61.52[0m
+[0;32mI (148045) uart_rx: Line: A:61.03,B:-80.52,C:60.34,D:61.67[0m
+[0;32mI (148145) uart_rx: Line: A:60.87,B:-80.41,C:60.22,D:61.56[0m
+[0;32mI (148245) uart_rx: Line: A:61.03,B:-80.55,C:60.45,D:61.58[0m
+[0;32mI (148345) uart_rx: Line: A:61.07,B:-80.40,C:60.38,D:61.68[0m
+[0;32mI (148445) uart_rx: Line: A:61.17,B:-80.36,C:60.22,D:61.60[0m
+[0;32mI (148545) uart_rx: Line: A:61.02,B:-80.33,C:60.22,D:61.59[0m
+[0;32mI (148645) uart_rx: Line: A:61.31,B:-80.20,C:60.15,D:61.59[0m
+[0;32mI (148745) uart_rx: Line: A:61.12,B:-80.32,C:60.19,D:61.56[0m
+[0;32mI (148845) uart_rx: Line: A:61.35,B:-80.52,C:60.38,D:61.62[0m
+[0;32mI (148945) uart_rx: Line: A:61.29,B:-80.48,C:60.24,D:61.68[0m
+[0;32mI (149045) uart_rx: Line: A:61.09,B:-80.56,C:60.23,D:61.64[0m
+[0;32mI (149145) uart_rx: Line: A:61.23,B:-80.68,C:60.46,D:61.86[0m
+[0;32mI (149245) uart_rx: Line: A:61.37,B:-80.75,C:60.42,D:61.69[0m
+[0;32mI (149345) uart_rx: Line: A:61.26,B:-80.47,C:60.48,D:61.62[0m
+[0;32mI (149455) uart_rx: Line: A:61.25,B:-80.39,C:60.31,D:61.64[0m
+[0;32mI (149555) uart_rx: Line: A:61.21,B:-80.44,C:60.26,D:61.59[0m
+[0;32mI (149655) uart_rx: Line: A:61.32,B:-80.31,C:60.16,D:61.48[0m
+[0;32mI (149755) uart_rx: Line: A:61.44,B:-80.46,C:60.40,D:61.61[0m
+[0;32mI (149855) uart_rx: Line: A:61.43,B:-80.53,C:60.35,D:61.79[0m
+[0;32mI (149955) uart_rx: Line: A:61.22,B:-80.54,C:60.29,D:61.59[0m
+[0;32mI (150055) uart_rx: Line: A:61.12,B:-80.59,C:60.41,D:61.73[0m
+[0;32mI (150155) uart_rx: Line: A:61.12,B:-80.70,C:60.39,D:61.64[0m
+[0;32mI (150255) uart_rx: Line: A:61.20,B:-80.57,C:60.41,D:61.69[0m
+[0;32mI (150355) uart_rx: Line: A:61.36,B:-80.50,C:60.25,D:61.57[0m
+[0;32mI (150455) uart_rx: Line: A:61.51,B:-80.48,C:60.41,D:61.58[0m
+[0;32mI (150555) uart_rx: Line: A:61.24,B:-80.57,C:60.35,D:61.51[0m
+[0;32mI (150655) uart_rx: Line: A:61.52,B:-80.44,C:60.46,D:61.65[0m
+[0;32mI (150755) uart_rx: Line: A:61.31,B:-80.52,C:60.43,D:61.69[0m
+[0;32mI (150855) uart_rx: Line: A:61.27,B:-80.40,C:60.26,D:61.45[0m
+[0;32mI (150955) uart_rx: Line: A:61.35,B:-80.46,C:60.45,D:61.65[0m
+[0;32mI (151055) uart_rx: Line: A:61.19,B:-80.62,C:60.25,D:61.55[0m
+[0;32mI (151155) uart_rx: Line: A:61.38,B:-80.69,C:60.49,D:61.60[0m
+[0;32mI (151255) uart_rx: Line: A:61.35,B:-80.66,C:60.31,D:61.73[0m
+[0;32mI (151355) uart_rx: Line: A:61.55,B:-80.63,C:60.35,D:61.67[0m
+[0;32mI (151455) uart_rx: Line: A:61.30,B:-80.55,C:60.45,D:61.63[0m
+[0;32mI (151555) uart_rx: Line: A:61.64,B:-80.74,C:60.46,D:61.61[0m
+[0;32mI (151655) uart_rx: Line: A:61.46,B:-80.51,C:60.35,D:61.38[0m
+[0;32mI (151755) uart_rx: Line: A:61.45,B:-80.41,C:60.21,D:61.41[0m
+[0;32mI (151865) uart_rx: Line: A:61.54,B:-80.60,C:60.43,D:61.57[0m
+[0;32mI (151965) uart_rx: Line: A:61.53,B:-80.80,C:60.59,D:61.60[0m
+[0;32mI (152065) uart_rx: Line: A:61.28,B:-80.73,C:60.33,D:61.49[0m
+[0;32mI (152165) uart_rx: Line: A:61.45,B:-80.69,C:60.54,D:61.68[0m
+[0;32mI (152265) uart_rx: Line: A:61.32,B:-80.78,C:60.40,D:61.66[0m
+[0;32mI (152365) uart_rx: Line: A:61.55,B:-80.71,C:60.48,D:61.80[0m
+[0;32mI (152465) uart_rx: Line: A:61.37,B:-80.72,C:60.59,D:61.73[0m
+[0;32mI (152565) uart_rx: Line: A:61.48,B:-80.56,C:60.56,D:61.57[0m
+[0;32mI (152665) uart_rx: Line: A:61.44,B:-80.58,C:60.45,D:61.54[0m
+[0;32mI (152765) uart_rx: Line: A:58.51,B:-76.26,C:57.44,D:58.69[0m
+[0;32mI (152865) uart_rx: Line: A:50.49,B:-65.35,C:49.73,D:50.95[0m
+[0;32mI (152965) uart_rx: Line: A:42.58,B:-55.01,C:42.21,D:43.18[0m
+[0;32mI (153065) uart_rx: Line: A:34.27,B:-44.36,C:34.60,D:35.34[0m
+[0;32mI (153165) uart_rx: Line: A:26.33,B:-34.49,C:27.21,D:27.51[0m

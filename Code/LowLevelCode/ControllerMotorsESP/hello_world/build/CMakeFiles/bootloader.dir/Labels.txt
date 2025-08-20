@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/aindulmedir/Documents/kerfurkerfur/RobotParts/Code/LowLevelCode/ControllerMotorsESP/hello_world/build/CMakeFiles/bootloader
+/home/aindulmedir/Documents/kerfurkerfur/RobotParts/Code/LowLevelCode/ControllerMotorsESP/hello_world/build/CMakeFiles/bootloader.rule
+/home/aindulmedir/Documents/kerfurkerfur/RobotParts/Code/LowLevelCode/ControllerMotorsESP/hello_world/build/CMakeFiles/bootloader-complete.rule
+/home/aindulmedir/Documents/kerfurkerfur/RobotParts/Code/LowLevelCode/ControllerMotorsESP/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/aindulmedir/Documents/kerfurkerfur/RobotParts/Code/LowLevelCode/ControllerMotorsESP/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/aindulmedir/Documents/kerfurkerfur/RobotParts/Code/LowLevelCode/ControllerMotorsESP/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/aindulmedir/Documents/kerfurkerfur/RobotParts/Code/LowLevelCode/ControllerMotorsESP/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/aindulmedir/Documents/kerfurkerfur/RobotParts/Code/LowLevelCode/ControllerMotorsESP/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/aindulmedir/Documents/kerfurkerfur/RobotParts/Code/LowLevelCode/ControllerMotorsESP/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/aindulmedir/Documents/kerfurkerfur/RobotParts/Code/LowLevelCode/ControllerMotorsESP/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

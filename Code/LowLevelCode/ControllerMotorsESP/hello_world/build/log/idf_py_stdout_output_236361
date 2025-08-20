@@ -1,0 +1,1138 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 14 2025 16:19:53[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc6ch ( 48236) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bc94 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bcb8 vaddr=3ffb0000 size=023a4h (  9124) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e064 vaddr=40080000 size=01fb4h (  8116) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=20d94h (134548) map[0m
+[0;32mI (171) esp_image: segment 5: paddr=00040dbc vaddr=40081fb4 size=0be10h ( 48656) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (216) cpu_start: Pro cpu start user code[0m
+[0;32mI (216) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (216) app_init: Application information:[0m
+[0;32mI (216) app_init: Project name:     hello_world[0m
+[0;32mI (220) app_init: App version:      c3f7ac7-dirty[0m
+[0;32mI (225) app_init: Compile time:     Aug 19 2025 15:25:04[0m
+[0;32mI (230) app_init: ELF file SHA256:  b2eda6bd1...[0m
+[0;32mI (234) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (238) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (242) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (246) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (261) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 4008DDC4 len 0001223C (72 KiB): IRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (286) spi_flash: flash io: dio[0m
+[0;33mW (289) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (301) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) main: Starting app[0m
+[0;32mI (320) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) uart: queue free spaces: 10[0m
+[0;32mI (380) main: Tasks created[0m
+[0;32mI (390) main_task: Returned from app_main()[0m
+[0;33mW (480) main: No rpm message this cycle[0m
+[0;33mW (580) main: No rpm message this cycle[0m
+[0;33mW (680) main: No rpm message this cycle[0m
+[0;33mW (780) main: No rpm message this cycle[0m
+[0;33mW (880) main: No rpm message this cycle[0m
+[0;33mW (980) main: No rpm message this cycle[0m
+[0;33mW (1080) main: No rpm message this cycle[0m
+[0;33mW (1180) main: No rpm message this cycle[0m
+[0;33mW (1280) main: No rpm message this cycle[0m
+[0;33mW (1380) main: No rpm message this cycle[0m
+[0;33mW (1480) main: No rpm message this cycle[0m
+[0;33mW (1580) main: No rpm message this cycle[0m
+[0;33mW (1680) main: No rpm message this cycle[0m
+[0;33mW (1780) main: No rpm message this cycle[0m
+[0;33mW (1880) main: No rpm message this cycle[0m
+[0;33mW (1980) main: No rpm message this cycle[0m
+[0;33mW (2080) main: No rpm message this cycle[0m
+[0;33mW (2180) main: No rpm message this cycle[0m
+[0;33mW (2280) main: No rpm message this cycle[0m
+[0;33mW (2380) main: No rpm message this cycle[0m
+[0;33mW (2480) main: No rpm message this cycle[0m
+[0;33mW (2580) main: No rpm message this cycle[0m
+[0;33mW (2680) main: No rpm message this cycle[0m
+[0;33mW (2780) main: No rpm message this cycle[0m
+[0;33mW (2880) main: No rpm message this cycle[0m
+[0;33mW (2980) main: No rpm message this cycle[0m
+[0;33mW (3080) main: No rpm message this cycle[0m
+[0;33mW (3180) main: No rpm message this cycle[0m
+[0;33mW (3280) main: No rpm message this cycle[0m
+[0;32mI (3310) main: Line: [0m
+[0;33mW (3310) main: Bad format (parsed=-1): [0m
+[0;33mW (3380) main: No rpm message this cycle[0m
+[0;32mI (3410) main: Line: A:44.70,B:-76.80,C:-58.21,D:44.81[0m
+[0;32mI (3480) main: PID out A:15.30 B:100.00 C:100.00 D:15.19 | meas A:44.70 B:-76.80 C:-58.21 D:44.81[0m
+[0;32mI (3510) main: Line: A:47.37,B:-54.96,C:-54.88,D:47.26[0m
+[0;32mI (3580) main: PID out A:12.63 B:100.00 C:100.00 D:12.74 | meas A:47.37 B:-54.96 C:-54.88 D:47.26[0m
+[0;32mI (3610) main: Line: A:66.19,B:-2.11,C:-3.67,D:66.14[0m
+[0;32mI (3680) main: PID out A:-6.19 B:62.11 C:63.67 D:-6.14 | meas A:66.19 B:-2.11 C:-3.67 D:66.14[0m
+[0;32mI (3710) main: Line: A:67.89,B:6.52,C:7.19,D:72.53[0m
+[0;32mI (3780) main: PID out A:-7.89 B:53.48 C:52.81 D:-12.53 | meas A:67.89 B:6.52 C:7.19 D:72.53[0m
+[0;32mI (3810) main: Line: A:-10.92,B:-2.94,C:4.56,D:59.46[0m
+[0;32mI (3880) main: PID out A:70.92 B:62.94 C:55.44 D:0.54 | meas A:-10.92 B:-2.94 C:4.56 D:59.46[0m
+[0;32mI (3910) main: Line: A:-39.24,B:-8.64,C:8.36,D:47.25[0m
+[0;32mI (3980) main: PID out A:99.24 B:68.64 C:51.64 D:12.75 | meas A:-39.24 B:-8.64 C:8.36 D:47.25[0m
+[0;32mI (4010) main: Line: A:25.25,B:-0.09,C:41.18,D:43.33[0m
+[0;32mI (4080) main: PID out A:34.75 B:60.09 C:18.82 D:16.67 | meas A:25.25 B:-0.09 C:41.18 D:43.33[0m
+[0;32mI (4110) main: Line: A:46.56,B:7.01,C:62.88,D:39.25[0m
+[0;32mI (4180) main: PID out A:13.44 B:52.99 C:-2.88 D:20.75 | meas A:46.56 B:7.01 C:62.88 D:39.25[0m
+[0;32mI (4210) main: Line: A:46.77,B:11.23,C:39.23,D:20.38[0m
+[0;32mI (4280) main: PID out A:13.23 B:48.77 C:20.77 D:39.62 | meas A:46.77 B:11.23 C:39.23 D:20.38[0m
+[0;32mI (4310) main: Line: A:42.91,B:15.49,C:16.90,D:3.41[0m
+[0;32mI (4380) main: PID out A:17.09 B:44.51 C:43.10 D:56.59 | meas A:42.91 B:15.49 C:16.90 D:3.41[0m
+[0;32mI (4410) main: Line: A:38.68,B:21.74,C:6.36,D:13.15[0m
+[0;32mI (4480) main: PID out A:21.32 B:38.26 C:53.64 D:46.85 | meas A:38.68 B:21.74 C:6.36 D:13.15[0m
+[0;32mI (4510) main: Line: A:39.61,B:-25.01,C:-32.39,D:33.50[0m
+[0;32mI (4580) main: PID out A:20.39 B:85.01 C:92.39 D:26.50 | meas A:39.61 B:-25.01 C:-32.39 D:33.50[0m
+[0;32mI (4610) main: Line: A:35.59,B:19.25,C:3.32,D:42.23[0m
+[0;32mI (4680) main: PID out A:24.41 B:40.75 C:56.68 D:17.77 | meas A:35.59 B:19.25 C:3.32 D:42.23[0m
+[0;32mI (4710) main: Line: A:53.28,B:21.07,C:13.61,D:59.35[0m
+[0;32mI (4780) main: PID out A:6.72 B:38.93 C:46.39 D:0.65 | meas A:53.28 B:21.07 C:13.61 D:59.35[0m
+[0;32mI (4810) main: Line: A:40.09,B:13.65,C:16.00,D:50.40[0m
+[0;32mI (4880) main: PID out A:19.91 B:46.35 C:44.00 D:9.60 | meas A:40.09 B:13.65 C:16.00 D:50.40[0m
+[0;32mI (4910) main: Line: A:32.65,B:2.79,C:7.68,D:40.09[0m
+[0;32mI (4980) main: PID out A:27.35 B:57.21 C:52.32 D:19.91 | meas A:32.65 B:2.79 C:7.68 D:40.09[0m
+[0;32mI (5010) main: Line: A:34.96,B:5.70,C:12.96,D:36.29[0m
+[0;32mI (5080) main: PID out A:25.04 B:54.30 C:47.04 D:23.71 | meas A:34.96 B:5.70 C:12.96 D:36.29[0m
+[0;32mI (5110) main: Line: A:41.46,B:12.92,C:18.79,D:38.32[0m
+[0;32mI (5180) main: PID out A:18.54 B:47.08 C:41.21 D:21.68 | meas A:41.46 B:12.92 C:18.79 D:38.32[0m
+[0;32mI (5210) main: Line: A:41.72,B:16.72,C:18.78,D:36.88[0m
+[0;32mI (5280) main: PID out A:18.28 B:43.28 C:41.22 D:23.12 | meas A:41.72 B:16.72 C:18.78 D:36.88[0m
+[0;32mI (5310) main: Line: A:37.86,B:16.38,C:14.98,D:33.69[0m
+[0;32mI (5380) main: PID out A:22.14 B:43.62 C:45.02 D:26.31 | meas A:37.86 B:16.38 C:14.98 D:33.69[0m
+[0;32mI (5410) main: Line: A:34.72,B:16.91,C:13.86,D:32.61[0m
+[0;32mI (5480) main: PID out A:25.28 B:43.09 C:46.14 D:27.39 | meas A:34.72 B:16.91 C:13.86 D:32.61[0m
+[0;32mI (5510) main: Line: A:34.16,B:19.33,C:16.14,D:34.18[0m
+[0;32mI (5580) main: PID out A:25.84 B:40.67 C:43.86 D:25.82 | meas A:34.16 B:19.33 C:16.14 D:34.18[0m
+[0;32mI (5610) main: Line: A:33.15,B:20.04,C:18.44,D:35.03[0m
+[0;32mI (5680) main: PID out A:26.85 B:39.96 C:41.56 D:24.97 | meas A:33.15 B:20.04 C:18.44 D:35.03[0m
+[0;32mI (5710) main: Line: A:32.06,B:19.96,C:18.99,D:34.23[0m
+[0;32mI (5780) main: PID out A:27.94 B:40.04 C:41.01 D:25.77 | meas A:32.06 B:19.96 C:18.99 D:34.23[0m
+[0;32mI (5810) main: Line: A:31.25,B:18.90,C:20.09,D:32.61[0m
+[0;32mI (5880) main: PID out A:28.75 B:41.10 C:39.91 D:27.39 | meas A:31.25 B:18.90 C:20.09 D:32.61[0m
+[0;32mI (5910) main: Line: A:31.05,B:19.14,C:21.00,D:31.82[0m
+[0;32mI (5980) main: PID out A:28.95 B:40.86 C:39.00 D:28.18 | meas A:31.05 B:19.14 C:21.00 D:31.82[0m
+[0;32mI (6010) main: Line: A:31.34,B:20.23,C:21.33,D:30.92[0m
+[0;32mI (6080) main: PID out A:28.66 B:39.77 C:38.67 D:29.08 | meas A:31.34 B:20.23 C:21.33 D:30.92[0m
+[0;32mI (6120) main: Line: A:31.27,B:21.10,C:21.90,D:30.33[0m
+[0;32mI (6180) main: PID out A:28.73 B:38.90 C:38.10 D:29.67 | meas A:31.27 B:21.10 C:21.90 D:30.33[0m
+[0;32mI (6220) main: Line: A:30.72,B:21.84,C:21.85,D:30.05[0m
+[0;32mI (6280) main: PID out A:29.28 B:38.16 C:38.15 D:29.95 | meas A:30.72 B:21.84 C:21.85 D:30.05[0m
+[0;32mI (6320) main: Line: A:30.42,B:22.17,C:21.38,D:29.13[0m
+[0;32mI (6380) main: PID out A:29.58 B:37.83 C:38.62 D:30.87 | meas A:30.42 B:22.17 C:21.38 D:29.13[0m
+[0;32mI (6420) main: Line: A:29.85,B:15.63,C:15.38,D:29.84[0m
+[0;32mI (6480) main: PID out A:30.15 B:44.37 C:44.62 D:30.16 | meas A:29.85 B:15.63 C:15.38 D:29.84[0m
+[0;32mI (6520) main: Line: A:37.50,B:-26.48,C:-27.25,D:37.62[0m
+[0;32mI (6580) main: PID out A:22.50 B:86.48 C:87.25 D:22.38 | meas A:37.50 B:-26.48 C:-27.25 D:37.62[0m
+[0;32mI (6620) main: Line: A:38.94,B:11.46,C:10.12,D:38.92[0m
+[0;32mI (6680) main: PID out A:21.06 B:48.54 C:49.88 D:21.08 | meas A:38.94 B:11.46 C:10.12 D:38.92[0m
+[0;32mI (6720) main: Line: A:55.31,B:16.49,C:16.23,D:55.45[0m
+[0;32mI (6780) main: PID out A:4.69 B:43.51 C:43.77 D:4.55 | meas A:55.31 B:16.49 C:16.23 D:55.45[0m
+[0;32mI (6820) main: Line: A:43.87,B:13.98,C:14.29,D:45.10[0m
+[0;32mI (6880) main: PID out A:16.13 B:46.02 C:45.71 D:14.90 | meas A:43.87 B:13.98 C:14.29 D:45.10[0m
+[0;32mI (6920) main: Line: A:35.97,B:5.60,C:5.90,D:37.20[0m
+[0;32mI (6980) main: PID out A:24.03 B:54.40 C:54.10 D:22.80 | meas A:35.97 B:5.60 C:5.90 D:37.20[0m
+[0;32mI (7020) main: Line: A:36.32,B:9.90,C:10.63,D:36.68[0m
+[0;32mI (7080) main: PID out A:23.68 B:50.10 C:49.37 D:23.32 | meas A:36.32 B:9.90 C:10.63 D:36.68[0m
+[0;32mI (7120) main: Line: A:39.50,B:15.77,C:16.45,D:39.83[0m
+[0;32mI (7180) main: PID out A:20.50 B:44.23 C:43.55 D:20.17 | meas A:39.50 B:15.77 C:16.45 D:39.83[0m
+[0;32mI (7220) main: Line: A:39.14,B:16.89,C:17.17,D:38.35[0m
+[0;32mI (7280) main: PID out A:20.86 B:43.11 C:42.83 D:21.65 | meas A:39.14 B:16.89 C:17.17 D:38.35[0m
+[0;32mI (7320) main: Line: A:35.65,B:15.30,C:15.84,D:35.15[0m
+[0;32mI (7380) main: PID out A:24.35 B:44.70 C:44.16 D:24.85 | meas A:35.65 B:15.30 C:15.84 D:35.15[0m
+[0;32mI (7420) main: Line: A:33.90,B:16.50,C:15.56,D:33.75[0m
+[0;32mI (7480) main: PID out A:26.10 B:43.50 C:44.44 D:26.25 | meas A:33.90 B:16.50 C:15.56 D:33.75[0m
+[0;32mI (7520) main: Line: A:34.42,B:18.35,C:18.29,D:34.12[0m
+[0;32mI (7580) main: PID out A:25.58 B:41.65 C:41.71 D:25.88 | meas A:34.42 B:18.35 C:18.29 D:34.12[0m
+[0;32mI (7620) main: Line: A:33.65,B:19.22,C:18.93,D:33.30[0m
+[0;32mI (7680) main: PID out A:26.35 B:40.78 C:41.07 D:26.70 | meas A:33.65 B:19.22 C:18.93 D:33.30[0m
+[0;32mI (7720) main: Line: A:32.61,B:19.43,C:19.71,D:32.45[0m
+[0;32mI (7780) main: PID out A:27.39 B:40.57 C:40.29 D:27.55 | meas A:32.61 B:19.43 C:19.71 D:32.45[0m
+[0;32mI (7820) main: Line: A:31.19,B:20.42,C:19.45,D:31.77[0m
+[0;32mI (7880) main: PID out A:28.81 B:39.58 C:40.55 D:28.23 | meas A:31.19 B:20.42 C:19.45 D:31.77[0m
+[0;32mI (7920) main: Line: A:31.19,B:20.69,C:20.60,D:31.10[0m
+[0;32mI (7980) main: PID out A:28.81 B:39.31 C:39.40 D:28.90 | meas A:31.19 B:20.69 C:20.60 D:31.10[0m
+[0;32mI (8020) main: Line: A:30.68,B:21.62,C:21.40,D:31.27[0m
+[0;32mI (8080) main: PID out A:29.32 B:38.38 C:38.60 D:28.73 | meas A:30.68 B:21.62 C:21.40 D:31.27[0m
+[0;32mI (8120) main: Line: A:30.68,B:21.59,C:21.95,D:30.93[0m
+[0;32mI (8180) main: PID out A:29.32 B:38.41 C:38.05 D:29.07 | meas A:30.68 B:21.59 C:21.95 D:30.93[0m
+[0;32mI (8220) main: Line: A:30.13,B:21.58,C:22.31,D:29.92[0m
+[0;32mI (8280) main: PID out A:29.87 B:38.42 C:37.69 D:30.08 | meas A:30.13 B:21.58 C:22.31 D:29.92[0m
+[0;32mI (8320) main: Line: A:29.08,B:22.04,C:21.98,D:29.35[0m
+[0;32mI (8380) main: PID out A:30.92 B:37.96 C:38.02 D:30.65 | meas A:29.08 B:22.04 C:21.98 D:29.35[0m
+[0;32mI (8420) main: Line: A:30.24,B:13.47,C:14.63,D:30.22[0m
+[0;32mI (8480) main: PID out A:29.76 B:46.53 C:45.37 D:29.78 | meas A:30.24 B:13.47 C:14.63 D:30.22[0m
+[0;32mI (8520) main: Line: A:37.75,B:-26.81,C:-25.47,D:37.77[0m
+[0;32mI (8580) main: PID out A:22.25 B:86.81 C:85.47 D:22.23 | meas A:37.75 B:-26.81 C:-25.47 D:37.77[0m
+[0;32mI (8620) main: Line: A:39.75,B:11.71,C:11.25,D:39.95[0m
+[0;32mI (8680) main: PID out A:20.25 B:48.29 C:48.75 D:20.05 | meas A:39.75 B:11.71 C:11.25 D:39.95[0m
+[0;32mI (8720) main: Line: A:55.73,B:16.33,C:15.69,D:54.52[0m
+[0;32mI (8780) main: PID out A:4.27 B:43.67 C:44.31 D:5.48 | meas A:55.73 B:16.33 C:15.69 D:54.52[0m
+[0;32mI (8820) main: Line: A:43.94,B:12.89,C:13.51,D:43.13[0m
+[0;32mI (8880) main: PID out A:16.06 B:47.11 C:46.49 D:16.87 | meas A:43.94 B:12.89 C:13.51 D:43.13[0m
+[0;32mI (8920) main: Line: A:36.49,B:6.05,C:5.63,D:37.09[0m
+[0;32mI (8980) main: PID out A:23.51 B:53.95 C:54.37 D:22.91 | meas A:36.49 B:6.05 C:5.63 D:37.09[0m
+[0;32mI (9020) main: Line: A:36.65,B:11.14,C:10.86,D:36.45[0m
+[0;32mI (9080) main: PID out A:23.35 B:48.86 C:49.14 D:23.55 | meas A:36.65 B:11.14 C:10.86 D:36.45[0m
+[0;32mI (9120) main: Line: A:39.94,B:16.29,C:16.17,D:40.03[0m
+[0;32mI (9180) main: PID out A:20.06 B:43.71 C:43.83 D:19.97 | meas A:39.94 B:16.29 C:16.17 D:40.03[0m
+[0;32mI (9220) main: Line: A:37.66,B:16.62,C:17.17,D:37.74[0m
+[0;32mI (9280) main: PID out A:22.34 B:43.38 C:42.83 D:22.26 | meas A:37.66 B:16.62 C:17.17 D:37.74[0m
+[0;32mI (9320) main: Line: A:35.13,B:15.56,C:15.29,D:35.29[0m
+[0;32mI (9380) main: PID out A:24.87 B:44.44 C:44.71 D:24.71 | meas A:35.13 B:15.56 C:15.29 D:35.29[0m
+[0;32mI (9420) main: Line: A:33.66,B:16.84,C:16.62,D:33.71[0m
+[0;32mI (9480) main: PID out A:26.34 B:43.16 C:43.38 D:26.29 | meas A:33.66 B:16.84 C:16.62 D:33.71[0m
+[0;32mI (9520) main: Line: A:34.14,B:18.30,C:18.18,D:34.27[0m
+[0;32mI (9580) main: PID out A:25.86 B:41.70 C:41.82 D:25.73 | meas A:34.14 B:18.30 C:18.18 D:34.27[0m
+[0;32mI (9620) main: Line: A:33.53,B:19.49,C:19.29,D:33.29[0m
+[0;32mI (9680) main: PID out A:26.47 B:40.51 C:40.71 D:26.71 | meas A:33.53 B:19.49 C:19.29 D:33.29[0m
+[0;32mI (9720) main: Line: A:32.09,B:19.50,C:19.73,D:32.90[0m
+[0;32mI (9780) main: PID out A:27.91 B:40.50 C:40.27 D:27.10 | meas A:32.09 B:19.50 C:19.73 D:32.90[0m
+[0;32mI (9830) main: Line: A:31.53,B:20.26,C:19.95,D:31.41[0m
+[0;32mI (9880) main: PID out A:28.47 B:39.74 C:40.05 D:28.59 | meas A:31.53 B:20.26 C:19.95 D:31.41[0m
+[0;32mI (9930) main: Line: A:31.05,B:20.31,C:21.20,D:31.49[0m
+[0;32mI (9980) main: PID out A:28.95 B:39.69 C:38.80 D:28.51 | meas A:31.05 B:20.31 C:21.20 D:31.49[0m
+[0;32mI (10030) main: Line: A:30.93,B:21.03,C:21.34,D:30.94[0m
+[0;32mI (10080) main: PID out A:29.07 B:38.97 C:38.66 D:29.06 | meas A:30.93 B:21.03 C:21.34 D:30.94[0m
+[0;32mI (10130) main: Line: A:30.36,B:21.57,C:21.61,D:30.17[0m
+[0;32mI (10180) main: PID out A:29.64 B:38.43 C:38.39 D:29.83 | meas A:30.36 B:21.57 C:21.61 D:30.17[0m
+[0;32mI (10230) main: Line: A:29.78,B:22.10,C:22.14,D:29.77[0m
+[0;32mI (10280) main: PID out A:30.22 B:37.90 C:37.86 D:30.23 | meas A:29.78 B:22.10 C:22.14 D:29.77[0m
+[0;32mI (10330) main: Line: A:29.34,B:22.09,C:22.73,D:29.23[0m
+[0;32mI (10380) main: PID out A:30.66 B:37.91 C:37.27 D:30.77 | meas A:29.34 B:22.09 C:22.73 D:29.23[0m
+[0;32mI (10430) main: Line: A:31.67,B:10.80,C:10.79,D:31.54[0m
+[0;32mI (10480) main: PID out A:28.33 B:49.20 C:49.21 D:28.46 | meas A:31.67 B:10.80 C:10.79 D:31.54[0m
+[0;32mI (10530) main: Line: A:41.28,B:-27.80,C:-27.45,D:40.91[0m
+[0;32mI (10580) main: PID out A:18.72 B:87.80 C:87.45 D:19.09 | meas A:41.28 B:-27.80 C:-27.45 D:40.91[0m
+[0;32mI (10630) main: Line: A:42.94,B:11.81,C:11.05,D:42.85[0m
+[0;32mI (10680) main: PID out A:17.06 B:48.19 C:48.95 D:17.15 | meas A:42.94 B:11.81 C:11.05 D:42.85[0m
+[0;32mI (10730) main: Line: A:56.55,B:14.06,C:13.09,D:56.15[0m
+[0;32mI (10780) main: PID out A:3.45 B:45.94 C:46.91 D:3.85 | meas A:56.55 B:14.06 C:13.09 D:56.15[0m
+[0;32mI (10830) main: Line: A:43.42,B:10.70,C:10.23,D:44.05[0m
+[0;32mI (10880) main: PID out A:16.58 B:49.30 C:49.77 D:15.95 | meas A:43.42 B:10.70 C:10.23 D:44.05[0m
+[0;32mI (10930) main: Line: A:37.62,B:4.68,C:4.89,D:39.18[0m
+[0;32mI (10980) main: PID out A:22.38 B:55.32 C:55.11 D:20.82 | meas A:37.62 B:4.68 C:4.89 D:39.18[0m
+[0;32mI (11030) main: Line: A:38.71,B:10.53,C:11.40,D:38.97[0m
+[0;32mI (11080) main: PID out A:21.29 B:49.47 C:48.60 D:21.03 | meas A:38.71 B:10.53 C:11.40 D:38.97[0m
+[0;32mI (11130) main: Line: A:40.85,B:14.93,C:15.58,D:40.94[0m
+[0;32mI (11180) main: PID out A:19.15 B:45.07 C:44.42 D:19.06 | meas A:40.85 B:14.93 C:15.58 D:40.94[0m
+[0;32mI (11230) main: Line: A:38.19,B:15.33,C:15.62,D:38.49[0m
+[0;32mI (11280) main: PID out A:21.81 B:44.67 C:44.38 D:21.51 | meas A:38.19 B:15.33 C:15.62 D:38.49[0m
+[0;32mI (11330) main: Line: A:35.53,B:14.67,C:14.67,D:35.28[0m
+[0;32mI (11380) main: PID out A:24.47 B:45.33 C:45.33 D:24.72 | meas A:35.53 B:14.67 C:14.67 D:35.28[0m
+[0;32mI (11430) main: Line: A:34.80,B:16.17,C:16.29,D:34.69[0m
+[0;32mI (11480) main: PID out A:25.20 B:43.83 C:43.71 D:25.31 | meas A:34.80 B:16.17 C:16.29 D:34.69[0m
+[0;32mI (11530) main: Line: A:34.52,B:17.75,C:17.93,D:34.77[0m
+[0;32mI (11580) main: PID out A:25.48 B:42.25 C:42.07 D:25.23 | meas A:34.52 B:17.75 C:17.93 D:34.77[0m
+[0;32mI (11630) main: Line: A:33.76,B:18.63,C:18.85,D:33.69[0m
+[0;32mI (11680) main: PID out A:26.24 B:41.37 C:41.15 D:26.31 | meas A:33.76 B:18.63 C:18.85 D:33.69[0m
+[0;32mI (11730) main: Line: A:32.61,B:19.41,C:19.12,D:32.80[0m
+[0;32mI (11780) main: PID out A:27.39 B:40.59 C:40.88 D:27.20 | meas A:32.61 B:19.41 C:19.12 D:32.80[0m
+[0;32mI (11830) main: Line: A:31.99,B:19.81,C:19.89,D:32.13[0m
+[0;32mI (11880) main: PID out A:28.01 B:40.19 C:40.11 D:27.87 | meas A:31.99 B:19.81 C:19.89 D:32.13[0m
+[0;32mI (11930) main: Line: A:30.96,B:20.40,C:20.73,D:31.69[0m
+[0;32mI (11980) main: PID out A:29.04 B:39.60 C:39.27 D:28.31 | meas A:30.96 B:20.40 C:20.73 D:31.69[0m
+[0;32mI (12030) main: Line: A:31.19,B:21.27,C:21.64,D:30.83[0m
+[0;32mI (12080) main: PID out A:28.81 B:38.73 C:38.36 D:29.17 | meas A:31.19 B:21.27 C:21.64 D:30.83[0m
+[0;32mI (12130) main: Line: A:30.27,B:21.38,C:21.61,D:30.44[0m
+[0;32mI (12180) main: PID out A:29.73 B:38.62 C:38.39 D:29.56 | meas A:30.27 B:21.38 C:21.61 D:30.44[0m
+[0;32mI (12230) main: Line: A:29.55,B:22.34,C:21.42,D:29.96[0m
+[0;32mI (12280) main: PID out A:30.45 B:37.66 C:38.58 D:30.04 | meas A:29.55 B:22.34 C:21.42 D:29.96[0m
+[0;32mI (12330) main: Line: A:29.49,B:22.56,C:22.56,D:30.01[0m
+[0;32mI (12380) main: PID out A:30.51 B:37.44 C:37.44 D:29.99 | meas A:29.49 B:22.56 C:22.56 D:30.01[0m
+[0;32mI (12430) main: Line: A:32.38,B:8.04,C:8.90,D:32.60[0m
+[0;32mI (12480) main: PID out A:27.62 B:51.96 C:51.10 D:27.40 | meas A:32.38 B:8.04 C:8.90 D:32.60[0m
+[0;32mI (12530) main: Line: A:41.02,B:-25.38,C:-25.18,D:40.97[0m
+[0;32mI (12580) main: PID out A:18.98 B:85.38 C:85.18 D:19.03 | meas A:41.02 B:-25.38 C:-25.18 D:40.97[0m
+[0;32mI (12630) main: Line: A:44.56,B:11.94,C:11.14,D:44.43[0m
+[0;32mI (12680) main: PID out A:15.44 B:48.06 C:48.86 D:15.57 | meas A:44.56 B:11.94 C:11.14 D:44.43[0m
+[0;32mI (12730) main: Line: A:55.29,B:13.07,C:13.15,D:54.92[0m
+[0;32mI (12780) main: PID out A:4.71 B:46.93 C:46.85 D:5.08 | meas A:55.29 B:13.07 C:13.15 D:54.92[0m
+[0;32mI (12830) main: Line: A:42.99,B:9.71,C:9.32,D:42.88[0m
+[0;32mI (12880) main: PID out A:17.01 B:50.29 C:50.68 D:17.12 | meas A:42.99 B:9.71 C:9.32 D:42.88[0m
+[0;32mI (12930) main: Line: A:37.88,B:5.88,C:5.41,D:38.74[0m
+[0;32mI (12980) main: PID out A:22.12 B:54.12 C:54.59 D:21.26 | meas A:37.88 B:5.88 C:5.41 D:38.74[0m
+[0;32mI (13030) main: Line: A:39.24,B:11.82,C:12.15,D:39.79[0m
+[0;32mI (13080) main: PID out A:20.76 B:48.18 C:47.85 D:20.21 | meas A:39.24 B:11.82 C:12.15 D:39.79[0m
+[0;32mI (13130) main: Line: A:40.62,B:14.85,C:15.41,D:40.44[0m
+[0;32mI (13180) main: PID out A:19.38 B:45.15 C:44.59 D:19.56 | meas A:40.62 B:14.85 C:15.41 D:40.44[0m
+[0;32mI (13230) main: Line: A:37.32,B:14.95,C:15.26,D:37.48[0m
+[0;32mI (13280) main: PID out A:22.68 B:45.05 C:44.74 D:22.52 | meas A:37.32 B:14.95 C:15.26 D:37.48[0m
+[0;32mI (13340) main: Line: A:35.38,B:14.90,C:14.97,D:35.32[0m
+[0;32mI (13380) main: PID out A:24.62 B:45.10 C:45.03 D:24.68 | meas A:35.38 B:14.90 C:14.97 D:35.32[0m
+[0;32mI (13440) main: Line: A:34.81,B:17.09,C:16.79,D:34.70[0m
+[0;32mI (13480) main: PID out A:25.19 B:42.91 C:43.21 D:25.30 | meas A:34.81 B:17.09 C:16.79 D:34.70[0m
+[0;32mI (13540) main: Line: A:34.28,B:18.17,C:18.20,D:34.61[0m
+[0;32mI (13580) main: PID out A:25.72 B:41.83 C:41.80 D:25.39 | meas A:34.28 B:18.17 C:18.20 D:34.61[0m
+[0;32mI (13640) main: Line: A:33.26,B:18.95,C:18.86,D:33.52[0m
+[0;32mI (13680) main: PID out A:26.74 B:41.05 C:41.14 D:26.48 | meas A:33.26 B:18.95 C:18.86 D:33.52[0m
+[0;32mI (13740) main: Line: A:32.27,B:18.86,C:19.22,D:32.57[0m
+[0;32mI (13780) main: PID out A:27.73 B:41.14 C:40.78 D:27.43 | meas A:32.27 B:18.86 C:19.22 D:32.57[0m
+[0;32mI (13840) main: Line: A:31.43,B:20.03,C:20.15,D:32.05[0m
+[0;32mI (13880) main: PID out A:28.57 B:39.97 C:39.85 D:27.95 | meas A:31.43 B:20.03 C:20.15 D:32.05[0m
+[0;32mI (13940) main: Line: A:31.26,B:20.90,C:20.96,D:31.44[0m
+[0;32mI (13980) main: PID out A:28.74 B:39.10 C:39.04 D:28.56 | meas A:31.26 B:20.90 C:20.96 D:31.44[0m
+[0;32mI (14040) main: Line: A:30.52,B:21.21,C:21.55,D:30.72[0m
+[0;32mI (14080) main: PID out A:29.48 B:38.79 C:38.45 D:29.28 | meas A:30.52 B:21.21 C:21.55 D:30.72[0m
+[0;32mI (14140) main: Line: A:30.31,B:21.55,C:21.76,D:30.56[0m
+[0;32mI (14180) main: PID out A:29.69 B:38.45 C:38.24 D:29.44 | meas A:30.31 B:21.55 C:21.76 D:30.56[0m
+[0;32mI (14240) main: Line: A:29.53,B:22.10,C:22.06,D:29.98[0m
+[0;32mI (14280) main: PID out A:30.47 B:37.90 C:37.94 D:30.02 | meas A:29.53 B:22.10 C:22.06 D:29.98[0m
+[0;32mI (14340) main: Line: A:29.22,B:22.32,C:22.28,D:29.45[0m
+[0;32mI (14380) main: PID out A:30.78 B:37.68 C:37.72 D:30.55 | meas A:29.22 B:22.32 C:22.28 D:29.45[0m
+[0;32mI (14440) main: Line: A:32.86,B:5.36,C:6.91,D:32.83[0m
+[0;32mI (14480) main: PID out A:27.14 B:54.64 C:53.09 D:27.17 | meas A:32.86 B:5.36 C:6.91 D:32.83[0m
+[0;32mI (14540) main: Line: A:41.89,B:-22.89,C:-22.25,D:41.15[0m
+[0;32mI (14580) main: PID out A:18.11 B:82.89 C:82.25 D:18.85 | meas A:41.89 B:-22.89 C:-22.25 D:41.15[0m
+[0;32mI (14640) main: Line: A:46.44,B:12.51,C:11.54,D:45.73[0m
+[0;32mI (14680) main: PID out A:13.56 B:47.49 C:48.46 D:14.27 | meas A:46.44 B:12.51 C:11.54 D:45.73[0m
+[0;32mI (14740) main: Line: A:53.90,B:12.73,C:12.43,D:53.17[0m
+[0;32mI (14780) main: PID out A:6.10 B:47.27 C:47.57 D:6.83 | meas A:53.90 B:12.73 C:12.43 D:53.17[0m
+[0;32mI (14840) main: Line: A:42.08,B:8.78,C:8.24,D:42.33[0m
+[0;32mI (14880) main: PID out A:17.92 B:51.22 C:51.76 D:17.67 | meas A:42.08 B:8.78 C:8.24 D:42.33[0m
+[0;32mI (14940) main: Line: A:38.73,B:6.86,C:6.56,D:38.67[0m
+[0;32mI (14980) main: PID out A:21.27 B:53.14 C:53.44 D:21.33 | meas A:38.73 B:6.86 C:6.56 D:38.67[0m
+[0;32mI (15040) main: Line: A:39.94,B:12.40,C:12.75,D:39.50[0m
+[0;32mI (15080) main: PID out A:20.06 B:47.60 C:47.25 D:20.50 | meas A:39.94 B:12.40 C:12.75 D:39.50[0m
+[0;32mI (15140) main: Line: A:39.46,B:15.17,C:14.29,D:40.01[0m
+[0;32mI (15180) main: PID out A:20.54 B:44.83 C:45.71 D:19.99 | meas A:39.46 B:15.17 C:14.29 D:40.01[0m
+[0;32mI (15240) main: Line: A:36.69,B:15.15,C:14.47,D:37.33[0m
+[0;32mI (15280) main: PID out A:23.31 B:44.85 C:45.53 D:22.67 | meas A:36.69 B:15.15 C:14.47 D:37.33[0m
+[0;32mI (15340) main: Line: A:34.82,B:15.49,C:15.74,D:36.16[0m
+[0;32mI (15380) main: PID out A:25.18 B:44.51 C:44.26 D:23.84 | meas A:34.82 B:15.49 C:15.74 D:36.16[0m
+[0;32mI (15440) main: Line: A:34.10,B:16.90,C:17.56,D:35.46[0m
+[0;32mI (15480) main: PID out A:25.90 B:43.10 C:42.44 D:24.54 | meas A:34.10 B:16.90 C:17.56 D:35.46[0m
+[0;32mI (15540) main: Line: A:34.03,B:17.48,C:18.70,D:33.98[0m
+[0;32mI (15580) main: PID out A:25.97 B:42.52 C:41.30 D:26.02 | meas A:34.03 B:17.48 C:18.70 D:33.98[0m
+[0;32mI (15640) main: Line: A:33.23,B:18.84,C:19.32,D:32.87[0m
+[0;32mI (15680) main: PID out A:26.77 B:41.16 C:40.68 D:27.13 | meas A:33.23 B:18.84 C:19.32 D:32.87[0m
+[0;32mI (15740) main: Line: A:32.46,B:19.81,C:19.68,D:31.85[0m
+[0;32mI (15780) main: PID out A:27.54 B:40.19 C:40.32 D:28.15 | meas A:32.46 B:19.81 C:19.68 D:31.85[0m
+[0;32mI (15840) main: Line: A:31.68,B:20.80,C:20.42,D:31.43[0m
+[0;32mI (15880) main: PID out A:28.32 B:39.20 C:39.58 D:28.57 | meas A:31.68 B:20.80 C:20.42 D:31.43[0m
+[0;32mI (15940) main: Line: A:31.11,B:21.38,C:20.25,D:31.29[0m
+[0;32mI (15980) main: PID out A:28.89 B:38.62 C:39.75 D:28.71 | meas A:31.11 B:21.38 C:20.25 D:31.29[0m
+[0;32mI (16040) main: Line: A:30.21,B:21.50,C:21.58,D:30.81[0m
+[0;32mI (16080) main: PID out A:29.79 B:38.50 C:38.42 D:29.19 | meas A:30.21 B:21.50 C:21.58 D:30.81[0m
+[0;32mI (16140) main: Line: A:29.75,B:21.78,C:21.73,D:30.43[0m
+[0;32mI (16180) main: PID out A:30.25 B:38.22 C:38.27 D:29.57 | meas A:29.75 B:21.78 C:21.73 D:30.43[0m
+[0;32mI (16240) main: Line: A:29.59,B:22.25,C:22.82,D:29.85[0m
+[0;32mI (16280) main: PID out A:30.41 B:37.75 C:37.18 D:30.15 | meas A:29.59 B:22.25 C:22.82 D:29.85[0m
+[0;32mI (16340) main: Line: A:29.00,B:22.47,C:22.80,D:29.14[0m
+[0;32mI (16380) main: PID out A:31.00 B:37.53 C:37.20 D:30.86 | meas A:29.00 B:22.47 C:22.80 D:29.14[0m
+[0;32mI (16440) main: Line: A:30.34,B:5.42,C:5.38,D:30.92[0m
+[0;32mI (16480) main: PID out A:29.66 B:54.58 C:54.62 D:29.08 | meas A:30.34 B:5.42 C:5.38 D:30.92[0m
+[0;32mI (16540) main: Line: A:40.13,B:-18.17,C:-18.65,D:39.80[0m
+[0;32mI (16580) main: PID out A:19.87 B:78.17 C:78.65 D:20.20 | meas A:40.13 B:-18.17 C:-18.65 D:39.80[0m
+[0;32mI (16640) main: Line: A:45.67,B:14.65,C:13.95,D:45.57[0m
+[0;32mI (16680) main: PID out A:14.33 B:45.35 C:46.05 D:14.43 | meas A:45.67 B:14.65 C:13.95 D:45.57[0m
+[0;32mI (16750) main: Line: A:50.53,B:13.50,C:13.18,D:50.45[0m
+[0;32mI (16780) main: PID out A:9.47 B:46.50 C:46.82 D:9.55 | meas A:50.53 B:13.50 C:13.18 D:50.45[0m
+[0;32mI (16850) main: Line: A:39.53,B:9.35,C:9.61,D:39.79[0m
+[0;32mI (16880) main: PID out A:20.47 B:50.65 C:50.39 D:20.21 | meas A:39.53 B:9.35 C:9.61 D:39.79[0m
+[0;32mI (16950) main: Line: A:37.65,B:9.30,C:9.19,D:37.68[0m
+[0;32mI (16980) main: PID out A:22.35 B:50.70 C:50.81 D:22.32 | meas A:37.65 B:9.30 C:9.19 D:37.68[0m
+[0;32mI (17050) main: Line: A:38.71,B:14.93,C:14.46,D:38.34[0m
+[0;32mI (17080) main: PID out A:21.29 B:45.07 C:45.54 D:21.66 | meas A:38.71 B:14.93 C:14.46 D:38.34[0m
+[0;32mI (17150) main: Line: A:37.27,B:16.05,C:15.35,D:38.14[0m
+[0;32mI (17180) main: PID out A:22.73 B:43.95 C:44.65 D:21.86 | meas A:37.27 B:16.05 C:15.35 D:38.14[0m
+[0;32mI (17250) main: Line: A:35.15,B:16.10,C:16.02,D:35.96[0m
+[0;32mI (17280) main: PID out A:24.85 B:43.90 C:43.98 D:24.04 | meas A:35.15 B:16.10 C:16.02 D:35.96[0m
+[0;32mI (17350) main: Line: A:33.94,B:16.78,C:17.31,D:34.70[0m
+[0;32mI (17380) main: PID out A:26.06 B:43.22 C:42.69 D:25.30 | meas A:33.94 B:16.78 C:17.31 D:34.70[0m
+[0;32mI (17450) main: Line: A:33.40,B:18.26,C:18.82,D:33.95[0m
+[0;32mI (17480) main: PID out A:26.60 B:41.74 C:41.18 D:26.05 | meas A:33.40 B:18.26 C:18.82 D:33.95[0m
+[0;32mI (17550) main: Line: A:33.18,B:19.06,C:19.51,D:32.92[0m
+[0;32mI (17580) main: PID out A:26.82 B:40.94 C:40.49 D:27.08 | meas A:33.18 B:19.06 C:19.51 D:32.92[0m
+[0;32mI (17650) main: Line: A:31.91,B:19.74,C:20.17,D:31.98[0m
+[0;32mI (17680) main: PID out A:28.09 B:40.26 C:39.83 D:28.02 | meas A:31.91 B:19.74 C:20.17 D:31.98[0m
+[0;32mI (17750) main: Line: A:31.24,B:20.53,C:20.57,D:31.27[0m
+[0;32mI (17780) main: PID out A:28.76 B:39.47 C:39.43 D:28.73 | meas A:31.24 B:20.53 C:20.57 D:31.27[0m
+[0;32mI (17850) main: Line: A:30.61,B:21.27,C:20.78,D:30.79[0m
+[0;32mI (17880) main: PID out A:29.39 B:38.73 C:39.22 D:29.21 | meas A:30.61 B:21.27 C:20.78 D:30.79[0m
+[0;32mI (17950) main: Line: A:30.45,B:21.92,C:21.70,D:30.58[0m
+[0;32mI (17980) main: PID out A:29.55 B:38.08 C:38.30 D:29.42 | meas A:30.45 B:21.92 C:21.70 D:30.58[0m
+[0;32mI (18050) main: Line: A:29.90,B:22.10,C:22.20,D:29.99[0m
+[0;32mI (18080) main: PID out A:30.10 B:37.90 C:37.80 D:30.01 | meas A:29.90 B:22.10 C:22.20 D:29.99[0m
+[0;32mI (18150) main: Line: A:28.82,B:22.69,C:22.41,D:29.91[0m
+[0;32mI (18180) main: PID out A:31.18 B:37.31 C:37.59 D:30.09 | meas A:28.82 B:22.69 C:22.41 D:29.91[0m
+[0;32mI (18250) main: Line: A:29.13,B:22.40,C:22.81,D:28.99[0m
+[0;32mI (18280) main: PID out A:30.87 B:37.60 C:37.19 D:31.01 | meas A:29.13 B:22.40 C:22.81 D:28.99[0m
+[0;32mI (18350) main: Line: A:28.80,B:23.05,C:23.38,D:28.59[0m
+[0;32mI (18380) main: PID out A:31.20 B:36.95 C:36.62 D:31.41 | meas A:28.80 B:23.05 C:23.38 D:28.59[0m
+[0;32mI (18450) main: Line: A:32.37,B:0.95,C:1.29,D:32.47[0m
+[0;32mI (18480) main: PID out A:27.63 B:59.05 C:58.71 D:27.53 | meas A:32.37 B:0.95 C:1.29 D:32.47[0m
+[0;32mI (18550) main: Line: A:42.07,B:-16.82,C:-16.86,D:42.73[0m
+[0;32mI (18580) main: PID out A:17.93 B:76.82 C:76.86 D:17.27 | meas A:42.07 B:-16.82 C:-16.86 D:42.73[0m
+[0;32mI (18650) main: Line: A:48.49,B:13.12,C:13.17,D:47.85[0m
+[0;32mI (18680) main: PID out A:11.51 B:46.88 C:46.83 D:12.15 | meas A:48.49 B:13.12 C:13.17 D:47.85[0m
+[0;32mI (18750) main: Line: A:50.09,B:11.37,C:11.33,D:49.89[0m
+[0;32mI (18780) main: PID out A:9.91 B:48.63 C:48.67 D:10.11 | meas A:50.09 B:11.37 C:11.33 D:49.89[0m
+[0;32mI (18850) main: Line: A:40.40,B:8.02,C:7.74,D:40.68[0m
+[0;32mI (18880) main: PID out A:19.60 B:51.98 C:52.26 D:19.32 | meas A:40.40 B:8.02 C:7.74 D:40.68[0m
+[0;32mI (18950) main: Line: A:38.87,B:9.31,C:9.55,D:39.01[0m
+[0;32mI (18980) main: PID out A:21.13 B:50.69 C:50.45 D:20.99 | meas A:38.87 B:9.31 C:9.55 D:39.01[0m
+[0;32mI (19050) main: Line: A:39.85,B:13.90,C:14.09,D:39.41[0m
+[0;32mI (19080) main: PID out A:20.15 B:46.10 C:45.91 D:20.59 | meas A:39.85 B:13.90 C:14.09 D:39.41[0m
+[0;32mI (19150) main: Line: A:37.86,B:15.00,C:15.16,D:38.56[0m
+[0;32mI (19180) main: PID out A:22.14 B:45.00 C:44.84 D:21.44 | meas A:37.86 B:15.00 C:15.16 D:38.56[0m
+[0;32mI (19250) main: Line: A:35.77,B:15.80,C:15.60,D:36.36[0m
+[0;32mI (19280) main: PID out A:24.23 B:44.20 C:44.40 D:23.64 | meas A:35.77 B:15.80 C:15.60 D:36.36[0m
+[0;32mI (19350) main: Line: A:34.65,B:16.58,C:17.15,D:35.07[0m
+[0;32mI (19380) main: PID out A:25.35 B:43.42 C:42.85 D:24.93 | meas A:34.65 B:16.58 C:17.15 D:35.07[0m
+[0;32mI (19450) main: Line: A:34.31,B:17.84,C:18.14,D:34.33[0m
+[0;32mI (19480) main: PID out A:25.69 B:42.16 C:41.86 D:25.67 | meas A:34.31 B:17.84 C:18.14 D:34.33[0m
+[0;32mI (19550) main: Line: A:33.17,B:18.86,C:18.79,D:33.11[0m
+[0;32mI (19580) main: PID out A:26.83 B:41.14 C:41.21 D:26.89 | meas A:33.17 B:18.86 C:18.79 D:33.11[0m
+[0;32mI (19650) main: Line: A:31.99,B:20.07,C:19.92,D:32.39[0m
+[0;32mI (19680) main: PID out A:28.01 B:39.93 C:40.08 D:27.61 | meas A:31.99 B:20.07 C:19.92 D:32.39[0m
+[0;32mI (19750) main: Line: A:31.25,B:20.43,C:20.31,D:31.71[0m
+[0;32mI (19780) main: PID out A:28.75 B:39.57 C:39.69 D:28.29 | meas A:31.25 B:20.43 C:20.31 D:31.71[0m
+[0;32mI (19850) main: Line: A:30.79,B:21.00,C:21.32,D:31.03[0m
+[0;32mI (19880) main: PID out A:29.21 B:39.00 C:38.68 D:28.97 | meas A:30.79 B:21.00 C:21.32 D:31.03[0m
+[0;32mI (19950) main: Line: A:30.26,B:21.73,C:21.91,D:30.46[0m
+[0;32mI (19980) main: PID out A:29.74 B:38.27 C:38.09 D:29.54 | meas A:30.26 B:21.73 C:21.91 D:30.46[0m
+[0;32mI (20050) main: Line: A:29.47,B:22.11,C:22.01,D:30.14[0m
+[0;32mI (20080) main: PID out A:30.53 B:37.89 C:37.99 D:29.86 | meas A:29.47 B:22.11 C:22.01 D:30.14[0m
+[0;32mI (20150) main: Line: A:29.37,B:22.34,C:22.48,D:29.18[0m
+[0;32mI (20180) main: PID out A:30.63 B:37.66 C:37.52 D:30.82 | meas A:29.37 B:22.34 C:22.48 D:29.18[0m
+[0;32mI (20250) main: Line: A:28.88,B:22.83,C:23.13,D:29.07[0m
+[0;32mI (20280) main: PID out A:31.12 B:37.17 C:36.87 D:30.93 | meas A:28.88 B:22.83 C:23.13 D:29.07[0m
+[0;32mI (20360) main: Line: A:28.61,B:23.17,C:23.32,D:28.91[0m
+[0;32mI (20380) main: PID out A:31.39 B:36.83 C:36.68 D:31.09 | meas A:28.61 B:23.17 C:23.32 D:28.91[0m
+[0;32mI (20460) main: Line: A:31.02,B:-0.29,C:0.34,D:31.29[0m
+[0;32mI (20480) main: PID out A:28.98 B:60.29 C:59.66 D:28.71 | meas A:31.02 B:-0.29 C:0.34 D:31.29[0m
+[0;32mI (20560) main: Line: A:41.73,B:-13.07,C:-13.85,D:41.76[0m
+[0;32mI (20580) main: PID out A:18.27 B:73.07 C:73.85 D:18.24 | meas A:41.73 B:-13.07 C:-13.85 D:41.76[0m
+[0;32mI (20660) main: Line: A:48.03,B:14.36,C:14.01,D:47.96[0m
+[0;32mI (20680) main: PID out A:11.97 B:45.64 C:45.99 D:12.04 | meas A:48.03 B:14.36 C:14.01 D:47.96[0m
+[0;32mI (20760) main: Line: A:48.03,B:11.73,C:11.72,D:47.95[0m
+[0;32mI (20780) main: PID out A:11.97 B:48.27 C:48.28 D:12.05 | meas A:48.03 B:11.73 C:11.72 D:47.95[0m
+[0;32mI (20860) main: Line: A:38.96,B:8.56,C:8.80,D:39.09[0m
+[0;32mI (20880) main: PID out A:21.04 B:51.44 C:51.20 D:20.91 | meas A:38.96 B:8.56 C:8.80 D:39.09[0m
+[0;32mI (20960) main: Line: A:38.58,B:10.90,C:11.05,D:38.13[0m
+[0;32mI (20980) main: PID out A:21.42 B:49.10 C:48.95 D:21.87 | meas A:38.58 B:10.90 C:11.05 D:38.13[0m
+[0;32mI (21060) main: Line: A:38.60,B:14.61,C:14.95,D:38.53[0m
+[0;32mI (21080) main: PID out A:21.40 B:45.39 C:45.05 D:21.47 | meas A:38.60 B:14.61 C:14.95 D:38.53[0m
+[0;32mI (21160) main: Line: A:37.03,B:15.96,C:15.89,D:36.80[0m
+[0;32mI (21180) main: PID out A:22.97 B:44.04 C:44.11 D:23.20 | meas A:37.03 B:15.96 C:15.89 D:36.80[0m
+[0;32mI (21260) main: Line: A:34.81,B:16.41,C:16.43,D:35.03[0m
+[0;32mI (21280) main: PID out A:25.19 B:43.59 C:43.57 D:24.97 | meas A:34.81 B:16.41 C:16.43 D:35.03[0m
+[0;32mI (21360) main: Line: A:34.36,B:17.69,C:17.62,D:34.25[0m
+[0;32mI (21380) main: PID out A:25.64 B:42.31 C:42.38 D:25.75 | meas A:34.36 B:17.69 C:17.62 D:34.25[0m
+[0;32mI (21460) main: Line: A:32.99,B:18.95,C:18.71,D:33.85[0m
+[0;32mI (21480) main: PID out A:27.01 B:41.05 C:41.29 D:26.15 | meas A:32.99 B:18.95 C:18.71 D:33.85[0m
+[0;32mI (21560) main: Line: A:32.45,B:19.36,C:19.74,D:32.28[0m
+[0;32mI (21580) main: PID out A:27.55 B:40.64 C:40.26 D:27.72 | meas A:32.45 B:19.36 C:19.74 D:32.28[0m
+[0;32mI (21660) main: Line: A:31.34,B:20.31,C:20.55,D:31.85[0m
+[0;32mI (21680) main: PID out A:28.66 B:39.69 C:39.45 D:28.15 | meas A:31.34 B:20.31 C:20.55 D:31.85[0m
+[0;32mI (21760) main: Line: A:31.13,B:21.32,C:21.04,D:30.86[0m
+[0;32mI (21780) main: PID out A:28.87 B:38.68 C:38.96 D:29.14 | meas A:31.13 B:21.32 C:21.04 D:30.86[0m
+[0;32mI (21860) main: Line: A:30.09,B:21.89,C:21.54,D:30.42[0m
+[0;32mI (21880) main: PID out A:29.91 B:38.11 C:38.46 D:29.58 | meas A:30.09 B:21.89 C:21.54 D:30.42[0m
+[0;32mI (21960) main: Line: A:28.80,B:22.67,C:21.64,D:30.44[0m
+[0;32mI (21980) main: PID out A:31.20 B:37.33 C:38.36 D:29.56 | meas A:28.80 B:22.67 C:21.64 D:30.44[0m
+[0;32mI (22060) main: Line: A:28.79,B:22.23,C:22.78,D:29.51[0m
+[0;32mI (22080) main: PID out A:31.21 B:37.77 C:37.22 D:30.49 | meas A:28.79 B:22.23 C:22.78 D:29.51[0m
+[0;32mI (22160) main: Line: A:28.55,B:22.65,C:23.50,D:29.25[0m
+[0;32mI (22180) main: PID out A:31.45 B:37.35 C:36.50 D:30.75 | meas A:28.55 B:22.65 C:23.50 D:29.25[0m
+[0;32mI (22260) main: Line: A:28.53,B:23.09,C:23.68,D:28.53[0m
+[0;32mI (22280) main: PID out A:31.47 B:36.91 C:36.32 D:31.47 | meas A:28.53 B:23.09 C:23.68 D:28.53[0m
+[0;32mI (22360) main: Line: A:28.53,B:23.72,C:23.53,D:28.09[0m
+[0;32mI (22380) main: PID out A:31.47 B:36.28 C:36.47 D:31.91 | meas A:28.53 B:23.72 C:23.53 D:28.09[0m
+[0;32mI (22460) main: Line: A:31.50,B:-3.10,C:-2.15,D:31.29[0m
+[0;32mI (22480) main: PID out A:28.50 B:63.10 C:62.15 D:28.71 | meas A:31.50 B:-3.10 C:-2.15 D:31.29[0m
+[0;32mI (22560) main: Line: A:43.30,B:-11.02,C:-11.67,D:42.76[0m
+[0;32mI (22580) main: PID out A:16.70 B:71.02 C:71.67 D:17.24 | meas A:43.30 B:-11.02 C:-11.67 D:42.76[0m
+[0;32mI (22660) main: Line: A:49.44,B:13.76,C:13.42,D:48.78[0m
+[0;32mI (22680) main: PID out A:10.56 B:46.24 C:46.58 D:11.22 | meas A:49.44 B:13.76 C:13.42 D:48.78[0m
+[0;32mI (22760) main: Line: A:47.43,B:10.51,C:10.19,D:47.20[0m
+[0;32mI (22780) main: PID out A:12.57 B:49.49 C:49.81 D:12.80 | meas A:47.43 B:10.51 C:10.19 D:47.20[0m
+[0;32mI (22860) main: Line: A:39.62,B:8.67,C:7.87,D:39.20[0m
+[0;32mI (22880) main: PID out A:20.38 B:51.33 C:52.13 D:20.80 | meas A:39.62 B:8.67 C:7.87 D:39.20[0m
+[0;32mI (22960) main: Line: A:37.91,B:11.58,C:11.32,D:38.98[0m
+[0;32mI (22980) main: PID out A:22.09 B:48.42 C:48.68 D:21.02 | meas A:37.91 B:11.58 C:11.32 D:38.98[0m
+[0;32mI (23060) main: Line: A:37.88,B:15.17,C:14.94,D:38.29[0m
+[0;32mI (23080) main: PID out A:22.12 B:44.83 C:45.06 D:21.71 | meas A:37.88 B:15.17 C:14.94 D:38.29[0m
+[0;32mI (23160) main: Line: A:36.06,B:15.70,C:15.95,D:36.56[0m
+[0;32mI (23180) main: PID out A:23.94 B:44.30 C:44.05 D:23.44 | meas A:36.06 B:15.70 C:15.95 D:36.56[0m
+[0;32mI (23260) main: Line: A:34.79,B:17.02,C:16.95,D:35.39[0m
+[0;32mI (23280) main: PID out A:25.21 B:42.98 C:43.05 D:24.61 | meas A:34.79 B:17.02 C:16.95 D:35.39[0m
+[0;32mI (23360) main: Line: A:34.03,B:17.82,C:17.96,D:34.33[0m
+[0;32mI (23380) main: PID out A:25.97 B:42.18 C:42.04 D:25.67 | meas A:34.03 B:17.82 C:17.96 D:34.33[0m
+[0;32mI (23460) main: Line: A:33.27,B:18.56,C:19.03,D:32.97[0m
+[0;32mI (23480) main: PID out A:26.73 B:41.44 C:40.97 D:27.03 | meas A:33.27 B:18.56 C:19.03 D:32.97[0m
+[0;32mI (23560) main: Line: A:32.15,B:19.69,C:20.00,D:32.16[0m
+[0;32mI (23580) main: PID out A:27.85 B:40.31 C:40.00 D:27.84 | meas A:32.15 B:19.69 C:20.00 D:32.16[0m
+[0;32mI (23660) main: Line: A:31.61,B:20.62,C:20.09,D:31.53[0m
+[0;32mI (23680) main: PID out A:28.39 B:39.38 C:39.91 D:28.47 | meas A:31.61 B:20.62 C:20.09 D:31.53[0m
+[0;32mI (23760) main: Line: A:31.16,B:20.91,C:21.31,D:31.40[0m
+[0;32mI (23780) main: PID out A:28.84 B:39.09 C:38.69 D:28.60 | meas A:31.16 B:20.91 C:21.31 D:31.40[0m
+[0;32mI (23860) main: Line: A:30.04,B:21.69,C:21.37,D:31.07[0m
+[0;32mI (23880) main: PID out A:29.96 B:38.31 C:38.63 D:28.93 | meas A:30.04 B:21.69 C:21.37 D:31.07[0m
+[0;32mI (23970) main: Line: A:29.73,B:21.86,C:22.26,D:29.93[0m
+[0;32mI (23980) main: PID out A:30.27 B:38.14 C:37.74 D:30.07 | meas A:29.73 B:21.86 C:22.26 D:29.93[0m
+[0;32mI (24070) main: Line: A:29.04,B:22.22,C:22.72,D:29.50[0m
+[0;32mI (24080) main: PID out A:30.96 B:37.78 C:37.28 D:30.50 | meas A:29.04 B:22.22 C:22.72 D:29.50[0m
+[0;32mI (24170) main: Line: A:28.89,B:22.97,C:22.90,D:28.89[0m
+[0;32mI (24180) main: PID out A:31.11 B:37.03 C:37.10 D:31.11 | meas A:28.89 B:22.97 C:22.90 D:28.89[0m
+[0;32mI (24270) main: Line: A:28.80,B:23.52,C:23.17,D:28.69[0m
+[0;32mI (24280) main: PID out A:31.20 B:36.48 C:36.83 D:31.31 | meas A:28.80 B:23.52 C:23.17 D:28.69[0m
+[0;32mI (24370) main: Line: A:27.99,B:23.13,C:23.98,D:28.88[0m
+[0;32mI (24380) main: PID out A:32.01 B:36.87 C:36.02 D:31.12 | meas A:27.99 B:23.13 C:23.98 D:28.88[0m
+[0;32mI (24470) main: Line: A:31.45,B:-6.56,C:-5.80,D:32.59[0m
+[0;32mI (24480) main: PID out A:28.55 B:66.56 C:65.80 D:27.41 | meas A:31.45 B:-6.56 C:-5.80 D:32.59[0m
+[0;32mI (24570) main: Line: A:44.43,B:-9.51,C:-8.99,D:45.15[0m
+[0;32mI (24580) main: PID out A:15.57 B:69.51 C:68.99 D:14.85 | meas A:44.43 B:-9.51 C:-8.99 D:45.15[0m
+[0;32mI (24670) main: Line: A:50.82,B:12.66,C:12.85,D:49.73[0m
+[0;32mI (24680) main: PID out A:9.18 B:47.34 C:47.15 D:10.27 | meas A:50.82 B:12.66 C:12.85 D:49.73[0m
+[0;32mI (24770) main: Line: A:46.63,B:9.24,C:8.72,D:46.07[0m
+[0;32mI (24780) main: PID out A:13.37 B:50.76 C:51.28 D:13.93 | meas A:46.63 B:9.24 C:8.72 D:46.07[0m
+[0;32mI (24870) main: Line: A:39.76,B:8.48,C:7.54,D:40.23[0m
+[0;32mI (24880) main: PID out A:20.24 B:51.52 C:52.46 D:19.77 | meas A:39.76 B:8.48 C:7.54 D:40.23[0m
+[0;32mI (24970) main: Line: A:39.46,B:11.88,C:11.99,D:40.03[0m
+[0;32mI (24980) main: PID out A:20.54 B:48.12 C:48.01 D:19.97 | meas A:39.46 B:11.88 C:11.99 D:40.03[0m
+[0;32mI (25070) main: Line: A:38.84,B:14.56,C:14.58,D:39.10[0m
+[0;32mI (25080) main: PID out A:21.16 B:45.44 C:45.42 D:20.90 | meas A:38.84 B:14.56 C:14.58 D:39.10[0m
+[0;32mI (25170) main: Line: A:36.99,B:14.98,C:15.31,D:37.29[0m
+[0;32mI (25180) main: PID out A:23.01 B:45.02 C:44.69 D:22.71 | meas A:36.99 B:14.98 C:15.31 D:37.29[0m
+[0;32mI (25270) main: Line: A:35.00,B:16.43,C:16.40,D:35.23[0m
+[0;32mI (25280) main: PID out A:25.00 B:43.57 C:43.60 D:24.77 | meas A:35.00 B:16.43 C:16.40 D:35.23[0m
+[0;32mI (25370) main: Line: A:33.96,B:17.55,C:17.93,D:34.49[0m
+[0;32mI (25380) main: PID out A:26.04 B:42.45 C:42.07 D:25.51 | meas A:33.96 B:17.55 C:17.93 D:34.49[0m
+[0;32mI (25470) main: Line: A:33.33,B:18.81,C:18.89,D:33.51[0m
+[0;32mI (25480) main: PID out A:26.67 B:41.19 C:41.11 D:26.49 | meas A:33.33 B:18.81 C:18.89 D:33.51[0m
+[0;32mI (25570) main: Line: A:32.18,B:19.95,C:19.56,D:32.46[0m
+[0;32mI (25580) main: PID out A:27.82 B:40.05 C:40.44 D:27.54 | meas A:32.18 B:19.95 C:19.56 D:32.46[0m
+[0;32mI (25670) main: Line: A:31.45,B:20.37,C:20.41,D:31.12[0m
+[0;32mI (25680) main: PID out A:28.55 B:39.63 C:39.59 D:28.88 | meas A:31.45 B:20.37 C:20.41 D:31.12[0m
+[0;32mI (25770) main: Line: A:30.71,B:21.11,C:21.54,D:31.11[0m
+[0;32mI (25780) main: PID out A:29.29 B:38.89 C:38.46 D:28.89 | meas A:30.71 B:21.11 C:21.54 D:31.11[0m
+[0;32mI (25870) main: Line: A:30.42,B:21.88,C:21.71,D:30.45[0m
+[0;32mI (25880) main: PID out A:29.58 B:38.12 C:38.29 D:29.55 | meas A:30.42 B:21.88 C:21.71 D:30.45[0m
+[0;32mI (25970) main: Line: A:29.21,B:22.32,C:21.90,D:29.67[0m
+[0;32mI (25980) main: PID out A:30.79 B:37.68 C:38.10 D:30.33 | meas A:29.21 B:22.32 C:21.90 D:29.67[0m
+[0;32mI (26070) main: Line: A:28.81,B:23.16,C:22.51,D:29.99[0m
+[0;32mI (26080) main: PID out A:31.19 B:36.84 C:37.49 D:30.01 | meas A:28.81 B:23.16 C:22.51 D:29.99[0m
+[0;32mI (26170) main: Line: A:28.21,B:23.07,C:23.01,D:29.25[0m
+[0;32mI (26180) main: PID out A:31.79 B:36.93 C:36.99 D:30.75 | meas A:28.21 B:23.07 C:23.01 D:29.25[0m
+[0;32mI (26270) main: Line: A:28.49,B:23.39,C:23.58,D:28.43[0m
+[0;32mI (26280) main: PID out A:31.51 B:36.61 C:36.42 D:31.57 | meas A:28.49 B:23.39 C:23.58 D:28.43[0m
+[0;32mI (26370) main: Line: A:28.12,B:23.88,C:23.73,D:28.05[0m
+[0;32mI (26380) main: PID out A:31.88 B:36.12 C:36.27 D:31.95 | meas A:28.12 B:23.88 C:23.73 D:28.05[0m
+[0;32mI (26470) main: Line: A:32.39,B:-9.39,C:-8.86,D:32.38[0m
+[0;32mI (26480) main: PID out A:27.61 B:69.39 C:68.86 D:27.62 | meas A:32.39 B:-9.39 C:-8.86 D:32.38[0m
+[0;32mI (26570) main: Line: A:46.06,B:-6.64,C:-6.99,D:46.37[0m
+[0;32mI (26580) main: PID out A:13.94 B:66.64 C:66.99 D:13.63 | meas A:46.06 B:-6.64 C:-6.99 D:46.37[0m
+[0;32mI (26670) main: Line: A:50.86,B:12.19,C:11.58,D:50.48[0m
+[0;32mI (26680) main: PID out A:9.14 B:47.81 C:48.42 D:9.52 | meas A:50.86 B:12.19 C:11.58 D:50.48[0m
+[0;32mI (26770) main: Line: A:45.55,B:8.07,C:8.21,D:46.03[0m
+[0;32mI (26780) main: PID out A:14.45 B:51.93 C:51.79 D:13.97 | meas A:45.55 B:8.07 C:8.21 D:46.03[0m
+[0;32mI (26870) main: Line: A:40.26,B:8.36,C:8.37,D:40.46[0m
+[0;32mI (26880) main: PID out A:19.74 B:51.64 C:51.63 D:19.54 | meas A:40.26 B:8.36 C:8.37 D:40.46[0m
+[0;32mI (26970) main: Line: A:40.16,B:11.85,C:12.10,D:39.78[0m
+[0;32mI (26980) main: PID out A:19.84 B:48.15 C:47.90 D:20.22 | meas A:40.16 B:11.85 C:12.10 D:39.78[0m
+[0;32mI (27070) main: Line: A:38.66,B:14.40,C:14.51,D:38.62[0m
+[0;32mI (27080) main: PID out A:21.34 B:45.60 C:45.49 D:21.38 | meas A:38.66 B:14.40 C:14.51 D:38.62[0m
+[0;32mI (27170) main: Line: A:36.60,B:15.57,C:15.19,D:36.60[0m
+[0;32mI (27180) main: PID out A:23.40 B:44.43 C:44.81 D:23.40 | meas A:36.60 B:15.57 C:15.19 D:36.60[0m
+[0;32mI (27270) main: Line: A:35.01,B:16.28,C:16.57,D:35.46[0m
+[0;32mI (27280) main: PID out A:24.99 B:43.72 C:43.43 D:24.54 | meas A:35.01 B:16.28 C:16.57 D:35.46[0m
+[0;32mI (27370) main: Line: A:34.17,B:18.12,C:17.85,D:33.91[0m
+[0;32mI (27380) main: PID out A:25.83 B:41.88 C:42.15 D:26.09 | meas A:34.17 B:18.12 C:17.85 D:33.91[0m
+[0;32mI (27470) main: Line: A:33.26,B:18.95,C:18.65,D:33.46[0m
+[0;32mI (27480) main: PID out A:26.74 B:41.05 C:41.35 D:26.54 | meas A:33.26 B:18.95 C:18.65 D:33.46[0m
+[0;32mI (27570) main: Line: A:32.35,B:19.47,C:20.08,D:32.56[0m
+[0;33mW (27580) main: No rpm message this cycle[0m
+[0;32mI (27680) main: PID out A:27.65 B:40.53 C:39.92 D:27.44 | meas A:32.35 B:19.47 C:20.08 D:32.56[0m
+[0;32mI (27680) main: Line: A:31.92,B:19.86,C:20.25,D:32.25[0m
+[0;32mI (27780) main: PID out A:28.08 B:40.14 C:39.75 D:27.75 | meas A:31.92 B:19.86 C:20.25 D:32.25[0m
+[0;32mI (27780) main: Line: A:31.41,B:20.24,C:20.50,D:31.37[0m
+[0;32mI (27880) main: PID out A:28.59 B:39.76 C:39.50 D:28.63 | meas A:31.41 B:20.24 C:20.50 D:31.37[0m
+[0;32mI (27880) main: Line: A:31.08,B:20.90,C:20.94,D:31.32[0m
+[0;32mI (27980) main: PID out A:28.92 B:39.10 C:39.06 D:28.68 | meas A:31.08 B:20.90 C:20.94 D:31.32[0m
+[0;32mI (27980) main: Line: A:30.80,B:21.47,C:21.25,D:30.69[0m
+[0;32mI (28080) main: PID out A:29.20 B:38.53 C:38.75 D:29.31 | meas A:30.80 B:21.47 C:21.25 D:30.69[0m
+[0;32mI (28080) main: Line: A:30.25,B:21.66,C:21.61,D:30.70[0m
+[0;32mI (28180) main: PID out A:29.75 B:38.34 C:38.39 D:29.30 | meas A:30.25 B:21.66 C:21.61 D:30.70[0m
+[0;32mI (28180) main: Line: A:29.76,B:22.24,C:21.85,D:30.44[0m
+[0;32mI (28280) main: PID out A:30.24 B:37.76 C:38.15 D:29.56 | meas A:29.76 B:22.24 C:21.85 D:30.44[0m
+[0;32mI (28280) main: Line: A:29.41,B:22.11,C:22.41,D:29.62[0m
+[0;32mI (28380) main: PID out A:30.59 B:37.89 C:37.59 D:30.38 | meas A:29.41 B:22.11 C:22.41 D:29.62[0m
+[0;32mI (28380) main: Line: A:29.34,B:22.46,C:22.65,D:29.43[0m
+[0;32mI (28480) main: PID out A:30.66 B:37.54 C:37.35 D:30.57 | meas A:29.34 B:22.46 C:22.65 D:29.43[0m
+[0;32mI (28480) main: Line: A:33.95,B:-13.77,C:-13.63,D:34.19[0m
+[0;32mI (28580) main: PID out A:26.05 B:73.77 C:73.63 D:25.81 | meas A:33.95 B:-13.77 C:-13.63 D:34.19[0m
+[0;32mI (28580) main: Line: A:34.94,B:-1.80,C:-2.30,D:34.43[0m
+[0;32mI (28680) main: PID out A:25.06 B:61.80 C:62.30 D:25.57 | meas A:34.94 B:-1.80 C:-2.30 D:34.43[0m
+[0;32mI (28680) main: Line: A:43.43,B:17.85,C:17.65,D:42.98[0m
+[0;32mI (28780) main: PID out A:16.57 B:42.15 C:42.35 D:17.02 | meas A:43.43 B:17.85 C:17.65 D:42.98[0m
+[0;32mI (28780) main: Line: A:49.46,B:19.08,C:18.76,D:49.78[0m
+[0;32mI (28880) main: PID out A:10.54 B:40.92 C:41.24 D:10.22 | meas A:49.46 B:19.08 C:18.76 D:49.78[0m
+[0;32mI (28880) main: Line: A:41.24,B:15.68,C:15.00,D:42.14[0m
+[0;32mI (28980) main: PID out A:18.76 B:44.32 C:45.00 D:17.86 | meas A:41.24 B:15.68 C:15.00 D:42.14[0m
+[0;32mI (28980) main: Line: A:34.65,B:9.41,C:9.64,D:34.66[0m
+[0;32mI (29080) main: PID out A:25.35 B:50.59 C:50.36 D:25.34 | meas A:34.65 B:9.41 C:9.64 D:34.66[0m
+[0;32mI (29080) main: Line: A:33.34,B:10.57,C:10.98,D:34.55[0m
+[0;32mI (29180) main: PID out A:26.66 B:49.43 C:49.02 D:25.45 | meas A:33.34 B:10.57 C:10.98 D:34.55[0m
+[0;32mI (29180) main: Line: A:35.96,B:16.01,C:16.33,D:36.26[0m
+[0;32mI (29280) main: PID out A:24.04 B:43.99 C:43.67 D:23.74 | meas A:35.96 B:16.01 C:16.33 D:36.26[0m
+[0;32mI (29280) main: Line: A:38.16,B:18.43,C:18.81,D:37.84[0m
+[0;32mI (29380) main: PID out A:21.84 B:41.57 C:41.19 D:22.16 | meas A:38.16 B:18.43 C:18.81 D:37.84[0m
+[0;32mI (29380) main: Line: A:36.24,B:18.68,C:18.83,D:35.76[0m
+[0;32mI (29480) main: PID out A:23.76 B:41.32 C:41.17 D:24.24 | meas A:36.24 B:18.68 C:18.83 D:35.76[0m
+[0;32mI (29480) main: Line: A:33.63,B:17.08,C:16.87,D:33.14[0m
+[0;32mI (29580) main: PID out A:26.37 B:42.92 C:43.13 D:26.86 | meas A:33.63 B:17.08 C:16.87 D:33.14[0m
+[0;32mI (29580) main: Line: A:32.07,B:17.79,C:16.62,D:32.01[0m
+[0;32mI (29680) main: PID out A:27.93 B:42.21 C:43.38 D:27.99 | meas A:32.07 B:17.79 C:16.62 D:32.01[0m
+[0;32mI (29680) main: Line: A:32.48,B:19.45,C:18.60,D:32.77[0m
+[0;32mI (29780) main: PID out A:27.52 B:40.55 C:41.40 D:27.23 | meas A:32.48 B:19.45 C:18.60 D:32.77[0m
+[0;32mI (29780) main: Line: A:32.76,B:20.75,C:20.53,D:33.29[0m
+[0;32mI (29880) main: PID out A:27.24 B:39.25 C:39.47 D:26.71 | meas A:32.76 B:20.75 C:20.53 D:33.29[0m
+[0;32mI (29880) main: Line: A:31.73,B:20.68,C:20.78,D:32.63[0m
+[0;32mI (29980) main: PID out A:28.27 B:39.32 C:39.22 D:27.37 | meas A:31.73 B:20.68 C:20.78 D:32.63[0m
+[0;32mI (29980) main: Line: A:30.91,B:20.58,C:20.63,D:31.25[0m
+[0;32mI (30080) main: PID out A:29.09 B:39.42 C:39.37 D:28.75 | meas A:30.91 B:20.58 C:20.63 D:31.25[0m
+[0;32mI (30080) main: Line: A:30.06,B:20.64,C:21.11,D:30.71[0m
+[0;32mI (30180) main: PID out A:29.94 B:39.36 C:38.89 D:29.29 | meas A:30.06 B:20.64 C:21.11 D:30.71[0m
+[0;32mI (30180) main: Line: A:30.61,B:21.05,C:21.59,D:30.42[0m
+[0;32mI (30280) main: PID out A:29.39 B:38.95 C:38.41 D:29.58 | meas A:30.61 B:21.05 C:21.59 D:30.42[0m
+[0;32mI (30280) main: Line: A:30.28,B:22.19,C:22.64,D:30.47[0m
+[0;32mI (30380) main: PID out A:29.72 B:37.81 C:37.36 D:29.53 | meas A:30.28 B:22.19 C:22.64 D:30.47[0m
+[0;32mI (30380) main: Line: A:29.76,B:22.82,C:22.24,D:29.99[0m
+[0;32mI (30480) main: PID out A:30.24 B:37.18 C:37.76 D:30.01 | meas A:29.76 B:22.82 C:22.24 D:29.99[0m
+[0;32mI (30480) main: Line: A:34.47,B:-16.60,C:-16.13,D:34.06[0m
+[0;32mI (30580) main: PID out A:25.53 B:76.60 C:76.13 D:25.94 | meas A:34.47 B:-16.60 C:-16.13 D:34.06[0m
+[0;32mI (30580) main: Line: A:33.20,B:1.15,C:0.09,D:34.65[0m
+[0;32mI (30680) main: PID out A:26.80 B:58.85 C:59.91 D:25.35 | meas A:33.20 B:1.15 C:0.09 D:34.65[0m
+[0;32mI (30680) main: Line: A:45.42,B:18.10,C:17.57,D:45.71[0m
+[0;32mI (30780) main: PID out A:14.58 B:41.90 C:42.43 D:14.29 | meas A:45.42 B:18.10 C:17.57 D:45.71[0m
+[0;32mI (30780) main: Line: A:49.14,B:19.30,C:19.50,D:48.91[0m
+[0;32mI (30880) main: PID out A:10.86 B:40.70 C:40.50 D:11.09 | meas A:49.14 B:19.30 C:19.50 D:48.91[0m
+[0;32mI (30880) main: Line: A:40.07,B:13.50,C:14.07,D:39.99[0m
+[0;32mI (30980) main: PID out A:19.93 B:46.50 C:45.93 D:20.01 | meas A:40.07 B:13.50 C:14.07 D:39.99[0m
+[0;32mI (30980) main: Line: A:34.28,B:8.54,C:8.92,D:33.92[0m
+[0;32mI (31080) main: PID out A:25.72 B:51.46 C:51.08 D:26.08 | meas A:34.28 B:8.54 C:8.92 D:33.92[0m
+[0;32mI (31090) main: Line: A:34.23,B:12.13,C:12.10,D:33.95[0m
+[0;32mI (31180) main: PID out A:25.77 B:47.87 C:47.90 D:26.05 | meas A:34.23 B:12.13 C:12.10 D:33.95[0m
+[0;32mI (31190) main: Line: A:37.56,B:17.68,C:16.79,D:37.07[0m
+[0;32mI (31280) main: PID out A:22.44 B:42.32 C:43.21 D:22.93 | meas A:37.56 B:17.68 C:16.79 D:37.07[0m
+[0;32mI (31290) main: Line: A:38.78,B:20.06,C:18.98,D:37.38[0m
+[0;32mI (31380) main: PID out A:21.22 B:39.94 C:41.02 D:22.62 | meas A:38.78 B:20.06 C:18.98 D:37.38[0m
+[0;32mI (31390) main: Line: A:34.60,B:18.45,C:17.52,D:35.01[0m
+[0;32mI (31480) main: PID out A:25.40 B:41.55 C:42.48 D:24.99 | meas A:34.60 B:18.45 C:17.52 D:35.01[0m
+[0;32mI (31490) main: Line: A:32.03,B:17.10,C:15.74,D:32.95[0m
+[0;32mI (31580) main: PID out A:27.97 B:42.90 C:44.26 D:27.05 | meas A:32.03 B:17.10 C:15.74 D:32.95[0m
+[0;32mI (31590) main: Line: A:31.65,B:17.72,C:18.05,D:32.54[0m
+[0;32mI (31680) main: PID out A:28.35 B:42.28 C:41.95 D:27.46 | meas A:31.65 B:17.72 C:18.05 D:32.54[0m
+[0;32mI (31690) main: Line: A:32.63,B:19.69,C:20.49,D:33.45[0m
+[0;32mI (31780) main: PID out A:27.37 B:40.31 C:39.51 D:26.55 | meas A:32.63 B:19.69 C:20.49 D:33.45[0m
+[0;32mI (31790) main: Line: A:32.14,B:20.46,C:21.13,D:33.19[0m
+[0;32mI (31880) main: PID out A:27.86 B:39.54 C:38.87 D:26.81 | meas A:32.14 B:20.46 C:21.13 D:33.19[0m
+[0;32mI (31890) main: Line: A:31.96,B:20.17,C:20.92,D:31.64[0m
+[0;32mI (31980) main: PID out A:28.04 B:39.83 C:39.08 D:28.36 | meas A:31.96 B:20.17 C:20.92 D:31.64[0m
+[0;32mI (31990) main: Line: A:30.71,B:20.18,C:20.69,D:30.51[0m
+[0;32mI (32080) main: PID out A:29.29 B:39.82 C:39.31 D:29.49 | meas A:30.71 B:20.18 C:20.69 D:30.51[0m
+[0;32mI (32090) main: Line: A:30.43,B:21.13,C:20.89,D:30.22[0m
+[0;32mI (32180) main: PID out A:29.57 B:38.87 C:39.11 D:29.78 | meas A:30.43 B:21.13 C:20.89 D:30.22[0m
+[0;32mI (32190) main: Line: A:30.51,B:21.38,C:22.02,D:30.40[0m
+[0;32mI (32280) main: PID out A:29.49 B:38.62 C:37.98 D:29.60 | meas A:30.51 B:21.38 C:22.02 D:30.40[0m
+[0;32mI (32290) main: Line: A:30.19,B:22.87,C:21.82,D:30.22[0m
+[0;32mI (32380) main: PID out A:29.81 B:37.13 C:38.18 D:29.78 | meas A:30.19 B:22.87 C:21.82 D:30.22[0m
+[0;32mI (32390) main: Line: A:29.62,B:22.19,C:22.15,D:29.77[0m
+[0;32mI (32480) main: PID out A:30.38 B:37.81 C:37.85 D:30.23 | meas A:29.62 B:22.19 C:22.15 D:29.77[0m
+[0;32mI (32490) main: Line: A:35.73,B:-20.17,C:-19.85,D:35.37[0m
+[0;32mI (32580) main: PID out A:24.27 B:80.17 C:79.85 D:24.63 | meas A:35.73 B:-20.17 C:-19.85 D:35.37[0m
+[0;32mI (32590) main: Line: A:34.99,B:2.73,C:2.25,D:34.73[0m
+[0;32mI (32680) main: PID out A:25.01 B:57.27 C:57.75 D:25.27 | meas A:34.99 B:2.73 C:2.25 D:34.73[0m
+[0;32mI (32690) main: Line: A:48.25,B:17.57,C:16.85,D:48.31[0m
+[0;32mI (32780) main: PID out A:11.75 B:42.43 C:43.15 D:11.69 | meas A:48.25 B:17.57 C:16.85 D:48.31[0m
+[0;32mI (32790) main: Line: A:49.08,B:18.67,C:18.22,D:49.28[0m
+[0;32mI (32880) main: PID out A:10.92 B:41.33 C:41.78 D:10.72 | meas A:49.08 B:18.67 C:18.22 D:49.28[0m
+[0;32mI (32890) main: Line: A:39.08,B:11.50,C:11.87,D:40.05[0m
+[0;32mI (32980) main: PID out A:20.92 B:48.50 C:48.13 D:19.95 | meas A:39.08 B:11.50 C:11.87 D:40.05[0m
+[0;32mI (32990) main: Line: A:33.49,B:7.94,C:8.34,D:34.44[0m
+[0;32mI (33080) main: PID out A:26.51 B:52.06 C:51.66 D:25.56 | meas A:33.49 B:7.94 C:8.34 D:34.44[0m
+[0;32mI (33090) main: Line: A:35.43,B:12.38,C:13.06,D:35.94[0m
+[0;32mI (33180) main: PID out A:24.57 B:47.62 C:46.94 D:24.06 | meas A:35.43 B:12.38 C:13.06 D:35.94[0m
+[0;32mI (33190) main: Line: A:38.76,B:17.49,C:17.69,D:38.24[0m
+[0;32mI (33280) main: PID out A:21.24 B:42.51 C:42.31 D:21.76 | meas A:38.76 B:17.49 C:17.69 D:38.24[0m
+[0;32mI (33290) main: Line: A:37.73,B:18.01,C:18.66,D:37.84[0m
+[0;32mI (33380) main: PID out A:22.27 B:41.99 C:41.34 D:22.16 | meas A:37.73 B:18.01 C:18.66 D:37.84[0m
+[0;32mI (33390) main: Line: A:34.65,B:16.60,C:16.90,D:34.89[0m
+[0;32mI (33480) main: PID out A:25.35 B:43.40 C:43.10 D:25.11 | meas A:34.65 B:16.60 C:16.90 D:34.89[0m
+[0;32mI (33490) main: Line: A:32.72,B:17.09,C:16.57,D:32.89[0m
+[0;32mI (33580) main: PID out A:27.28 B:42.91 C:43.43 D:27.11 | meas A:32.72 B:17.09 C:16.57 D:32.89[0m
+[0;32mI (33590) main: Line: A:32.91,B:18.34,C:18.27,D:33.13[0m
+[0;32mI (33680) main: PID out A:27.09 B:41.66 C:41.73 D:26.87 | meas A:32.91 B:18.34 C:18.27 D:33.13[0m
+[0;32mI (33690) main: Line: A:33.51,B:19.97,C:19.80,D:33.27[0m
+[0;32mI (33780) main: PID out A:26.49 B:40.03 C:40.20 D:26.73 | meas A:33.51 B:19.97 C:19.80 D:33.27[0m
+[0;32mI (33790) main: Line: A:32.32,B:20.27,C:20.71,D:32.97[0m
+[0;32mI (33880) main: PID out A:27.68 B:39.73 C:39.29 D:27.03 | meas A:32.32 B:20.27 C:20.71 D:32.97[0m
+[0;32mI (33890) main: Line: A:31.50,B:20.25,C:20.32,D:31.97[0m
+[0;32mI (33980) main: PID out A:28.50 B:39.75 C:39.68 D:28.03 | meas A:31.50 B:20.25 C:20.32 D:31.97[0m
+[0;32mI (33990) main: Line: A:30.69,B:20.66,C:20.35,D:30.83[0m
+[0;32mI (34080) main: PID out A:29.31 B:39.34 C:39.65 D:29.17 | meas A:30.69 B:20.66 C:20.35 D:30.83[0m
+[0;32mI (34090) main: Line: A:30.58,B:21.07,C:21.13,D:30.36[0m
+[0;32mI (34180) main: PID out A:29.42 B:38.93 C:38.87 D:29.64 | meas A:30.58 B:21.07 C:21.13 D:30.36[0m
+[0;32mI (34190) main: Line: A:30.24,B:22.03,C:22.18,D:30.25[0m
+[0;32mI (34280) main: PID out A:29.76 B:37.97 C:37.82 D:29.75 | meas A:30.24 B:22.03 C:22.18 D:30.25[0m
+[0;32mI (34290) main: Line: A:29.76,B:22.62,C:22.21,D:30.06[0m
+[0;32mI (34380) main: PID out A:30.24 B:37.38 C:37.79 D:29.94 | meas A:29.76 B:22.62 C:22.21 D:30.06[0m
+[0;32mI (34390) main: Line: A:29.73,B:21.10,C:21.66,D:29.97[0m
+[0;32mI (34480) main: PID out A:30.27 B:38.90 C:38.34 D:30.03 | meas A:29.73 B:21.10 C:21.66 D:29.97[0m
+[0;32mI (34500) main: Line: A:35.16,B:-22.09,C:-22.65,D:35.36[0m
+[0;32mI (34580) main: PID out A:24.84 B:82.09 C:82.65 D:24.64 | meas A:35.16 B:-22.09 C:-22.65 D:35.36[0m
+[0;32mI (34600) main: Line: A:34.72,B:5.48,C:4.38,D:34.64[0m
+[0;32mI (34680) main: PID out A:25.28 B:54.52 C:55.62 D:25.36 | meas A:34.72 B:5.48 C:4.38 D:34.64[0m
+[0;32mI (34700) main: Line: A:50.88,B:17.98,C:16.97,D:50.89[0m
+[0;32mI (34780) main: PID out A:9.12 B:42.02 C:43.03 D:9.11 | meas A:50.88 B:17.98 C:16.97 D:50.89[0m
+[0;32mI (34800) main: Line: A:48.26,B:18.38,C:18.53,D:48.56[0m
+[0;32mI (34880) main: PID out A:11.74 B:41.62 C:41.47 D:11.44 | meas A:48.26 B:18.38 C:18.53 D:48.56[0m
+[0;32mI (34900) main: Line: A:38.13,B:10.04,C:9.92,D:39.01[0m
+[0;32mI (34980) main: PID out A:21.87 B:49.96 C:50.08 D:20.99 | meas A:38.13 B:10.04 C:9.92 D:39.01[0m
+[0;32mI (35000) main: Line: A:33.87,B:7.57,C:7.92,D:33.95[0m
+[0;32mI (35080) main: PID out A:26.13 B:52.43 C:52.08 D:26.05 | meas A:33.87 B:7.57 C:7.92 D:33.95[0m
+[0;32mI (35100) main: Line: A:36.38,B:13.44,C:13.87,D:36.52[0m
+[0;32mI (35180) main: PID out A:23.62 B:46.56 C:46.13 D:23.48 | meas A:36.38 B:13.44 C:13.87 D:36.52[0m
+[0;32mI (35200) main: Line: A:39.23,B:17.86,C:18.09,D:39.29[0m
+[0;32mI (35280) main: PID out A:20.77 B:42.14 C:41.91 D:20.71 | meas A:39.23 B:17.86 C:18.09 D:39.29[0m
+[0;32mI (35300) main: Line: A:37.63,B:17.84,C:17.95,D:37.55[0m
+[0;32mI (35380) main: PID out A:22.37 B:42.16 C:42.05 D:22.45 | meas A:37.63 B:17.84 C:17.95 D:37.55[0m
+[0;32mI (35400) main: Line: A:34.33,B:16.23,C:16.45,D:34.27[0m
+[0;32mI (35480) main: PID out A:25.67 B:43.77 C:43.55 D:25.73 | meas A:34.33 B:16.23 C:16.45 D:34.27[0m
+[0;32mI (35500) main: Line: A:33.64,B:16.76,C:16.11,D:32.87[0m
+[0;32mI (35580) main: PID out A:26.36 B:43.24 C:43.89 D:27.13 | meas A:33.64 B:16.76 C:16.11 D:32.87[0m
+[0;32mI (35600) main: Line: A:32.86,B:18.67,C:18.46,D:33.38[0m
+[0;32mI (35680) main: PID out A:27.14 B:41.33 C:41.54 D:26.62 | meas A:32.86 B:18.67 C:18.46 D:33.38[0m
+[0;32mI (35700) main: Line: A:33.49,B:19.76,C:19.58,D:33.85[0m
+[0;32mI (35780) main: PID out A:26.51 B:40.24 C:40.42 D:26.15 | meas A:33.49 B:19.76 C:19.58 D:33.85[0m
+[0;32mI (35800) main: Line: A:32.45,B:19.93,C:20.11,D:32.98[0m
+[0;32mI (35880) main: PID out A:27.55 B:40.07 C:39.89 D:27.02 | meas A:32.45 B:19.93 C:20.11 D:32.98[0m
+[0;32mI (35900) main: Line: A:31.73,B:19.76,C:20.05,D:31.90[0m
+[0;32mI (35980) main: PID out A:28.27 B:40.24 C:39.95 D:28.10 | meas A:31.73 B:19.76 C:20.05 D:31.90[0m
+[0;32mI (36000) main: Line: A:31.07,B:20.30,C:20.38,D:30.82[0m
+[0;32mI (36080) main: PID out A:28.93 B:39.70 C:39.62 D:29.18 | meas A:31.07 B:20.30 C:20.38 D:30.82[0m
+[0;32mI (36100) main: Line: A:30.97,B:21.08,C:21.17,D:31.21[0m
+[0;32mI (36180) main: PID out A:29.03 B:38.92 C:38.83 D:28.79 | meas A:30.97 B:21.08 C:21.17 D:31.21[0m
+[0;32mI (36200) main: Line: A:30.76,B:21.93,C:21.54,D:30.84[0m
+[0;32mI (36280) main: PID out A:29.24 B:38.07 C:38.46 D:29.16 | meas A:30.76 B:21.93 C:21.54 D:30.84[0m
+[0;32mI (36300) main: Line: A:29.79,B:21.97,C:21.89,D:30.28[0m
+[0;32mI (36380) main: PID out A:30.21 B:38.03 C:38.11 D:29.72 | meas A:29.79 B:21.97 C:21.89 D:30.28[0m
+[0;32mI (36400) main: Line: A:29.77,B:19.70,C:20.55,D:29.75[0m
+[0;32mI (36480) main: PID out A:30.23 B:40.30 C:39.45 D:30.25 | meas A:29.77 B:19.70 C:20.55 D:29.75[0m
+[0;32mI (36500) main: Line: A:35.84,B:-26.42,C:-24.28,D:36.09[0m
+[0;32mI (36580) main: PID out A:24.16 B:86.42 C:84.28 D:23.91 | meas A:35.84 B:-26.42 C:-24.28 D:36.09[0m
+[0;32mI (36600) main: Line: A:35.27,B:6.97,C:6.75,D:35.83[0m
+[0;32mI (36680) main: PID out A:24.73 B:53.03 C:53.25 D:24.17 | meas A:35.27 B:6.97 C:6.75 D:35.83[0m
+[0;32mI (36700) main: Line: A:53.51,B:17.18,C:17.26,D:52.13[0m
+[0;32mI (36780) main: PID out A:6.49 B:42.82 C:42.74 D:7.87 | meas A:53.51 B:17.18 C:17.26 D:52.13[0m
+[0;32mI (36800) main: Line: A:47.85,B:17.32,C:17.78,D:47.41[0m
+[0;32mI (36880) main: PID out A:12.15 B:42.68 C:42.22 D:12.59 | meas A:47.85 B:17.32 C:17.78 D:47.41[0m
+[0;32mI (36900) main: Line: A:37.74,B:8.45,C:7.72,D:37.40[0m
+[0;32mI (36980) main: PID out A:22.26 B:51.55 C:52.28 D:22.60 | meas A:37.74 B:8.45 C:7.72 D:37.40[0m
+[0;32mI (37000) main: Line: A:34.03,B:8.02,C:7.90,D:34.48[0m
+[0;32mI (37080) main: PID out A:25.97 B:51.98 C:52.10 D:25.52 | meas A:34.03 B:8.02 C:7.90 D:34.48[0m
+[0;32mI (37100) main: Line: A:37.72,B:14.31,C:14.23,D:37.91[0m
+[0;32mI (37180) main: PID out A:22.28 B:45.69 C:45.77 D:22.09 | meas A:37.72 B:14.31 C:14.23 D:37.91[0m
+[0;32mI (37200) main: Line: A:39.18,B:17.83,C:17.96,D:39.20[0m
+[0;32mI (37280) main: PID out A:20.82 B:42.17 C:42.04 D:20.80 | meas A:39.18 B:17.83 C:17.96 D:39.20[0m
+[0;32mI (37300) main: Line: A:36.35,B:17.08,C:17.51,D:37.09[0m
+[0;32mI (37380) main: PID out A:23.65 B:42.92 C:42.49 D:22.91 | meas A:36.35 B:17.08 C:17.51 D:37.09[0m
+[0;32mI (37400) main: Line: A:33.26,B:15.79,C:16.20,D:34.37[0m
+[0;32mI (37480) main: PID out A:26.74 B:44.21 C:43.80 D:25.63 | meas A:33.26 B:15.79 C:16.20 D:34.37[0m
+[0;32mI (37500) main: Line: A:33.38,B:16.90,C:17.67,D:33.43[0m
+[0;32mI (37580) main: PID out A:26.62 B:43.10 C:42.33 D:26.57 | meas A:33.38 B:16.90 C:17.67 D:33.43[0m
+[0;32mI (37600) main: Line: A:33.80,B:18.74,C:19.10,D:33.59[0m
+[0;32mI (37680) main: PID out A:26.20 B:41.26 C:40.90 D:26.41 | meas A:33.80 B:18.74 C:19.10 D:33.59[0m
+[0;32mI (37700) main: Line: A:33.31,B:19.93,C:19.94,D:32.75[0m
+[0;32mI (37780) main: PID out A:26.69 B:40.07 C:40.06 D:27.25 | meas A:33.31 B:19.93 C:19.94 D:32.75[0m
+[0;32mI (37800) main: Line: A:32.34,B:20.12,C:19.91,D:31.95[0m
+[0;32mI (37880) main: PID out A:27.66 B:39.88 C:40.09 D:28.05 | meas A:32.34 B:20.12 C:19.91 D:31.95[0m
+[0;32mI (37900) main: Line: A:31.17,B:20.06,C:20.31,D:31.04[0m
+[0;32mI (37980) main: PID out A:28.83 B:39.94 C:39.69 D:28.96 | meas A:31.17 B:20.06 C:20.31 D:31.04[0m
+[0;32mI (38000) main: Line: A:30.43,B:21.29,C:20.30,D:30.75[0m
+[0;32mI (38080) main: PID out A:29.57 B:38.71 C:39.70 D:29.25 | meas A:30.43 B:21.29 C:20.30 D:30.75[0m
+[0;32mI (38100) main: Line: A:30.73,B:22.19,C:21.55,D:31.19[0m
+[0;32mI (38180) main: PID out A:29.27 B:37.81 C:38.45 D:28.81 | meas A:30.73 B:22.19 C:21.55 D:31.19[0m
+[0;32mI (38200) main: Line: A:30.03,B:21.96,C:22.09,D:30.66[0m
+[0;32mI (38280) main: PID out A:29.97 B:38.04 C:37.91 D:29.34 | meas A:30.03 B:21.96 C:22.09 D:30.66[0m
+[0;32mI (38310) main: Line: A:28.70,B:22.23,C:21.88,D:30.27[0m
+[0;32mI (38380) main: PID out A:31.30 B:37.77 C:38.12 D:29.73 | meas A:28.70 B:22.23 C:21.88 D:30.27[0m
+[0;32mI (38410) main: Line: A:29.06,B:18.79,C:18.99,D:30.35[0m
+[0;32mI (38480) main: PID out A:30.94 B:41.21 C:41.01 D:29.65 | meas A:29.06 B:18.79 C:18.99 D:30.35[0m
+[0;32mI (38510) main: Line: A:37.98,B:-28.98,C:-26.86,D:37.96[0m
+[0;32mI (38580) main: PID out A:22.02 B:88.98 C:86.86 D:22.04 | meas A:37.98 B:-28.98 C:-26.86 D:37.96[0m
+[0;32mI (38610) main: Line: A:37.09,B:8.27,C:8.55,D:36.61[0m
+[0;32mI (38680) main: PID out A:22.91 B:51.73 C:51.45 D:23.39 | meas A:37.09 B:8.27 C:8.55 D:36.61[0m
+[0;32mI (38710) main: Line: A:55.88,B:16.33,C:16.37,D:54.49[0m
+[0;32mI (38780) main: PID out A:4.12 B:43.67 C:43.63 D:5.51 | meas A:55.88 B:16.33 C:16.37 D:54.49[0m
+[0;32mI (38810) main: Line: A:47.29,B:16.23,C:15.60,D:46.78[0m
+[0;32mI (38880) main: PID out A:12.71 B:43.77 C:44.40 D:13.22 | meas A:47.29 B:16.23 C:15.60 D:46.78[0m
+[0;32mI (38910) main: Line: A:38.09,B:6.53,C:5.94,D:37.66[0m
+[0;32mI (38980) main: PID out A:21.91 B:53.47 C:54.06 D:22.34 | meas A:38.09 B:6.53 C:5.94 D:37.66[0m
+[0;32mI (39010) main: Line: A:35.57,B:8.39,C:8.25,D:36.20[0m
+[0;32mI (39080) main: PID out A:24.43 B:51.61 C:51.75 D:23.80 | meas A:35.57 B:8.39 C:8.25 D:36.20[0m
+[0;32mI (39110) main: Line: A:38.94,B:14.92,C:14.62,D:39.43[0m
+[0;32mI (39180) main: PID out A:21.06 B:45.08 C:45.38 D:20.57 | meas A:38.94 B:14.92 C:14.62 D:39.43[0m
+[0;32mI (39210) main: Line: A:39.59,B:17.14,C:17.38,D:39.42[0m
+[0;32mI (39280) main: PID out A:20.41 B:42.86 C:42.62 D:20.58 | meas A:39.59 B:17.14 C:17.38 D:39.42[0m
+[0;32mI (39310) main: Line: A:36.50,B:16.09,C:16.15,D:36.63[0m
+[0;32mI (39380) main: PID out A:23.50 B:43.91 C:43.85 D:23.37 | meas A:36.50 B:16.09 C:16.15 D:36.63[0m
+[0;32mI (39410) main: Line: A:34.00,B:15.64,C:15.69,D:34.12[0m
+[0;32mI (39480) main: PID out A:26.00 B:44.36 C:44.31 D:25.88 | meas A:34.00 B:15.64 C:15.69 D:34.12[0m
+[0;32mI (39510) main: Line: A:33.86,B:16.93,C:17.26,D:34.13[0m
+[0;32mI (39580) main: PID out A:26.14 B:43.07 C:42.74 D:25.87 | meas A:33.86 B:16.93 C:17.26 D:34.13[0m
+[0;32mI (39610) main: Line: A:34.05,B:18.91,C:18.94,D:34.32[0m
+[0;32mI (39680) main: PID out A:25.95 B:41.09 C:41.06 D:25.68 | meas A:34.05 B:18.91 C:18.94 D:34.32[0m
+[0;32mI (39710) main: Line: A:33.33,B:19.30,C:19.54,D:33.18[0m
+[0;32mI (39780) main: PID out A:26.67 B:40.70 C:40.46 D:26.82 | meas A:33.33 B:19.30 C:19.54 D:33.18[0m
+[0;32mI (39810) main: Line: A:31.72,B:19.46,C:19.48,D:32.30[0m
+[0;32mI (39880) main: PID out A:28.28 B:40.54 C:40.52 D:27.70 | meas A:31.72 B:19.46 C:19.48 D:32.30[0m
+[0;32mI (39910) main: Line: A:31.32,B:20.14,C:20.50,D:31.54[0m
+[0;32mI (39980) main: PID out A:28.68 B:39.86 C:39.50 D:28.46 | meas A:31.32 B:20.14 C:20.50 D:31.54[0m
+[0;32mI (40010) main: Line: A:31.20,B:21.00,C:20.99,D:31.30[0m
+[0;32mI (40080) main: PID out A:28.80 B:39.00 C:39.01 D:28.70 | meas A:31.20 B:21.00 C:20.99 D:31.30[0m
+[0;32mI (40110) main: Line: A:31.02,B:21.20,C:21.78,D:31.00[0m
+[0;32mI (40180) main: PID out A:28.98 B:38.80 C:38.22 D:29.00 | meas A:31.02 B:21.20 C:21.78 D:31.00[0m
+[0;32mI (40210) main: Line: A:30.27,B:21.85,C:21.67,D:30.32[0m
+[0;32mI (40280) main: PID out A:29.73 B:38.15 C:38.33 D:29.68 | meas A:30.27 B:21.85 C:21.67 D:30.32[0m
+[0;32mI (40310) main: Line: A:30.00,B:22.09,C:21.87,D:29.67[0m
+[0;32mI (40380) main: PID out A:30.00 B:37.91 C:38.13 D:30.33 | meas A:30.00 B:22.09 C:21.87 D:29.67[0m
+[0;32mI (40410) main: Line: A:30.14,B:17.52,C:17.47,D:30.38[0m
+[0;32mI (40480) main: PID out A:29.86 B:42.48 C:42.53 D:29.62 | meas A:30.14 B:17.52 C:17.47 D:30.38[0m
+[0;32mI (40510) main: Line: A:37.73,B:-29.36,C:-28.49,D:37.83[0m
+[0;32mI (40580) main: PID out A:22.27 B:89.36 C:88.49 D:22.17 | meas A:37.73 B:-29.36 C:-28.49 D:37.83[0m
+[0;32mI (40610) main: Line: A:38.09,B:9.44,C:9.02,D:38.09[0m
+[0;32mI (40680) main: PID out A:21.91 B:50.56 C:50.98 D:21.91 | meas A:38.09 B:9.44 C:9.02 D:38.09[0m
+[0;32mI (40710) main: Line: A:56.44,B:16.40,C:15.86,D:55.88[0m
+[0;32mI (40780) main: PID out A:3.56 B:43.60 C:44.14 D:4.12 | meas A:56.44 B:16.40 C:15.86 D:55.88[0m
+[0;32mI (40810) main: Line: A:46.09,B:15.03,C:14.85,D:46.40[0m
+[0;32mI (40880) main: PID out A:13.91 B:44.97 C:45.15 D:13.60 | meas A:46.09 B:15.03 C:14.85 D:46.40[0m
+[0;32mI (40910) main: Line: A:37.92,B:5.48,C:5.38,D:38.14[0m
+[0;32mI (40980) main: PID out A:22.08 B:54.52 C:54.62 D:21.86 | meas A:37.92 B:5.48 C:5.38 D:38.14[0m
+[0;32mI (41010) main: Line: A:35.52,B:8.68,C:8.88,D:36.01[0m
+[0;32mI (41080) main: PID out A:24.48 B:51.32 C:51.12 D:23.99 | meas A:35.52 B:8.68 C:8.88 D:36.01[0m
+[0;32mI (41110) main: Line: A:39.22,B:14.99,C:14.95,D:40.34[0m
+[0;32mI (41180) main: PID out A:20.78 B:45.01 C:45.05 D:19.66 | meas A:39.22 B:14.99 C:14.95 D:40.34[0m
+[0;32mI (41210) main: Line: A:39.51,B:16.91,C:17.27,D:39.60[0m
+[0;32mI (41280) main: PID out A:20.49 B:43.09 C:42.73 D:20.40 | meas A:39.51 B:16.91 C:17.27 D:39.60[0m
+[0;32mI (41310) main: Line: A:36.65,B:15.20,C:16.16,D:36.53[0m
+[0;32mI (41380) main: PID out A:23.35 B:44.80 C:43.84 D:23.47 | meas A:36.65 B:15.20 C:16.16 D:36.53[0m
+[0;32mI (41410) main: Line: A:34.26,B:15.52,C:15.46,D:34.11[0m
+[0;32mI (41480) main: PID out A:25.74 B:44.48 C:44.54 D:25.89 | meas A:34.26 B:15.52 C:15.46 D:34.11[0m
+[0;32mI (41510) main: Line: A:34.25,B:17.32,C:16.71,D:33.81[0m
+[0;32mI (41580) main: PID out A:25.75 B:42.68 C:43.29 D:26.19 | meas A:34.25 B:17.32 C:16.71 D:33.81[0m
+[0;32mI (41610) main: Line: A:33.96,B:19.41,C:18.53,D:34.27[0m
+[0;32mI (41680) main: PID out A:26.04 B:40.59 C:41.47 D:25.73 | meas A:33.96 B:19.41 C:18.53 D:34.27[0m
+[0;32mI (41710) main: Line: A:33.62,B:19.69,C:19.05,D:34.19[0m
+[0;32mI (41780) main: PID out A:26.38 B:40.31 C:40.95 D:25.81 | meas A:33.62 B:19.69 C:19.05 D:34.19[0m
+[0;32mI (41810) main: Line: A:31.55,B:19.53,C:19.57,D:32.43[0m
+[0;32mI (41880) main: PID out A:28.45 B:40.47 C:40.43 D:27.57 | meas A:31.55 B:19.53 C:19.57 D:32.43[0m
+[0;32mI (41920) main: Line: A:31.75,B:20.04,C:19.98,D:31.86[0m
+[0;32mI (41980) main: PID out A:28.25 B:39.96 C:40.02 D:28.14 | meas A:31.75 B:20.04 C:19.98 D:31.86[0m
+[0;32mI (42020) main: Line: A:31.47,B:20.71,C:21.29,D:31.40[0m
+[0;32mI (42080) main: PID out A:28.53 B:39.29 C:38.71 D:28.60 | meas A:31.47 B:20.71 C:21.29 D:31.40[0m
+[0;32mI (42120) main: Line: A:30.72,B:21.61,C:21.23,D:30.55[0m
+[0;32mI (42180) main: PID out A:29.28 B:38.39 C:38.77 D:29.45 | meas A:30.72 B:21.61 C:21.23 D:30.55[0m
+[0;32mI (42220) main: Line: A:30.05,B:21.41,C:21.80,D:30.32[0m
+[0;32mI (42280) main: PID out A:29.95 B:38.59 C:38.20 D:29.68 | meas A:30.05 B:21.41 C:21.80 D:30.32[0m
+[0;32mI (42320) main: Line: A:29.97,B:22.93,C:21.99,D:30.15[0m
+[0;32mI (42380) main: PID out A:30.03 B:37.07 C:38.01 D:29.85 | meas A:29.97 B:22.93 C:21.99 D:30.15[0m
+[0;32mI (42420) main: Line: A:30.27,B:15.62,C:16.04,D:30.42[0m
+[0;32mI (42480) main: PID out A:29.73 B:44.38 C:43.96 D:29.58 | meas A:30.27 B:15.62 C:16.04 D:30.42[0m
+[0;32mI (42520) main: Line: A:37.26,B:-26.99,C:-25.85,D:37.30[0m
+[0;32mI (42580) main: PID out A:22.74 B:86.99 C:85.85 D:22.70 | meas A:37.26 B:-26.99 C:-25.85 D:37.30[0m
+[0;32mI (42620) main: Line: A:39.01,B:10.50,C:10.27,D:38.73[0m
+[0;32mI (42680) main: PID out A:20.99 B:49.50 C:49.73 D:21.27 | meas A:39.01 B:10.50 C:10.27 D:38.73[0m
+[0;32mI (42720) main: Line: A:55.73,B:16.73,C:16.46,D:54.61[0m
+[0;32mI (42780) main: PID out A:4.27 B:43.27 C:43.54 D:5.39 | meas A:55.73 B:16.73 C:16.46 D:54.61[0m
+[0;32mI (42820) main: Line: A:44.69,B:14.38,C:13.80,D:44.69[0m
+[0;32mI (42880) main: PID out A:15.31 B:45.62 C:46.20 D:15.31 | meas A:44.69 B:14.38 C:13.80 D:44.69[0m
+[0;32mI (42920) main: Line: A:36.78,B:6.29,C:5.60,D:37.30[0m
+[0;32mI (42980) main: PID out A:23.22 B:53.71 C:54.40 D:22.70 | meas A:36.78 B:6.29 C:5.60 D:37.30[0m
+[0;32mI (43020) main: Line: A:36.23,B:10.27,C:10.33,D:36.47[0m
+[0;32mI (43080) main: PID out A:23.77 B:49.73 C:49.67 D:23.53 | meas A:36.23 B:10.27 C:10.33 D:36.47[0m
+[0;32mI (43120) main: Line: A:40.23,B:15.63,C:15.91,D:39.79[0m
+[0;32mI (43180) main: PID out A:19.77 B:44.37 C:44.09 D:20.21 | meas A:40.23 B:15.63 C:15.91 D:39.79[0m
+[0;32mI (43220) main: Line: A:38.50,B:16.75,C:17.22,D:38.49[0m
+[0;32mI (43280) main: PID out A:21.50 B:43.25 C:42.78 D:21.51 | meas A:38.50 B:16.75 C:17.22 D:38.49[0m
+[0;32mI (43320) main: Line: A:35.58,B:15.80,C:15.48,D:35.64[0m
+[0;32mI (43380) main: PID out A:24.42 B:44.20 C:44.52 D:24.36 | meas A:35.58 B:15.80 C:15.48 D:35.64[0m
+[0;32mI (43420) main: Line: A:33.90,B:16.54,C:15.82,D:33.85[0m
+[0;32mI (43480) main: PID out A:26.10 B:43.46 C:44.18 D:26.15 | meas A:33.90 B:16.54 C:15.82 D:33.85[0m
+[0;32mI (43520) main: Line: A:33.89,B:17.94,C:18.19,D:34.07[0m
+[0;32mI (43580) main: PID out A:26.11 B:42.06 C:41.81 D:25.93 | meas A:33.89 B:17.94 C:18.19 D:34.07[0m
+[0;32mI (43620) main: Line: A:33.82,B:19.55,C:19.10,D:34.00[0m
+[0;32mI (43680) main: PID out A:26.18 B:40.45 C:40.90 D:26.00 | meas A:33.82 B:19.55 C:19.10 D:34.00[0m
+[0;32mI (43720) main: Line: A:32.49,B:19.36,C:19.63,D:32.68[0m
+[0;32mI (43780) main: PID out A:27.51 B:40.64 C:40.37 D:27.32 | meas A:32.49 B:19.36 C:19.63 D:32.68[0m
+[0;32mI (43820) main: Line: A:30.96,B:19.78,C:19.90,D:31.92[0m
+[0;32mI (43880) main: PID out A:29.04 B:40.22 C:40.10 D:28.08 | meas A:30.96 B:19.78 C:19.90 D:31.92[0m
+[0;32mI (43920) main: Line: A:31.39,B:20.55,C:20.77,D:31.41[0m
+[0;32mI (43980) main: PID out A:28.61 B:39.45 C:39.23 D:28.59 | meas A:31.39 B:20.55 C:20.77 D:31.41[0m
+[0;32mI (44020) main: Line: A:30.87,B:21.33,C:21.56,D:31.23[0m
+[0;32mI (44080) main: PID out A:29.13 B:38.67 C:38.44 D:28.77 | meas A:30.87 B:21.33 C:21.56 D:31.23[0m
+[0;32mI (44120) main: Line: A:30.31,B:21.64,C:21.90,D:30.70[0m
+[0;32mI (44180) main: PID out A:29.69 B:38.36 C:38.10 D:29.30 | meas A:30.31 B:21.64 C:21.90 D:30.70[0m
+[0;32mI (44220) main: Line: A:29.58,B:21.92,C:22.12,D:29.79[0m
+[0;32mI (44280) main: PID out A:30.42 B:38.08 C:37.88 D:30.21 | meas A:29.58 B:21.92 C:22.12 D:29.79[0m
+[0;32mI (44320) main: Line: A:29.23,B:22.44,C:22.44,D:29.48[0m
+[0;32mI (44380) main: PID out A:30.77 B:37.56 C:37.56 D:30.52 | meas A:29.23 B:22.44 C:22.44 D:29.48[0m
+[0;32mI (44420) main: Line: A:30.06,B:14.55,C:14.40,D:30.20[0m
+[0;32mI (44480) main: PID out A:29.94 B:45.45 C:45.60 D:29.80 | meas A:30.06 B:14.55 C:14.40 D:30.20[0m
+[0;32mI (44520) main: Line: A:38.10,B:-26.02,C:-26.22,D:38.48[0m
+[0;32mI (44580) main: PID out A:21.90 B:86.02 C:86.22 D:21.52 | meas A:38.10 B:-26.02 C:-26.22 D:38.48[0m
+[0;32mI (44620) main: Line: A:39.65,B:11.95,C:11.81,D:40.03[0m
+[0;32mI (44680) main: PID out A:20.35 B:48.05 C:48.19 D:19.97 | meas A:39.65 B:11.95 C:11.81 D:40.03[0m
+[0;32mI (44720) main: Line: A:55.39,B:15.61,C:16.08,D:55.17[0m
+[0;32mI (44780) main: PID out A:4.61 B:44.39 C:43.92 D:4.83 | meas A:55.39 B:15.61 C:16.08 D:55.17[0m
+[0;32mI (44820) main: Line: A:43.37,B:12.93,C:13.30,D:43.42[0m
+[0;32mI (44880) main: PID out A:16.63 B:47.07 C:46.70 D:16.58 | meas A:43.37 B:12.93 C:13.30 D:43.42[0m
+[0;32mI (44920) main: Line: A:37.05,B:5.76,C:5.92,D:36.90[0m
+[0;32mI (44980) main: PID out A:22.95 B:54.24 C:54.08 D:23.10 | meas A:37.05 B:5.76 C:5.92 D:36.90[0m
+[0;32mI (45020) main: Line: A:37.08,B:11.07,C:11.44,D:37.47[0m
+[0;32mI (45080) main: PID out A:22.92 B:48.93 C:48.56 D:22.53 | meas A:37.08 B:11.07 C:11.44 D:37.47[0m
+[0;32mI (45120) main: Line: A:39.98,B:16.06,C:15.56,D:40.12[0m
+[0;32mI (45180) main: PID out A:20.02 B:43.94 C:44.44 D:19.88 | meas A:39.98 B:16.06 C:15.56 D:40.12[0m
+[0;32mI (45220) main: Line: A:38.51,B:16.28,C:16.77,D:37.93[0m
+[0;32mI (45280) main: PID out A:21.49 B:43.72 C:43.23 D:22.07 | meas A:38.51 B:16.28 C:16.77 D:37.93[0m
+[0;32mI (45320) main: Line: A:35.10,B:15.04,C:15.35,D:35.45[0m
+[0;32mI (45380) main: PID out A:24.90 B:44.96 C:44.65 D:24.55 | meas A:35.10 B:15.04 C:15.35 D:35.45[0m
+[0;32mI (45420) main: Line: A:34.00,B:16.64,C:16.54,D:34.23[0m
+[0;32mI (45480) main: PID out A:26.00 B:43.36 C:43.46 D:25.77 | meas A:34.00 B:16.64 C:16.54 D:34.23[0m
+[0;32mI (45520) main: Line: A:34.31,B:18.03,C:18.32,D:34.17[0m
+[0;32mI (45580) main: PID out A:25.69 B:41.97 C:41.68 D:25.83 | meas A:34.31 B:18.03 C:18.32 D:34.17[0m
+[0;32mI (45620) main: Line: A:33.41,B:19.22,C:19.18,D:33.99[0m
+[0;32mI (45680) main: PID out A:26.59 B:40.78 C:40.82 D:26.01 | meas A:33.41 B:19.22 C:19.18 D:33.99[0m
+[0;32mI (45720) main: Line: A:32.57,B:19.52,C:18.96,D:32.48[0m
+[0;32mI (45780) main: PID out A:27.43 B:40.48 C:41.04 D:27.52 | meas A:32.57 B:19.52 C:18.96 D:32.48[0m
+[0;32mI (45820) main: Line: A:31.58,B:19.81,C:20.11,D:32.18[0m
+[0;32mI (45880) main: PID out A:28.42 B:40.19 C:39.89 D:27.82 | meas A:31.58 B:19.81 C:20.11 D:32.18[0m
+[0;32mI (45930) main: Line: A:31.34,B:20.79,C:20.90,D:32.12[0m
+[0;32mI (45980) main: PID out A:28.66 B:39.21 C:39.10 D:27.88 | meas A:31.34 B:20.79 C:20.90 D:32.12[0m
+[0;32mI (46030) main: Line: A:30.78,B:20.92,C:21.40,D:31.05[0m
+[0;32mI (46080) main: PID out A:29.22 B:39.08 C:38.60 D:28.95 | meas A:30.78 B:20.92 C:21.40 D:31.05[0m
+[0;32mI (46130) main: Line: A:30.34,B:21.29,C:21.79,D:30.23[0m
+[0;32mI (46180) main: PID out A:29.66 B:38.71 C:38.21 D:29.77 | meas A:30.34 B:21.29 C:21.79 D:30.23[0m
+[0;32mI (46230) main: Line: A:30.28,B:21.76,C:22.10,D:29.97[0m
+[0;32mI (46280) main: PID out A:29.72 B:38.24 C:37.90 D:30.03 | meas A:30.28 B:21.76 C:22.10 D:29.97[0m
+[0;32mI (46330) main: Line: A:29.64,B:22.46,C:22.14,D:29.50[0m
+[0;32mI (46380) main: PID out A:30.36 B:37.54 C:37.86 D:30.50 | meas A:29.64 B:22.46 C:22.14 D:29.50[0m
+[0;32mI (46430) main: Line: A:32.12,B:11.14,C:11.02,D:31.76[0m
+[0;32mI (46480) main: PID out A:27.88 B:48.86 C:48.98 D:28.24 | meas A:32.12 B:11.14 C:11.02 D:31.76[0m
+[0;32mI (46530) main: Line: A:40.80,B:-27.96,C:-27.70,D:40.58[0m
+[0;32mI (46580) main: PID out A:19.20 B:87.96 C:87.70 D:19.42 | meas A:40.80 B:-27.96 C:-27.70 D:40.58[0m
+[0;32mI (46630) main: Line: A:42.69,B:11.46,C:10.29,D:42.78[0m
+[0;32mI (46680) main: PID out A:17.31 B:48.54 C:49.71 D:17.22 | meas A:42.69 B:11.46 C:10.29 D:42.78[0m
+[0;32mI (46730) main: Line: A:56.67,B:13.73,C:13.97,D:56.11[0m
+[0;32mI (46780) main: PID out A:3.33 B:46.27 C:46.03 D:3.89 | meas A:56.67 B:13.73 C:13.97 D:56.11[0m
+[0;32mI (46830) main: Line: A:43.77,B:10.99,C:10.99,D:44.52[0m
+[0;32mI (46880) main: PID out A:16.23 B:49.01 C:49.01 D:15.48 | meas A:43.77 B:10.99 C:10.99 D:44.52[0m
+[0;32mI (46930) main: Line: A:38.18,B:5.07,C:4.96,D:38.10[0m
+[0;32mI (46980) main: PID out A:21.82 B:54.93 C:55.04 D:21.90 | meas A:38.18 B:5.07 C:4.96 D:38.10[0m
+[0;32mI (47030) main: Line: A:38.39,B:10.63,C:11.07,D:38.32[0m
+[0;32mI (47080) main: PID out A:21.61 B:49.37 C:48.93 D:21.68 | meas A:38.39 B:10.63 C:11.07 D:38.32[0m
+[0;32mI (47130) main: Line: A:40.68,B:15.49,C:15.40,D:40.69[0m
+[0;32mI (47180) main: PID out A:19.32 B:44.51 C:44.60 D:19.31 | meas A:40.68 B:15.49 C:15.40 D:40.69[0m
+[0;32mI (47230) main: Line: A:38.77,B:15.66,C:15.54,D:38.31[0m
+[0;32mI (47280) main: PID out A:21.23 B:44.34 C:44.46 D:21.69 | meas A:38.77 B:15.66 C:15.54 D:38.31[0m
+[0;32mI (47330) main: Line: A:35.71,B:15.13,C:14.82,D:35.61[0m
+[0;32mI (47380) main: PID out A:24.29 B:44.87 C:45.18 D:24.39 | meas A:35.71 B:15.13 C:14.82 D:35.61[0m
+[0;32mI (47430) main: Line: A:34.69,B:16.64,C:15.88,D:35.18[0m
+[0;32mI (47480) main: PID out A:25.31 B:43.36 C:44.12 D:24.82 | meas A:34.69 B:16.64 C:15.88 D:35.18[0m
+[0;32mI (47530) main: Line: A:34.62,B:17.94,C:17.17,D:34.84[0m
+[0;32mI (47580) main: PID out A:25.38 B:42.06 C:42.83 D:25.16 | meas A:34.62 B:17.94 C:17.17 D:34.84[0m
+[0;32mI (47630) main: Line: A:33.32,B:18.68,C:18.78,D:34.52[0m
+[0;32mI (47680) main: PID out A:26.68 B:41.32 C:41.22 D:25.48 | meas A:33.32 B:18.68 C:18.78 D:34.52[0m
+[0;32mI (47730) main: Line: A:32.54,B:19.45,C:18.97,D:33.48[0m
+[0;32mI (47780) main: PID out A:27.46 B:40.55 C:41.03 D:26.52 | meas A:32.54 B:19.45 C:18.97 D:33.48[0m
+[0;32mI (47830) main: Line: A:32.26,B:19.53,C:20.10,D:32.11[0m
+[0;32mI (47880) main: PID out A:27.74 B:40.47 C:39.90 D:27.89 | meas A:32.26 B:19.53 C:20.10 D:32.11[0m
+[0;32mI (47930) main: Line: A:31.47,B:19.88,C:20.65,D:31.35[0m
+[0;32mI (47980) main: PID out A:28.53 B:40.12 C:39.35 D:28.65 | meas A:31.47 B:19.88 C:20.65 D:31.35[0m
+[0;32mI (48030) main: Line: A:31.11,B:21.11,C:21.17,D:31.35[0m
+[0;32mI (48080) main: PID out A:28.89 B:38.89 C:38.83 D:28.65 | meas A:31.11 B:21.11 C:21.17 D:31.35[0m
+[0;32mI (48130) main: Line: A:30.74,B:21.89,C:21.12,D:30.59[0m
+[0;32mI (48180) main: PID out A:29.26 B:38.11 C:38.88 D:29.41 | meas A:30.74 B:21.89 C:21.12 D:30.59[0m
+[0;32mI (48230) main: Line: A:29.96,B:22.06,C:21.80,D:30.68[0m
+[0;32mI (48280) main: PID out A:30.04 B:37.94 C:38.20 D:29.32 | meas A:29.96 B:22.06 C:21.80 D:30.68[0m
+[0;32mI (48330) main: Line: A:29.09,B:21.96,C:22.65,D:30.24[0m
+[0;32mI (48380) main: PID out A:30.91 B:38.04 C:37.35 D:29.76 | meas A:29.09 B:21.96 C:22.65 D:30.24[0m
+[0;32mI (48430) main: Line: A:29.86,B:9.49,C:9.73,D:31.20[0m
+[0;32mI (48480) main: PID out A:30.14 B:50.51 C:50.27 D:28.80 | meas A:29.86 B:9.49 C:9.73 D:31.20[0m
+[0;32mI (48530) main: Line: A:38.97,B:-23.35,C:-22.45,D:39.26[0m
+[0;32mI (48580) main: PID out A:21.03 B:83.35 C:82.45 D:20.74 | meas A:38.97 B:-23.35 C:-22.45 D:39.26[0m
+[0;32mI (48630) main: Line: A:43.36,B:12.98,C:13.03,D:43.24[0m
+[0;32mI (48680) main: PID out A:16.64 B:47.02 C:46.97 D:16.76 | meas A:43.36 B:12.98 C:13.03 D:43.24[0m
+[0;32mI (48730) main: Line: A:54.32,B:14.45,C:14.97,D:53.29[0m
+[0;32mI (48780) main: PID out A:5.68 B:45.55 C:45.03 D:6.71 | meas A:54.32 B:14.45 C:14.97 D:53.29[0m
+[0;32mI (48830) main: Line: A:42.00,B:10.79,C:10.54,D:41.68[0m
+[0;32mI (48880) main: PID out A:18.00 B:49.21 C:49.46 D:18.32 | meas A:42.00 B:10.79 C:10.54 D:41.68[0m
+[0;32mI (48930) main: Line: A:37.53,B:7.22,C:6.77,D:37.57[0m
+[0;32mI (48980) main: PID out A:22.47 B:52.78 C:53.23 D:22.43 | meas A:37.53 B:7.22 C:6.77 D:37.57[0m
+[0;32mI (49030) main: Line: A:38.03,B:13.00,C:12.58,D:38.17[0m
+[0;32mI (49080) main: PID out A:21.97 B:47.00 C:47.42 D:21.83 | meas A:38.03 B:13.00 C:12.58 D:38.17[0m
+[0;32mI (49130) main: Line: A:39.16,B:15.84,C:15.79,D:40.15[0m
+[0;32mI (49180) main: PID out A:20.84 B:44.16 C:44.21 D:19.85 | meas A:39.16 B:15.84 C:15.79 D:40.15[0m
+[0;32mI (49230) main: Line: A:37.18,B:15.62,C:16.26,D:37.10[0m
+[0;32mI (49280) main: PID out A:22.82 B:44.38 C:43.74 D:22.90 | meas A:37.18 B:15.62 C:16.26 D:37.10[0m
+[0;32mI (49340) main: Line: A:34.91,B:15.43,C:15.71,D:34.92[0m
+[0;32mI (49380) main: PID out A:25.09 B:44.57 C:44.29 D:25.08 | meas A:34.91 B:15.43 C:15.71 D:34.92[0m
+[0;32mI (49440) main: Line: A:34.25,B:17.08,C:17.37,D:34.67[0m
+[0;32mI (49480) main: PID out A:25.75 B:42.92 C:42.63 D:25.33 | meas A:34.25 B:17.08 C:17.37 D:34.67[0m
+[0;32mI (49540) main: Line: A:34.06,B:18.43,C:18.53,D:33.93[0m
+[0;32mI (49580) main: PID out A:25.94 B:41.57 C:41.47 D:26.07 | meas A:34.06 B:18.43 C:18.53 D:33.93[0m
+[0;32mI (49640) main: Line: A:33.04,B:19.20,C:19.17,D:32.96[0m
+[0;32mI (49680) main: PID out A:26.96 B:40.80 C:40.83 D:27.04 | meas A:33.04 B:19.20 C:19.17 D:32.96[0m
+[0;32mI (49740) main: Line: A:32.20,B:19.74,C:19.55,D:32.30[0m
+[0;32mI (49780) main: PID out A:27.80 B:40.26 C:40.45 D:27.70 | meas A:32.20 B:19.74 C:19.55 D:32.30[0m
+[0;32mI (49840) main: Line: A:31.51,B:20.44,C:20.22,D:31.84[0m
+[0;32mI (49880) main: PID out A:28.49 B:39.56 C:39.78 D:28.16 | meas A:31.51 B:20.44 C:20.22 D:31.84[0m
+[0;32mI (49940) main: Line: A:31.10,B:20.96,C:21.13,D:31.29[0m
+[0;32mI (49980) main: PID out A:28.90 B:39.04 C:38.87 D:28.71 | meas A:31.10 B:20.96 C:21.13 D:31.29[0m
+[0;32mI (50040) main: Line: A:30.51,B:21.40,C:21.19,D:30.46[0m
+[0;32mI (50080) main: PID out A:29.49 B:38.60 C:38.81 D:29.54 | meas A:30.51 B:21.40 C:21.19 D:30.46[0m
+[0;32mI (50140) main: Line: A:30.29,B:21.62,C:21.61,D:30.31[0m
+[0;32mI (50180) main: PID out A:29.71 B:38.38 C:38.39 D:29.69 | meas A:30.29 B:21.62 C:21.61 D:30.31[0m
+[0;32mI (50240) main: Line: A:29.63,B:22.42,C:22.14,D:29.92[0m
+[0;32mI (50280) main: PID out A:30.37 B:37.58 C:37.86 D:30.08 | meas A:29.63 B:22.42 C:22.14 D:29.92[0m
+[0;32mI (50340) main: Line: A:29.31,B:22.48,C:22.47,D:29.67[0m
+[0;32mI (50380) main: PID out A:30.69 B:37.52 C:37.53 D:30.33 | meas A:29.31 B:22.48 C:22.47 D:29.67[0m
+[0;32mI (50440) main: Line: A:31.77,B:5.33,C:5.87,D:33.22[0m
+[0;32mI (50480) main: PID out A:28.23 B:54.67 C:54.13 D:26.78 | meas A:31.77 B:5.33 C:5.87 D:33.22[0m
+[0;32mI (50540) main: Line: A:41.78,B:-23.54,C:-23.07,D:41.89[0m
+[0;32mI (50580) main: PID out A:18.22 B:83.54 C:83.07 D:18.11 | meas A:41.78 B:-23.54 C:-23.07 D:41.89[0m
+[0;32mI (50640) main: Line: A:46.65,B:11.94,C:12.05,D:46.29[0m
+[0;32mI (50680) main: PID out A:13.35 B:48.06 C:47.95 D:13.71 | meas A:46.65 B:11.94 C:12.05 D:46.29[0m
+[0;32mI (50740) main: Line: A:54.37,B:12.25,C:12.64,D:54.08[0m
+[0;32mI (50780) main: PID out A:5.63 B:47.75 C:47.36 D:5.92 | meas A:54.37 B:12.25 C:12.64 D:54.08[0m
+[0;32mI (50840) main: Line: A:42.39,B:8.34,C:8.00,D:42.77[0m
+[0;32mI (50880) main: PID out A:17.61 B:51.66 C:52.00 D:17.23 | meas A:42.39 B:8.34 C:8.00 D:42.77[0m
+[0;32mI (50940) main: Line: A:38.25,B:6.22,C:6.54,D:38.69[0m
+[0;32mI (50980) main: PID out A:21.75 B:53.78 C:53.46 D:21.31 | meas A:38.25 B:6.22 C:6.54 D:38.69[0m
+[0;32mI (51040) main: Line: A:40.11,B:12.56,C:12.48,D:40.41[0m
+[0;32mI (51080) main: PID out A:19.89 B:47.44 C:47.52 D:19.59 | meas A:40.11 B:12.56 C:12.48 D:40.41[0m
+[0;32mI (51140) main: Line: A:39.68,B:14.95,C:15.10,D:39.88[0m
+[0;32mI (51180) main: PID out A:20.32 B:45.05 C:44.90 D:20.12 | meas A:39.68 B:14.95 C:15.10 D:39.88[0m
+[0;32mI (51240) main: Line: A:36.98,B:15.03,C:14.97,D:37.96[0m
+[0;32mI (51280) main: PID out A:23.02 B:44.97 C:45.03 D:22.04 | meas A:36.98 B:15.03 C:14.97 D:37.96[0m
+[0;32mI (51340) main: Line: A:35.29,B:15.35,C:15.64,D:35.81[0m
+[0;32mI (51380) main: PID out A:24.71 B:44.65 C:44.36 D:24.19 | meas A:35.29 B:15.35 C:15.64 D:35.81[0m
+[0;32mI (51440) main: Line: A:34.81,B:16.63,C:17.08,D:34.71[0m
+[0;32mI (51480) main: PID out A:25.19 B:43.37 C:42.92 D:25.29 | meas A:34.81 B:16.63 C:17.08 D:34.71[0m
+[0;32mI (51540) main: Line: A:34.53,B:18.29,C:18.27,D:34.73[0m
+[0;32mI (51580) main: PID out A:25.47 B:41.71 C:41.73 D:25.27 | meas A:34.53 B:18.29 C:18.27 D:34.73[0m
+[0;32mI (51640) main: Line: A:33.58,B:18.71,C:18.96,D:32.97[0m
+[0;32mI (51680) main: PID out A:26.42 B:41.29 C:41.04 D:27.03 | meas A:33.58 B:18.71 C:18.96 D:32.97[0m
+[0;32mI (51740) main: Line: A:32.26,B:19.08,C:19.46,D:32.53[0m
+[0;32mI (51780) main: PID out A:27.74 B:40.92 C:40.54 D:27.47 | meas A:32.26 B:19.08 C:19.46 D:32.53[0m
+[0;32mI (51840) main: Line: A:31.92,B:20.30,C:19.93,D:32.12[0m
+[0;32mI (51880) main: PID out A:28.08 B:39.70 C:40.07 D:27.88 | meas A:31.92 B:20.30 C:19.93 D:32.12[0m
+[0;32mI (51940) main: Line: A:31.54,B:20.94,C:21.07,D:31.22[0m
+[0;32mI (51980) main: PID out A:28.46 B:39.06 C:38.93 D:28.78 | meas A:31.54 B:20.94 C:21.07 D:31.22[0m
+[0;32mI (52040) main: Line: A:30.36,B:21.25,C:21.19,D:30.92[0m
+[0;32mI (52080) main: PID out A:29.64 B:38.75 C:38.81 D:29.08 | meas A:30.36 B:21.25 C:21.19 D:30.92[0m
+[0;32mI (52140) main: Line: A:30.17,B:21.29,C:21.78,D:30.46[0m
+[0;32mI (52180) main: PID out A:29.83 B:38.71 C:38.22 D:29.54 | meas A:30.17 B:21.29 C:21.78 D:30.46[0m
+[0;32mI (52240) main: Line: A:30.09,B:22.41,C:22.18,D:30.11[0m
+[0;32mI (52280) main: PID out A:29.91 B:37.59 C:37.82 D:29.89 | meas A:30.09 B:22.41 C:22.18 D:30.11[0m
+[0;32mI (52340) main: Line: A:29.57,B:22.75,C:22.51,D:29.66[0m
+[0;32mI (52380) main: PID out A:30.43 B:37.25 C:37.49 D:30.34 | meas A:29.57 B:22.75 C:22.51 D:29.66[0m
+[0;32mI (52440) main: Line: A:32.39,B:3.11,C:2.67,D:33.54[0m
+[0;32mI (52480) main: PID out A:27.61 B:56.89 C:57.33 D:26.46 | meas A:32.39 B:3.11 C:2.67 D:33.54[0m
+[0;32mI (52550) main: Line: A:41.90,B:-20.07,C:-20.50,D:42.67[0m
+[0;32mI (52580) main: PID out A:18.10 B:80.07 C:80.50 D:17.33 | meas A:41.90 B:-20.07 C:-20.50 D:42.67[0m
+[0;32mI (52650) main: Line: A:47.59,B:12.56,C:12.52,D:48.13[0m
+[0;32mI (52680) main: PID out A:12.41 B:47.44 C:47.48 D:11.87 | meas A:47.59 B:12.56 C:12.52 D:48.13[0m
+[0;32mI (52750) main: Line: A:52.27,B:11.32,C:11.97,D:52.14[0m
+[0;32mI (52780) main: PID out A:7.73 B:48.68 C:48.03 D:7.86 | meas A:52.27 B:11.32 C:11.97 D:52.14[0m
+[0;32mI (52850) main: Line: A:41.13,B:7.52,C:8.03,D:41.47[0m
+[0;32mI (52880) main: PID out A:18.87 B:52.48 C:51.97 D:18.53 | meas A:41.13 B:7.52 C:8.03 D:41.47[0m
+[0;32mI (52950) main: Line: A:39.25,B:7.59,C:7.75,D:39.25[0m
+[0;32mI (52980) main: PID out A:20.75 B:52.41 C:52.25 D:20.75 | meas A:39.25 B:7.59 C:7.75 D:39.25[0m
+[0;32mI (53050) main: Line: A:40.46,B:13.33,C:13.43,D:40.19[0m
+[0;32mI (53080) main: PID out A:19.54 B:46.67 C:46.57 D:19.81 | meas A:40.46 B:13.33 C:13.43 D:40.19[0m
+[0;32mI (53150) main: Line: A:39.62,B:14.48,C:14.63,D:39.39[0m
+[0;32mI (53180) main: PID out A:20.38 B:45.52 C:45.37 D:20.61 | meas A:39.62 B:14.48 C:14.63 D:39.39[0m
+[0;32mI (53250) main: Line: A:37.01,B:15.21,C:14.44,D:36.65[0m
+[0;32mI (53280) main: PID out A:22.99 B:44.79 C:45.56 D:23.35 | meas A:37.01 B:15.21 C:14.44 D:36.65[0m
+[0;32mI (53350) main: Line: A:35.38,B:15.57,C:15.57,D:35.51[0m
+[0;32mI (53380) main: PID out A:24.62 B:44.43 C:44.43 D:24.49 | meas A:35.38 B:15.57 C:15.57 D:35.51[0m
+[0;32mI (53450) main: Line: A:35.13,B:17.05,C:17.48,D:35.18[0m
+[0;32mI (53480) main: PID out A:24.87 B:42.95 C:42.52 D:24.82 | meas A:35.13 B:17.05 C:17.48 D:35.18[0m
+[0;32mI (53550) main: Line: A:34.07,B:18.31,C:18.43,D:34.14[0m
+[0;32mI (53580) main: PID out A:25.93 B:41.69 C:41.57 D:25.86 | meas A:34.07 B:18.31 C:18.43 D:34.14[0m
+[0;32mI (53650) main: Line: A:32.94,B:19.00,C:18.96,D:32.91[0m
+[0;32mI (53680) main: PID out A:27.06 B:41.00 C:41.04 D:27.09 | meas A:32.94 B:19.00 C:18.96 D:32.91[0m
+[0;32mI (53750) main: Line: A:32.10,B:19.89,C:19.65,D:32.55[0m
+[0;32mI (53780) main: PID out A:27.90 B:40.11 C:40.35 D:27.45 | meas A:32.10 B:19.89 C:19.65 D:32.55[0m
+[0;32mI (53850) main: Line: A:31.68,B:20.40,C:20.50,D:31.49[0m
+[0;32mI (53880) main: PID out A:28.32 B:39.60 C:39.50 D:28.51 | meas A:31.68 B:20.40 C:20.50 D:31.49[0m
+[0;32mI (53950) main: Line: A:30.82,B:21.05,C:21.00,D:30.97[0m
+[0;32mI (53980) main: PID out A:29.18 B:38.95 C:39.00 D:29.03 | meas A:30.82 B:21.05 C:21.00 D:30.97[0m
+[0;32mI (54050) main: Line: A:30.29,B:21.73,C:21.20,D:30.55[0m
+[0;32mI (54080) main: PID out A:29.71 B:38.27 C:38.80 D:29.45 | meas A:30.29 B:21.73 C:21.20 D:30.55[0m
+[0;32mI (54150) main: Line: A:30.05,B:21.95,C:22.09,D:30.19[0m
+[0;32mI (54180) main: PID out A:29.95 B:38.05 C:37.91 D:29.81 | meas A:30.05 B:21.95 C:22.09 D:30.19[0m
+[0;32mI (54250) main: Line: A:29.54,B:22.32,C:22.92,D:29.56[0m
+[0;32mI (54280) main: PID out A:30.46 B:37.68 C:37.08 D:30.44 | meas A:29.54 B:22.32 C:22.92 D:29.56[0m
+[0;32mI (54350) main: Line: A:29.11,B:22.66,C:22.62,D:29.26[0m
+[0;32mI (54380) main: PID out A:30.89 B:37.34 C:37.38 D:30.74 | meas A:29.11 B:22.66 C:22.62 D:29.26[0m
+[0;32mI (54450) main: Line: A:31.56,B:2.40,C:2.13,D:31.41[0m
+[0;32mI (54480) main: PID out A:28.44 B:57.60 C:57.87 D:28.59 | meas A:31.56 B:2.40 C:2.13 D:31.41[0m
+[0;32mI (54550) main: Line: A:41.71,B:-16.06,C:-16.43,D:41.09[0m
+[0;32mI (54580) main: PID out A:18.29 B:76.06 C:76.43 D:18.91 | meas A:41.71 B:-16.06 C:-16.43 D:41.09[0m
+[0;32mI (54650) main: Line: A:47.67,B:13.46,C:13.22,D:47.23[0m
+[0;32mI (54680) main: PID out A:12.33 B:46.54 C:46.78 D:12.77 | meas A:47.67 B:13.46 C:13.22 D:47.23[0m
+[0;32mI (54750) main: Line: A:49.74,B:12.34,C:11.55,D:49.80[0m
+[0;32mI (54780) main: PID out A:10.26 B:47.66 C:48.45 D:10.20 | meas A:49.74 B:12.34 C:11.55 D:49.80[0m
+[0;32mI (54850) main: Line: A:40.54,B:8.31,C:8.49,D:40.52[0m
+[0;32mI (54880) main: PID out A:19.46 B:51.69 C:51.51 D:19.48 | meas A:40.54 B:8.31 C:8.49 D:40.52[0m
+[0;32mI (54950) main: Line: A:38.78,B:9.41,C:9.46,D:39.23[0m
+[0;32mI (54980) main: PID out A:21.22 B:50.59 C:50.54 D:20.77 | meas A:38.78 B:9.41 C:9.46 D:39.23[0m
+[0;32mI (55050) main: Line: A:40.11,B:13.93,C:14.12,D:39.74[0m
+[0;32mI (55080) main: PID out A:19.89 B:46.07 C:45.88 D:20.26 | meas A:40.11 B:13.93 C:14.12 D:39.74[0m
+[0;32mI (55150) main: Line: A:38.07,B:15.30,C:15.33,D:38.16[0m
+[0;32mI (55180) main: PID out A:21.93 B:44.70 C:44.67 D:21.84 | meas A:38.07 B:15.30 C:15.33 D:38.16[0m
+[0;32mI (55250) main: Line: A:35.86,B:15.72,C:15.18,D:35.81[0m
