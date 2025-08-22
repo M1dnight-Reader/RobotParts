@@ -1,0 +1,100 @@
+nDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+[0;32mI (315) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| Op�ets Jul 29 2019 12:21:46[0m
+
+rst:0x1 (POWERON_RESET),boot:0x12 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 14 2025 16:19:53[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b1f0h ( 45552) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0001b218 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (106) esp_image: segment 2: paddr=0001b23c vaddr=3ffb0000 size=023a4h (  9124) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=0001d5e8 vaddr=40080000 size=02a30h ( 10800) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=17a6ch ( 96876) map[0m
+[0;32mI (158) esp_image: segment 5: paddr=00037a94 vaddr=40082a30 size=0b2d4h ( 45780) load[0m
+[0;32mI (182) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (182) boot: Disabling RNG early entropy source...[0m
+[0;32mI (193) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu start user code[0m
+[0;32mI (201) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (201) app_init: Application information:[0m
+[0;32mI (201) app_init: Project name:     hello_world[0m
+[0;32mI (205) app_init: App version:      c3f7ac7[0m
+[0;32mI (209) app_init: Compile time:     Aug 14 2025 16:19:32[0m
+[0;32mI (214) app_init: ELF file SHA256:  847262346...[0m
+[0;32mI (219) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (222) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (226) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (230) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (234) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (241) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (246) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (251) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (256) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (262) heap_init: At 4008DD04 len 000122FC (72 KiB): IRAM[0m
+[0;32mI (268) spi_flash: detected chip: generic[0m
+[0;32mI (271) spi_flash: flash io: dio[0m
+[0;33mW (274) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (286) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (295) main_task: Started on CPU0[0m
+[0;32mI (305) main_task: Calling app_main()[0m
+[0;32mI (305) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (305) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (315) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (335) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (345) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (355) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (365) uart: queue free spaces: 64[0m
+[0;32mI (365) main_task: Returned from app_main()[0m
+[0;32mI (3635) uart_rx: Line: A:59.68,B:5.69,C:59.65,D:60.57[0m
+:58.61,B:5.20,C:58.49,D:59.45AA:59.68,B:5.69,C:59.65,D:60.57
+[0;32mI (3735) uart_rx: Line: A:59.74,B:5.77,C:59.87,D:61.19[0m
+[0;32mI (3835) uart_rx: Line: A:59.99,B:5.76,C:59.65,D:61.35[0m
+[0;32mI (3935) uart_rx: Line: A:59.96,B:5.73,C:59.72,D:61.31[0m
+[0;32mI (4035) uart_rx: Line: A:60.01,B:5.72,C:59.91,D:61.45[0m
+[0;32mI (4135) uart_rx: Line: A:60.10,B:5.83,C:59.86,D:61.37[0m
+[0;32mI (4245) uart_rx: Line: A:60.15,B:5.90,C:60.03,D:61.55[0m
+[0;32mI (4345) uart_rx: Line: A:60.10,B:5.93,C:59.89,D:61.33[0m
+[0;32mI (4445) uart_rx: Line: A:60.15,B:5.73,C:59.90,D:61.47[0m
+[0;32mI (4545) uart_rx: Line: A:60.29,B:5.74,C:59.92,D:61.60[0m
+[0;32mI (4645) uart_rx: Line: A:60.30,B:5.71,C:60.03,D:61.46[0m
+[0;32mI (4745) uart_rx: Line: A:60.25,B:5.96,C:59.84,D:61.31[0m
+[0;32mI (4845) uart_rx: Line: A:60.46,B:5.84,C:59.96,D:61.41[0m
+[0;32mI (4945) uart_rx: Line: A:60.30,B:6.03,C:60.08,D:61.49[0m
+[0;32mI (5045) uart_rx: Line: A:60.25,B:5.86,C:59.80,D:61.11[0m
+[0;32mI (5145) uart_rx: Line: A:60.13,B:5.76,C:59.86,D:61.49[0m
+[0;32mI (5245) uart_rx: Line: A:60.42,B:5.86,C:59.82,D:61.33[0m
+[0;32mI (5345) uart_rx: Line: A:60.36,B:5.95,C:59.74,D:61.23[0m
+[0;32mI (5445) uart_rx: Line: A:60.05,B:6.05,C:59.62,D:61.49[0m
+[0;32mI (5545) uart_rx: Line: A:60.54,B:6.06,C:60.10,D:61.55[0m
+[0;32mI (5645) uart_rx: Line: A:60.26,B:5.92,C:59.83,D:61.21[0m
+[0;32mI (5745) uart_rx: Line: A:60.57,B:6.05,C:60.15,D:61.39[0m
+[0;32mI (5845) uart_rx: Line: A:60.55,B:5.93,C:60.09,D:61.54[0m
+[0;32mI (5945) uart_rx: Line: A:60.41,B:5.97,C:59.85,D:61.47[0m
+[0;32mI (6045) uart_rx: Line: A:60.72,B:6.01,C:60.20,D:61.67[0m
+[0;32mI (6145) uart_rx: Line: A:59.85,B:5.92,C:59.46,D:61.00[0m
+[0;32mI (6245) uart_rx: Line: A:53.24,B:4.84,C:53.20,D:54.15[0m
+[0;32mI (6345) uart_rx: Line: A:44.82,B:3.62,C:44.77,D:45.71[0m
+[0;32mI (6445) uart_rx: Line: A:36.55,B:2.65,C:36.28,D:37.06[0m
+[0;32mI (6545) uart_rx: Line: A:27.68,B:1.60,C:28.72,D:28.70[0m

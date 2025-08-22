@@ -1,0 +1,439 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug 14 2025 16:19:53[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bc6ch ( 48236) map[0m
+[0;32mI (106) esp_image: segment 1: paddr=0001bc94 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=0001bcb8 vaddr=3ffb0000 size=023a4h (  9124) load[0m
+[0;32mI (114) esp_image: segment 3: paddr=0001e064 vaddr=40080000 size=01fb4h (  8116) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=20d90h (134544) map[0m
+[0;32mI (171) esp_image: segment 5: paddr=00040db8 vaddr=40081fb4 size=0be10h ( 48656) load[0m
+[0;32mI (197) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (197) boot: Disabling RNG early entropy source...[0m
+[0;32mI (208) cpu_start: Multicore app[0m
+[0;32mI (216) cpu_start: Pro cpu start user code[0m
+[0;32mI (216) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (216) app_init: Application information:[0m
+[0;32mI (216) app_init: Project name:     hello_world[0m
+[0;32mI (220) app_init: App version:      c3f7ac7-dirty[0m
+[0;32mI (225) app_init: Compile time:     Aug 19 2025 15:25:04[0m
+[0;32mI (230) app_init: ELF file SHA256:  47d7c2049...[0m
+[0;32mI (234) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (238) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (242) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (246) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (256) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (261) heap_init: At 3FFB2C70 len 0002D390 (180 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (272) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 4008DDC4 len 0001223C (72 KiB): IRAM[0m
+[0;32mI (284) spi_flash: detected chip: generic[0m
+[0;32mI (286) spi_flash: flash io: dio[0m
+[0;33mW (289) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (301) mcpwm(legacy): legacy driver is deprecated, please migrate to `driver/mcpwm_prelude.h`[0m
+[0;32mI (310) main_task: Started on CPU0[0m
+[0;32mI (320) main_task: Calling app_main()[0m
+[0;32mI (320) main: Starting app[0m
+[0;32mI (320) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (320) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (330) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (340) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (350) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[27]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (360) gpio: GPIO[32]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[33]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) uart: queue free spaces: 10[0m
+[0;32mI (380) main: Tasks created[0m
+[0;32mI (390) main_task: Returned from app_main()[0m
+[0;33mW (480) main: No rpm message this cycle[0m
+[0;33mW (580) main: No rpm message this cycle[0m
+[0;33mW (680) main: No rpm message this cycle[0m
+[0;33mW (780) main: No rpm message this cycle[0m
+[0;33mW (880) main: No rpm message this cycle[0m
+[0;33mW (980) main: No rpm message this cycle[0m
+[0;33mW (1080) main: No rpm message this cycle[0m
+[0;33mW (1180) main: No rpm message this cycle[0m
+[0;33mW (1280) main: No rpm message this cycle[0m
+[0;33mW (1380) main: No rpm message this cycle[0m
+[0;33mW (1480) main: No rpm message this cycle[0m
+[0;33mW (1580) main: No rpm message this cycle[0m
+[0;33mW (1680) main: No rpm message this cycle[0m
+[0;33mW (1780) main: No rpm message this cycle[0m
+[0;33mW (1880) main: No rpm message this cycle[0m
+[0;33mW (1980) main: No rpm message this cycle[0m
+[0;33mW (2080) main: No rpm message this cycle[0m
+[0;33mW (2180) main: No rpm message this cycle[0m
+[0;33mW (2280) main: No rpm message this cycle[0m
+[0;33mW (2380) main: No rpm message this cycle[0m
+[0;33mW (2480) main: No rpm message this cycle[0m
+[0;33mW (2580) main: No rpm message this cycle[0m
+[0;33mW (2680) main: No rpm message this cycle[0m
+[0;33mW (2780) main: No rpm message this cycle[0m
+[0;33mW (2880) main: No rpm message this cycle[0m
+[0;33mW (2980) main: No rpm message this cycle[0m
+[0;33mW (3080) main: No rpm message this cycle[0m
+[0;33mW (3180) main: No rpm message this cycle[0m
+[0;33mW (3280) main: No rpm message this cycle[0m
+[0;33mW (3380) main: No rpm message this cycle[0m
+[0;33mW (3480) main: No rpm message this cycle[0m
+[0;32mI (3520) main: Line: [0m
+[0;33mW (3520) main: Bad format (parsed=-1): [0m
+[0;33mW (3580) main: No rpm message this cycle[0m
+[0;32mI (3620) main: Line: A:44.37,B:-58.10,C:-57.75,D:44.36[0m
+[0;32mI (3680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:44.37 B:-58.10 C:-57.75 D:44.36[0m
+[0;32mI (3720) main: Line: A:38.92,B:-49.46,C:-49.90,D:38.85[0m
+[0;32mI (3780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:38.92 B:-49.46 C:-49.90 D:38.85[0m
+[0;32mI (3820) main: Line: A:8.44,B:-8.10,C:-9.24,D:8.06[0m
+[0;32mI (3880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:8.44 B:-8.10 C:-9.24 D:8.06[0m
+[0;32mI (3920) main: Line: A:0.39,B:0.13,C:-0.25,D:0.53[0m
+[0;32mI (3980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.39 B:0.13 C:-0.25 D:0.53[0m
+[0;32mI (4020) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (4080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (4120) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (4180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (4220) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (4280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (4320) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (4380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (4420) main: Line: A:4.32,B:-5.55,C:-5.52,D:3.83[0m
+[0;32mI (4480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:4.32 B:-5.55 C:-5.52 D:3.83[0m
+[0;32mI (4520) main: Line: A:28.23,B:-36.98,C:-36.77,D:28.70[0m
+[0;32mI (4580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:28.23 B:-36.98 C:-36.77 D:28.70[0m
+[0;32mI (4620) main: Line: A:6.06,B:-5.70,C:-6.90,D:5.91[0m
+[0;32mI (4680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:6.06 B:-5.70 C:-6.90 D:5.91[0m
+[0;32mI (4720) main: Line: A:0.13,B:-0.27,C:-0.13,D:0.27[0m
+[0;32mI (4780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.13 B:-0.27 C:-0.13 D:0.27[0m
+[0;32mI (4820) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (4880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (4920) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (4980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (5020) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (5080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (5120) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (5180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (5220) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (5280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (5320) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (5380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (5420) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (5480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (5520) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (5580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (5630) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (5680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (5730) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (5780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (5830) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (5880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (5930) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (5980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (6030) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (6080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (6130) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (6180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (6230) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (6280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (6330) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (6380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (6430) main: Line: A:4.55,B:-6.01,C:-6.11,D:4.89[0m
+[0;32mI (6480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:4.55 B:-6.01 C:-6.11 D:4.89[0m
+[0;32mI (6530) main: Line: A:27.39,B:-35.92,C:-35.47,D:27.90[0m
+[0;32mI (6580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:27.39 B:-35.92 C:-35.47 D:27.90[0m
+[0;32mI (6630) main: Line: A:5.63,B:-5.07,C:-6.17,D:5.22[0m
+[0;32mI (6680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:5.63 B:-5.07 C:-6.17 D:5.22[0m
+[0;32mI (6730) main: Line: A:0.14,B:0.14,C:0.00,D:0.25[0m
+[0;32mI (6780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.14 B:0.14 C:0.00 D:0.25[0m
+[0;32mI (6830) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (6880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (6930) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (6980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (7030) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (7080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (7130) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (7180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (7230) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (7280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (7330) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (7380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (7430) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (7480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (7530) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (7580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (7630) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (7680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (7730) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (7780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (7830) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (7880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (7930) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (7980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (8030) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (8080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (8130) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (8180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (8230) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (8280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (8330) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (8380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (8430) main: Line: A:5.27,B:-7.14,C:-7.53,D:5.86[0m
+[0;32mI (8480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:5.27 B:-7.14 C:-7.53 D:5.86[0m
+[0;32mI (8530) main: Line: A:27.43,B:-35.50,C:-35.62,D:27.69[0m
+[0;32mI (8580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:27.43 B:-35.50 C:-35.62 D:27.69[0m
+[0;32mI (8630) main: Line: A:5.14,B:-4.66,C:-5.74,D:5.08[0m
+[0;32mI (8680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:5.14 B:-4.66 C:-5.74 D:5.08[0m
+[0;32mI (8730) main: Line: A:0.13,B:0.26,C:0.13,D:0.00[0m
+[0;32mI (8780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.13 B:0.26 C:0.13 D:0.00[0m
+[0;32mI (8830) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (8880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (8930) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (8980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (9030) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (9080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (9130) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (9180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (9230) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (9280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (9330) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (9380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (9430) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (9480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (9530) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (9580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (9630) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (9680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (9730) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (9780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (9830) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (9880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (9930) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (9980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (10030) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (10080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (10130) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (10180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (10230) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (10280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (10330) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (10380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (10430) main: Line: A:5.67,B:-7.40,C:-7.89,D:5.91[0m
+[0;32mI (10480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:5.67 B:-7.40 C:-7.89 D:5.91[0m
+[0;32mI (10540) main: Line: A:26.24,B:-33.73,C:-33.62,D:26.44[0m
+[0;32mI (10580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:26.24 B:-33.73 C:-33.62 D:26.44[0m
+[0;32mI (10630) main: Line: A:4.73,B:-4.12,C:-4.98,D:4.40[0m
+[0;32mI (10680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:4.73 B:-4.12 C:-4.98 D:4.40[0m
+[0;32mI (10730) main: Line: A:-0.27,B:0.00,C:0.00,D:0.13[0m
+[0;32mI (10780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:-0.27 B:0.00 C:0.00 D:0.13[0m
+[0;32mI (10830) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (10880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (10930) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (10980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (11040) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (11080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (11140) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (11180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (11240) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (11280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (11340) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (11380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (11440) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (11480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (11540) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (11580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (11640) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (11680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (11740) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (11780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (11840) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (11880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (11940) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (11980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (12040) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (12080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (12140) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (12180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (12240) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (12280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (12340) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (12380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (12440) main: Line: A:6.30,B:-9.23,C:-8.95,D:6.53[0m
+[0;32mI (12480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:6.30 B:-9.23 C:-8.95 D:6.53[0m
+[0;32mI (12540) main: Line: A:25.17,B:-32.47,C:-32.42,D:25.43[0m
+[0;32mI (12580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:25.17 B:-32.47 C:-32.42 D:25.43[0m
+[0;32mI (12640) main: Line: A:3.97,B:-3.53,C:-4.41,D:4.05[0m
+[0;32mI (12680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:3.97 B:-3.53 C:-4.41 D:4.05[0m
+[0;32mI (12740) main: Line: A:0.00,B:0.00,C:-0.25,D:0.13[0m
+[0;32mI (12780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:-0.25 D:0.13[0m
+[0;32mI (12840) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (12880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (12940) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (12980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (13040) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (13080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (13140) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (13180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (13240) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (13280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (13340) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (13380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (13440) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (13480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (13540) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (13580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (13640) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (13680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (13740) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (13780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (13840) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (13880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (13940) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (13980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (14040) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (14080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (14140) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (14180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (14240) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (14280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (14340) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (14380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (14440) main: Line: A:7.42,B:-10.29,C:-9.42,D:7.36[0m
+[0;32mI (14480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:7.42 B:-10.29 C:-9.42 D:7.36[0m
+[0;32mI (14540) main: Line: A:24.19,B:-30.97,C:-30.98,D:24.37[0m
+[0;32mI (14580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:24.19 B:-30.97 C:-30.98 D:24.37[0m
+[0;32mI (14640) main: Line: A:3.53,B:-3.13,C:-3.87,D:3.42[0m
+[0;32mI (14680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:3.53 B:-3.13 C:-3.87 D:3.42[0m
+[0;32mI (14740) main: Line: A:-0.25,B:-0.26,C:0.00,D:0.00[0m
+[0;32mI (14780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:-0.25 B:-0.26 C:0.00 D:0.00[0m
+[0;32mI (14840) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (14880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (14940) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (14980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (15040) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (15080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (15140) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (15180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (15240) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (15280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (15340) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (15380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (15440) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (15480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (15540) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (15580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (15640) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (15680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (15740) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (15780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (15840) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (15880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (15950) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (15980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (16050) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (16080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (16150) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (16180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (16250) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (16280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (16350) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (16380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (16450) main: Line: A:7.70,B:-10.73,C:-10.90,D:7.90[0m
+[0;32mI (16480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:7.70 B:-10.73 C:-10.90 D:7.90[0m
+[0;32mI (16550) main: Line: A:22.72,B:-29.35,C:-29.34,D:23.04[0m
+[0;32mI (16580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:22.72 B:-29.35 C:-29.34 D:23.04[0m
+[0;32mI (16650) main: Line: A:3.13,B:-2.82,C:-3.41,D:3.42[0m
+[0;32mI (16680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:3.13 B:-2.82 C:-3.41 D:3.42[0m
+[0;32mI (16750) main: Line: A:0.00,B:-0.13,C:0.00,D:-0.13[0m
+[0;32mI (16780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:-0.13 C:0.00 D:-0.13[0m
+[0;32mI (16850) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (16880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (16950) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (16980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (17050) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (17080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (17150) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (17180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (17250) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (17280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (17350) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (17380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (17450) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (17480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (17550) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (17580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (17650) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (17680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (17750) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (17780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (17850) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (17880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (17950) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (17980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (18050) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (18080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (18150) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (18180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (18250) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (18280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (18350) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (18380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (18450) main: Line: A:8.86,B:-12.47,C:-12.21,D:9.44[0m
+[0;32mI (18480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:8.86 B:-12.47 C:-12.21 D:9.44[0m
+[0;32mI (18550) main: Line: A:22.50,B:-27.75,C:-28.42,D:22.21[0m
+[0;32mI (18580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:22.50 B:-27.75 C:-28.42 D:22.21[0m
+[0;32mI (18650) main: Line: A:2.78,B:-2.29,C:-3.13,D:2.87[0m
+[0;32mI (18680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:2.78 B:-2.29 C:-3.13 D:2.87[0m
+[0;32mI (18750) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (18780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (18850) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (18880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (18950) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (18980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (19050) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (19080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (19150) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (19180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (19250) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (19280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (19350) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (19380) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (19450) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (19480) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (19550) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (19580) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (19650) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (19680) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (19750) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (19780) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (19850) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (19880) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (19950) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (19980) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (20050) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (20080) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (20150) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (20180) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (20250) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
+[0;32mI (20280) main: PID out A:0.00 B:0.00 C:0.00 D:0.00 | meas A:0.00 B:0.00 C:0.00 D:0.00[0m
+[0;32mI (20350) main: Line: A:0.00,B:0.00,C:0.00,D:0.00[0m
